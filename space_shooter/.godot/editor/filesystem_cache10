@@ -1,0 +1,361 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1772874009
+icon.svg::CompressedTexture2D/CompressedTexture2D::2323743263602634725::1772005374::1772005392::1::::<><><>0<>0<>8684c859fd5acc0a7713b65a582b4079<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Wave_pattern.gd::GDScript::208281251678695212::1772873084::0::1::::WavePattern<>Resource<><>0<>0<><>::
+::res://Animation/::1772869844
+::res://assets/::1772634729
+::res://assets/image/::1772869775
+::res://assets/image/cardspickup/::1772869807
+atkcard.png::CompressedTexture2D/CompressedTexture2D::8146353197566851417::1772869775::1772869807::1::::<><><>0<>0<>4954ca88ded7d22405e117ff84ca8bc2<>res://.godot/imported/atkcard.png-cdc1a33d311cf79ebc8630affeee59aa.ctex::
+coin.png::CompressedTexture2D/CompressedTexture2D::1129533791542865256::1772869775::1772869807::1::::<><><>0<>0<>d178f3aec406039b40a38950e6b7236b<>res://.godot/imported/coin.png-7effea28c75d043b1bd3d1dd2afb736c.ctex::
+defcard.png::CompressedTexture2D/CompressedTexture2D::740991447026342005::1772869775::1772869807::1::::<><><>0<>0<>8f0f3b00d2be59ce0e48ced1c91357e2<>res://.godot/imported/defcard.png-01d3ddf5d90a6820435978d8a994e5fe.ctex::
+energy.png::CompressedTexture2D/CompressedTexture2D::8536334517147663378::1772869775::1772869807::1::::<><><>0<>0<>22ea97ccbe7c50edb6f104636008a393<>res://.godot/imported/energy.png-1fa2780aabaf1dc1b0fbe9032f87b2c0.ctex::
+goldcard.png::CompressedTexture2D/CompressedTexture2D::4647335913337141888::1772869775::1772869807::1::::<><><>0<>0<>7c6c9370b4611434467f4e9cbe7887e9<>res://.godot/imported/goldcard.png-c7faa8bba0f21992a29cb9c1c0a26450.ctex::
+::res://assets/image/enemytype1/::1772681313
+Kla'ed - Ships Preview.png::CompressedTexture2D/CompressedTexture2D::2127196023029209466::1772634590::1772681313::1::::<><><>0<>0<>695eacb42f99e83736fbfa6b92fbee4f<>res://.godot/imported/Kla'ed - Ships Preview.png-6e58ab1f3001302d643ce9da6fa99cd7.ctex::
+Readme.txt::TextFile/TextFile::-1::1772634590::0::1::::<><><>0<>0<><>::
+::res://assets/image/enemytype1/_Previews/::1772634591
+::res://assets/image/enemytype1/_Previews/Kla'ed/::1772634591
+::res://assets/image/enemytype1/_Previews/Kla'ed/Bases/::1772681312
+Kla'ed - Battlecruiser - Base.png::CompressedTexture2D/CompressedTexture2D::2703826998037423873::1772634591::1772681312::1::::<><><>0<>0<>bb2fe1e7f53ace92295b5bb4e18af3b8<>res://.godot/imported/Kla'ed - Battlecruiser - Base.png-a2b47d35315428a2b43995c990d7c773.ctex::
+Kla'ed - Bomber - Base.png::CompressedTexture2D/CompressedTexture2D::4832623063422462207::1772634591::1772681312::1::::<><><>0<>0<>ab3663f122b1d4627f4ee036fdb80149<>res://.godot/imported/Kla'ed - Bomber - Base.png-6f0138bbbef9768f2d6caef93f0b2e39.ctex::
+Kla'ed - Dreadnought - Base.png::CompressedTexture2D/CompressedTexture2D::6649392361059393937::1772634591::1772681312::1::::<><><>0<>0<>7fdabc2e5316879b751df6840d377ecf<>res://.godot/imported/Kla'ed - Dreadnought - Base.png-a2708be4084da59e7bddd27cf0b9e74e.ctex::
+Kla'ed - Fighter - Base.png::CompressedTexture2D/CompressedTexture2D::3578341027285986442::1772634591::1772681312::1::::<><><>0<>0<>a2e4d402a98d5c0aa5a13255365ffe2a<>res://.godot/imported/Kla'ed - Fighter - Base.png-8522523263d4aeb6fcd90ec0917b2639.ctex::
+Kla'ed - Frigate - Base.png::CompressedTexture2D/CompressedTexture2D::4339624549272127943::1772634591::1772681312::1::::<><><>0<>0<>788487c3d54ced89585f3fcb6051f774<>res://.godot/imported/Kla'ed - Frigate - Base.png-b39e70fcb11da1c25a5607e1e05740d3.ctex::
+Kla'ed - Scout - Base.png::CompressedTexture2D/CompressedTexture2D::8749995857199495519::1772634591::1772681312::1::::<><><>0<>0<>346b2aba4661f8d9bf52023a692de348<>res://.godot/imported/Kla'ed - Scout - Base.png-2d9fb63a50b0d4fa017375074798fc42.ctex::
+Kla'ed - Support ship - Base.png::CompressedTexture2D/CompressedTexture2D::5263923107521057163::1772634591::1772681312::1::::<><><>0<>0<>bacbdf0f077d095596023d7894d5bbbb<>res://.godot/imported/Kla'ed - Support ship - Base.png-7802ae5774859b5784c3d379eb1461a8.ctex::
+Kla'ed - Torpedo Ship - Base.png::CompressedTexture2D/CompressedTexture2D::8399980534384631232::1772634591::1772681312::1::::<><><>0<>0<>b97597a891cd7a7b497e138ef270ec12<>res://.godot/imported/Kla'ed - Torpedo Ship - Base.png-0bf4279f0c4f44dfdbb317870f82179b.ctex::
+::res://assets/image/enemytype1/_Previews/Kla'ed/Destruction/::1772634591
+::res://assets/image/enemytype1/_Previews/Kla'ed/Engine/::1772634591
+::res://assets/image/enemytype1/_Previews/Kla'ed/Projectiles/::1772634591
+::res://assets/image/enemytype1/_Previews/Kla'ed/Shield/::1772634591
+::res://assets/image/enemytype1/_Previews/Kla'ed/Weapons/::1772634591
+::res://assets/image/enemytype1/Kla'ed/::1772634591
+::res://assets/image/enemytype1/Kla'ed/Base/::1772634590
+::res://assets/image/enemytype1/Kla'ed/Base/Aseprite/::1772634590
+::res://assets/image/enemytype1/Kla'ed/Base/PNGs/::1772681312
+Kla'ed - Battlecruiser - Base.png::CompressedTexture2D/CompressedTexture2D::547152918677301271::1772634590::1772681312::1::::<><><>0<>0<>37f4e3b0a8cbc84f4f9c1b8b98a7da48<>res://.godot/imported/Kla'ed - Battlecruiser - Base.png-7cca8974fe0ba083cf56b8528776bb32.ctex::
+Kla'ed - Bomber - Base.png::CompressedTexture2D/CompressedTexture2D::4378083703455364241::1772634590::1772681312::1::::<><><>0<>0<>749abd0a975dfe5b8429fe5aea406110<>res://.godot/imported/Kla'ed - Bomber - Base.png-a76ad2ea48f82ab24a4d30e1b245b6a9.ctex::
+Kla'ed - Dreadnought - Base.png::CompressedTexture2D/CompressedTexture2D::410117000142901226::1772634590::1772681312::1::::<><><>0<>0<>4dac735dc8d963200db863fb9cd73c56<>res://.godot/imported/Kla'ed - Dreadnought - Base.png-c3562fd3ebac41505e6d776464e64c17.ctex::
+Kla'ed - Fighter - Base.png::CompressedTexture2D/CompressedTexture2D::7515516173893316190::1772634590::1772681312::1::::<><><>0<>0<>87959d1787119de33b1d05d458ac4dc7<>res://.godot/imported/Kla'ed - Fighter - Base.png-f124ba0fc84be3bb90ec8fa5aefb19fc.ctex::
+Kla'ed - Frigate - Base.png::CompressedTexture2D/CompressedTexture2D::5475273407283118250::1772634590::1772681312::1::::<><><>0<>0<>8a23544c2acd485e4f37ec0b523110b6<>res://.godot/imported/Kla'ed - Frigate - Base.png-72a07985d5c32ccd146b06a717e4b080.ctex::
+Kla'ed - Scout - Base.png::CompressedTexture2D/CompressedTexture2D::3162157559193804466::1772634590::1772681312::1::::<><><>0<>0<>3acc273a1d7effb94b625b0cc7fdcdb5<>res://.godot/imported/Kla'ed - Scout - Base.png-b90f1750692355adcba45aa2848be275.ctex::
+Kla'ed - Support ship - Base.png::CompressedTexture2D/CompressedTexture2D::7869604175862024018::1772634590::1772681312::1::::<><><>0<>0<>cc55398d18b8486be4e7867571f1ffa9<>res://.godot/imported/Kla'ed - Support ship - Base.png-c627fb46729f918d0806be06db6dedfb.ctex::
+Kla'ed - Torpedo Ship - Base.png::CompressedTexture2D/CompressedTexture2D::9183278815555236805::1772634590::1772681312::1::::<><><>0<>0<>5937a6233ccf127423bedfbcb8306eb0<>res://.godot/imported/Kla'ed - Torpedo Ship - Base.png-dcd97779357e9f503bbf65abad1c931e.ctex::
+::res://assets/image/enemytype1/Kla'ed/Destruction/::1772634590
+::res://assets/image/enemytype1/Kla'ed/Destruction/Aseprite/::1772634590
+::res://assets/image/enemytype1/Kla'ed/Destruction/PNGs/::1772681312
+Kla'ed - Battlecruiser - Destruction.png::CompressedTexture2D/CompressedTexture2D::8427353704018863140::1772634590::1772681312::1::::<><><>0<>0<>a3493a2dc9e2b322bf1ee540cad013d5<>res://.godot/imported/Kla'ed - Battlecruiser - Destruction.png-9b3a02f731dfa25bef162d9e9d34d25b.ctex::
+Kla'ed - Bomber - Destruction.png::CompressedTexture2D/CompressedTexture2D::8970652994389698358::1772634590::1772681312::1::::<><><>0<>0<>10844082e51630f33aecbc3f1c88fcd8<>res://.godot/imported/Kla'ed - Bomber - Destruction.png-e8c4c23570fa2be6bb0f42521d4c84ff.ctex::
+Kla'ed - Dreadnought - Destruction.png::CompressedTexture2D/CompressedTexture2D::362108973420041649::1772634590::1772681312::1::::<><><>0<>0<>e6346eb65516241c863315e22dbde1e7<>res://.godot/imported/Kla'ed - Dreadnought - Destruction.png-10a3da2ed3ec88f6caaa50d1d890b550.ctex::
+Kla'ed - Fighter - Destruction.png::CompressedTexture2D/CompressedTexture2D::1643870983684860193::1772634590::1772681312::1::::<><><>0<>0<>9116b3686745aafe3122e9949d1ffb25<>res://.godot/imported/Kla'ed - Fighter - Destruction.png-bbe1dbe551794f9cd3dfcea4474e77ed.ctex::
+Kla'ed - Frigate - Destruction.png::CompressedTexture2D/CompressedTexture2D::2594326722697795731::1772634590::1772681312::1::::<><><>0<>0<>6768f376070ae7ddbaec3cef8071e3f9<>res://.godot/imported/Kla'ed - Frigate - Destruction.png-e509215a95a3ec15c7242550d9238909.ctex::
+Kla'ed - Scout - Destruction.png::CompressedTexture2D/CompressedTexture2D::8477189210119901296::1772634590::1772681312::1::::<><><>0<>0<>cfd2fa1eaa9f36a4185af6f9cb68e6fb<>res://.godot/imported/Kla'ed - Scout - Destruction.png-2afeb3b81b1ac9356f31b13a0c5eba0a.ctex::
+Kla'ed - Support ship - Destruction.png::CompressedTexture2D/CompressedTexture2D::2374885983240066657::1772634590::1772681312::1::::<><><>0<>0<>b245bb889c68080ad4a41afc86122ffa<>res://.godot/imported/Kla'ed - Support ship - Destruction.png-e059bc67af54480ee5067769cf5f1320.ctex::
+Kla'ed - Torpedo Ship - Destruction.png::CompressedTexture2D/CompressedTexture2D::7953786180984813801::1772634590::1772681312::1::::<><><>0<>0<>647c0d9d2ff9fced240e2315593a92f0<>res://.godot/imported/Kla'ed - Torpedo Ship - Destruction.png-f330b11c312796e3fb15ec27ade336bc.ctex::
+::res://assets/image/enemytype1/Kla'ed/Engine/::1772634590
+::res://assets/image/enemytype1/Kla'ed/Engine/Aseprite/::1772634590
+::res://assets/image/enemytype1/Kla'ed/Engine/PNGs/::1772681312
+Kla'ed - Battlecruiser - Engine.png::CompressedTexture2D/CompressedTexture2D::8048078498063273729::1772634590::1772681312::1::::<><><>0<>0<>1571ae138a088f22a1936029a0ea35f4<>res://.godot/imported/Kla'ed - Battlecruiser - Engine.png-1c6aa0d97d7a2b35bb712b9874964bf2.ctex::
+Kla'ed - Bomber - Engine.png::CompressedTexture2D/CompressedTexture2D::2970326844894883602::1772634590::1772681312::1::::<><><>0<>0<>1e415bd0ddea1d0712386730a2ef46bf<>res://.godot/imported/Kla'ed - Bomber - Engine.png-a47735e0b76875b70c48ec3366240767.ctex::
+Kla'ed - Dreadnought - Engine.png::CompressedTexture2D/CompressedTexture2D::8984202609027461367::1772634590::1772681312::1::::<><><>0<>0<>67c9cfa6e8788c9513c7b043ecaa7e31<>res://.godot/imported/Kla'ed - Dreadnought - Engine.png-f91d73736a47734030cee3a28ae34dcc.ctex::
+Kla'ed - Fighter - Engine.png::CompressedTexture2D/CompressedTexture2D::703205419958814763::1772634590::1772681312::1::::<><><>0<>0<>106afe5b2ec0eaf7276179c263527da2<>res://.godot/imported/Kla'ed - Fighter - Engine.png-f512a4d224f941bd518aafbb17855665.ctex::
+Kla'ed - Frigate - Engine.png::CompressedTexture2D/CompressedTexture2D::5022332553322400619::1772634590::1772681312::1::::<><><>0<>0<>ebb8f3a691bf3680d6c2a02976c00e17<>res://.godot/imported/Kla'ed - Frigate - Engine.png-4120167eec9dd8917173eddf3cfa5d6b.ctex::
+Kla'ed - Scout - Engine.png::CompressedTexture2D/CompressedTexture2D::7007723869823638590::1772634590::1772681312::1::::<><><>0<>0<>56185239a838e45da9fb46b3697c755d<>res://.godot/imported/Kla'ed - Scout - Engine.png-5bec13583fbaf923c226f95f6b4bb0de.ctex::
+Kla'ed - Support ship - Engine.png::CompressedTexture2D/CompressedTexture2D::707778420666878060::1772634591::1772681312::1::::<><><>0<>0<>cb2b8aa9f4230f122fdfe0d9393e2f51<>res://.godot/imported/Kla'ed - Support ship - Engine.png-c27a5eb18479041aa6671f249e1a9f92.ctex::
+Kla'ed - Torpedo Ship - Engine.png::CompressedTexture2D/CompressedTexture2D::1507974263667289498::1772634591::1772681312::1::::<><><>0<>0<>abd6f861f7b95a4200b607d38ca358ad<>res://.godot/imported/Kla'ed - Torpedo Ship - Engine.png-329af47768be5c231aa6a8ec1b213905.ctex::
+::res://assets/image/enemytype1/Kla'ed/Projectiles/::1772634591
+::res://assets/image/enemytype1/Kla'ed/Projectiles/Aseprite/::1772634591
+::res://assets/image/enemytype1/Kla'ed/Projectiles/PNGs/::1772681312
+Kla'ed - Big Bullet.png::CompressedTexture2D/CompressedTexture2D::3233458542994476095::1772634591::1772681312::1::::<><><>0<>0<>446eb5fea2e30977478868612e235efe<>res://.godot/imported/Kla'ed - Big Bullet.png-b1b101ae0aa58439e9d60391915711e4.ctex::
+Kla'ed - Bullet.png::CompressedTexture2D/CompressedTexture2D::4314726403380514994::1772634591::1772681312::1::::<><><>0<>0<>44c03123fee49ab7c23ffc81f8cb287d<>res://.godot/imported/Kla'ed - Bullet.png-8c5145b5f4a4c555bd0b2c4fe9d3bfbd.ctex::
+Kla'ed - Ray.png::CompressedTexture2D/CompressedTexture2D::3188824790687286224::1772634591::1772681312::1::::<><><>0<>0<>0178af8c19417790a79c31b1cc499139<>res://.godot/imported/Kla'ed - Ray.png-33959c92488d6e5d6634d2036b039e91.ctex::
+Kla'ed - Torpedo.png::CompressedTexture2D/CompressedTexture2D::1877129834393927003::1772634591::1772681312::1::::<><><>0<>0<>1df8c873dfe16b27525077211ed85a54<>res://.godot/imported/Kla'ed - Torpedo.png-5bcc1933b2be7f8b24f744cc297e636a.ctex::
+Kla'ed - Wave.png::CompressedTexture2D/CompressedTexture2D::3380510045650181156::1772634591::1772681312::1::::<><><>0<>0<>312b804bdfb07bf5acd19062cbc3c6ae<>res://.godot/imported/Kla'ed - Wave.png-f23c983f7ba918bb3780592e44083bb7.ctex::
+::res://assets/image/enemytype1/Kla'ed/Shield/::1772634591
+::res://assets/image/enemytype1/Kla'ed/Shield/Aseprite/::1772634591
+::res://assets/image/enemytype1/Kla'ed/Shield/PNGs/::1772681312
+Kla'ed - Battlecruiser - Shield.png::CompressedTexture2D/CompressedTexture2D::3480354295641853556::1772634591::1772681312::1::::<><><>0<>0<>44592d51c3bdf0e70950da35ac23ec84<>res://.godot/imported/Kla'ed - Battlecruiser - Shield.png-761ab65deaccee6d144e480bcf7f3a73.ctex::
+Kla'ed - Bomber - Shield.png::CompressedTexture2D/CompressedTexture2D::3872595845907501836::1772634591::1772681312::1::::<><><>0<>0<>00295eb94d88d91af4a2148a59ca2a06<>res://.godot/imported/Kla'ed - Bomber - Shield.png-c2cd67c45f9b1cb62cf294e0c60fe4e0.ctex::
+Kla'ed - Dreadnought - Shield.png::CompressedTexture2D/CompressedTexture2D::4456475011842383603::1772634591::1772681312::1::::<><><>0<>0<>e33b0da9df22d3c9688c8ae5ea33ea47<>res://.godot/imported/Kla'ed - Dreadnought - Shield.png-3be3cf8c790df05e6942c49d2b42ac51.ctex::
+Kla'ed - Fighter - Shield.png::CompressedTexture2D/CompressedTexture2D::5038617252674627241::1772634591::1772681312::1::::<><><>0<>0<>f26229357f5252b0e7ab76b0b8c25f0f<>res://.godot/imported/Kla'ed - Fighter - Shield.png-4c3da0580e12e130f2d2753acd3b3953.ctex::
+Kla'ed - Frigate - Shield.png::CompressedTexture2D/CompressedTexture2D::3794291095611112007::1772634591::1772681312::1::::<><><>0<>0<>c9d1683bb8c3176a658e57e4bc09ff9e<>res://.godot/imported/Kla'ed - Frigate - Shield.png-757e18ccf5f1395c350e82d09f5eb94b.ctex::
+Kla'ed - Scout - Shield.png::CompressedTexture2D/CompressedTexture2D::6905449635114340975::1772634591::1772681312::1::::<><><>0<>0<>e33c1b29d2304727533978e049ecea66<>res://.godot/imported/Kla'ed - Scout - Shield.png-d6db821bd8dd51df3440e044abd396e5.ctex::
+Kla'ed - Torpedo Ship - Shield.png::CompressedTexture2D/CompressedTexture2D::970670214117696273::1772634591::1772681312::1::::<><><>0<>0<>3057fb291defe81f83f16be506f3dcdc<>res://.godot/imported/Kla'ed - Torpedo Ship - Shield.png-a7e7cf2fa27e2db58643101ae01ef6ae.ctex::
+::res://assets/image/enemytype1/Kla'ed/Weapons/::1772634591
+::res://assets/image/enemytype1/Kla'ed/Weapons/Aseprite/::1772634591
+::res://assets/image/enemytype1/Kla'ed/Weapons/PNGs/::1772681312
+Kla'ed - Battlecruiser - Weapons.png::CompressedTexture2D/CompressedTexture2D::8789010187289205650::1772634591::1772681312::1::::<><><>0<>0<>58cb34ddd54ea22011291f451658cd86<>res://.godot/imported/Kla'ed - Battlecruiser - Weapons.png-30f4ce7f0e1ddbc1a0812129b0464414.ctex::
+Kla'ed - Dreadnought - Weapons.png::CompressedTexture2D/CompressedTexture2D::5836720623203758467::1772634591::1772681312::1::::<><><>0<>0<>6a404595e144a0b8dfe13b465b6dfd91<>res://.godot/imported/Kla'ed - Dreadnought - Weapons.png-9fe66160b799e5d3784b8a0a3c331833.ctex::
+Kla'ed - Fighter - Weapons.png::CompressedTexture2D/CompressedTexture2D::4614440068846002861::1772634591::1772681312::1::::<><><>0<>0<>9b3c8a871264dec10e66586ddb89d6d3<>res://.godot/imported/Kla'ed - Fighter - Weapons.png-4eef9e087f97723e90c7bbe9ab15dff3.ctex::
+Kla'ed - Frigate - Weapons.png::CompressedTexture2D/CompressedTexture2D::3843482985283783119::1772634591::1772681312::1::::<><><>0<>0<>1aeffa4954047d429f004bc52a4d1385<>res://.godot/imported/Kla'ed - Frigate - Weapons.png-24be0f84d9c2a82a55d15796ed735fac.ctex::
+Kla'ed - Scout - Weapons.png::CompressedTexture2D/CompressedTexture2D::8759052906843906363::1772634591::1772681312::1::::<><><>0<>0<>75184277b175808af865aacfab271ab7<>res://.godot/imported/Kla'ed - Scout - Weapons.png-fa5030310e76c7134b886fa3f283eed2.ctex::
+Kla'ed - Torpedo Ship - Weapons.png::CompressedTexture2D/CompressedTexture2D::1958417827069317507::1772634591::1772681312::1::::<><><>0<>0<>b71c593792194468ef48a3b9cb39f8ad<>res://.godot/imported/Kla'ed - Torpedo Ship - Weapons.png-9f08e6b94265ad48e5d1ce3680f702ab.ctex::
+::res://assets/image/enemytype2/::1772681313
+Nairan - Ships Preview.png::CompressedTexture2D/CompressedTexture2D::7293101057590555984::1772634608::1772681313::1::::<><><>0<>0<>743a82b430c5edc6d8984c8d178bb488<>res://.godot/imported/Nairan - Ships Preview.png-c08a0e17e6419fd7c7f76a223cb53c4c.ctex::
+Readme.txt::TextFile/TextFile::-1::1772634609::0::1::::<><><>0<>0<><>::
+::res://assets/image/enemytype2/_Previews/::1772634609
+::res://assets/image/enemytype2/_Previews/Nairan/::1772634609
+::res://assets/image/enemytype2/_Previews/Nairan/Bases/::1772634609
+::res://assets/image/enemytype2/_Previews/Nairan/Destruction/::1772634609
+::res://assets/image/enemytype2/_Previews/Nairan/Engines/::1772634609
+::res://assets/image/enemytype2/_Previews/Nairan/Projectiles/::1772634609
+::res://assets/image/enemytype2/_Previews/Nairan/Shields/::1772634609
+::res://assets/image/enemytype2/_Previews/Nairan/Weapons/::1772634609
+::res://assets/image/enemytype2/Nairan/::1772634609
+::res://assets/image/enemytype2/Nairan/Designs - Base/::1772634609
+::res://assets/image/enemytype2/Nairan/Designs - Base/Aseprite/::1772634609
+::res://assets/image/enemytype2/Nairan/Designs - Base/PNGs/::1772681313
+Nairan - Battlecruiser - Base.png::CompressedTexture2D/CompressedTexture2D::894224523465774334::1772634609::1772681313::1::::<><><>0<>0<>0d8a87cff671fe5a60c270f98deed322<>res://.godot/imported/Nairan - Battlecruiser - Base.png-f13f1ca7ac154485b3f7d56a28df457c.ctex::
+Nairan - Bomber - Base.png::CompressedTexture2D/CompressedTexture2D::7335406136228931324::1772634609::1772681313::1::::<><><>0<>0<>addac9190728fb260649bc3426e9d89e<>res://.godot/imported/Nairan - Bomber - Base.png-ed84ba46dfc1e3a08777ed31007c61e9.ctex::
+Nairan - Dreadnought - Base.png::CompressedTexture2D/CompressedTexture2D::9079412065698620452::1772634609::1772681313::1::::<><><>0<>0<>2113f739e36c68901b0ff94a88b0c01c<>res://.godot/imported/Nairan - Dreadnought - Base.png-82bf0118e05514b3e77f1b33605ffae8.ctex::
+Nairan - Fighter - Base.png::CompressedTexture2D/CompressedTexture2D::4835815796965611080::1772634609::1772681313::1::::<><><>0<>0<>3c9d351ae878e8d8fff765f341fca377<>res://.godot/imported/Nairan - Fighter - Base.png-53ad3cf08402651a9fce82f1448a4e02.ctex::
+Nairan - Frigate - Base.png::CompressedTexture2D/CompressedTexture2D::150455199570818960::1772634609::1772681313::1::::<><><>0<>0<>7bd262925438b0efef89a39519eb6541<>res://.godot/imported/Nairan - Frigate - Base.png-3f115c3c6da6427cfc056931dd0e6e0a.ctex::
+Nairan - Scout - Base.png::CompressedTexture2D/CompressedTexture2D::6973286174321104354::1772634609::1772681313::1::::<><><>0<>0<>33cc7862a2b9c7c4d41265bd4ef13b6e<>res://.godot/imported/Nairan - Scout - Base.png-23730064d886264eacaa69758b56d2d3.ctex::
+Nairan - Support Ship - Base.png::CompressedTexture2D/CompressedTexture2D::6357410129298730541::1772634609::1772681313::1::::<><><>0<>0<>ba490b3261d1a3145aa65f1d6d99e409<>res://.godot/imported/Nairan - Support Ship - Base.png-705960aca390706cd10564bcf9077296.ctex::
+Nairan - Torpedo Ship - Base.png::CompressedTexture2D/CompressedTexture2D::3082413401732597744::1772634609::1772681313::1::::<><><>0<>0<>15e113c8f7dbf24939b97deb2d63d4e9<>res://.godot/imported/Nairan - Torpedo Ship - Base.png-fd31aeea834b5aab1e3d5c8eec7c205f.ctex::
+::res://assets/image/enemytype2/Nairan/Destruction/::1772634609
+::res://assets/image/enemytype2/Nairan/Destruction/Aseprite/::1772634609
+::res://assets/image/enemytype2/Nairan/Destruction/PNGs/::1772681313
+Nairan - Battlecruiser  -  Destruction.png::CompressedTexture2D/CompressedTexture2D::8482323846599172961::1772634609::1772681313::1::::<><><>0<>0<>7ed8f3370664a56009fa4551f18c69d5<>res://.godot/imported/Nairan - Battlecruiser  -  Destruction.png-e890e3d33c1f452093d94f6f7bf8d9c4.ctex::
+Nairan - Bomber -  Destruction.png::CompressedTexture2D/CompressedTexture2D::3075521276268976481::1772634609::1772681313::1::::<><><>0<>0<>886ad53e1d78fd8bd5c1a10ccacf70f1<>res://.godot/imported/Nairan - Bomber -  Destruction.png-092c3b1c55995965455c1f38d928eb12.ctex::
+Nairan - Dreadnought -  Destruction.png::CompressedTexture2D/CompressedTexture2D::2315549985798209277::1772634609::1772681313::1::::<><><>0<>0<>a6494ee228094f41cb170d26d5949976<>res://.godot/imported/Nairan - Dreadnought -  Destruction.png-5c11b7bd8d9eb0fec8ca211094d1c85c.ctex::
+Nairan - Fighter -  Destruction.png::CompressedTexture2D/CompressedTexture2D::8534513206670863880::1772634609::1772681313::1::::<><><>0<>0<>ee9cc3bd0ad5cdb03d142fd8ed31ad23<>res://.godot/imported/Nairan - Fighter -  Destruction.png-d74a7e565f1823c27128a04f40540d13.ctex::
+Nairan - Frigate -  Destruction.png::CompressedTexture2D/CompressedTexture2D::6385771430624353347::1772634609::1772681313::1::::<><><>0<>0<>c862058f09f1cd949a8bad1fc5b7184b<>res://.godot/imported/Nairan - Frigate -  Destruction.png-2a379ed97d05e72d2411296b3270a9e7.ctex::
+Nairan - Scout -  Destruction.png::CompressedTexture2D/CompressedTexture2D::7350240934044656392::1772634609::1772681313::1::::<><><>0<>0<>fe50005cc780b7cb4a48cff28e8915de<>res://.godot/imported/Nairan - Scout -  Destruction.png-f1742992875801023ce587c575965d69.ctex::
+Nairan - Support Ship -  Destruction.png::CompressedTexture2D/CompressedTexture2D::5070183964459216695::1772634609::1772681313::1::::<><><>0<>0<>447962e466f871fe609774b03db7f15b<>res://.godot/imported/Nairan - Support Ship -  Destruction.png-b963c1c7a04da058174ac4e195a77f6c.ctex::
+Nairan - Torpedo Ship -  Destruction.png::CompressedTexture2D/CompressedTexture2D::2905654121493105724::1772634609::1772681313::1::::<><><>0<>0<>5fc737d1ddb145d66bebea8f760c52ca<>res://.godot/imported/Nairan - Torpedo Ship -  Destruction.png-1e0cb53950179a1e08e85d991308aaad.ctex::
+::res://assets/image/enemytype2/Nairan/Engine Effects/::1772634609
+::res://assets/image/enemytype2/Nairan/Engine Effects/Aseprite/::1772634609
+::res://assets/image/enemytype2/Nairan/Engine Effects/PNGs/::1772681313
+Nairan - Battlecruiser - Engine.png::CompressedTexture2D/CompressedTexture2D::1830231441379289925::1772634609::1772681313::1::::<><><>0<>0<>1b940f71853391ad061fa097885f7d47<>res://.godot/imported/Nairan - Battlecruiser - Engine.png-25cfaefbcbae8d913e65ecc79597c772.ctex::
+Nairan - Bomber - Engine.png::CompressedTexture2D/CompressedTexture2D::6067435907564385162::1772634609::1772681313::1::::<><><>0<>0<>b5f07287ea19dc15c1bac2d90e3f4d54<>res://.godot/imported/Nairan - Bomber - Engine.png-5385c87d830549bfa5949a93ab386cc7.ctex::
+Nairan - Dreadnought - Engine.png::CompressedTexture2D/CompressedTexture2D::239706855727108389::1772634609::1772681313::1::::<><><>0<>0<>a2c997110953fc61737eee358ca80610<>res://.godot/imported/Nairan - Dreadnought - Engine.png-2748e8a4336d789aaa9480a583c23b83.ctex::
+Nairan - Fighter - Engine.png::CompressedTexture2D/CompressedTexture2D::5052915870067979765::1772634609::1772681313::1::::<><><>0<>0<>7dfdffd98e26383e00281524354bb53a<>res://.godot/imported/Nairan - Fighter - Engine.png-4c1ec3e11b6b5a251db3864a62c161d0.ctex::
+Nairan - Frigate - Engine.png::CompressedTexture2D/CompressedTexture2D::7641458092685659828::1772634609::1772681313::1::::<><><>0<>0<>76f3702f3aee453be37b0ce7e061fae4<>res://.godot/imported/Nairan - Frigate - Engine.png-e10cb9bbad85be9c8f6ec74cbd2a993b.ctex::
+Nairan - Scout - Engine.png::CompressedTexture2D/CompressedTexture2D::6637267454643822435::1772634609::1772681313::1::::<><><>0<>0<>cb8154be75d3eb4e148c51bb95f8781f<>res://.godot/imported/Nairan - Scout - Engine.png-3091e4ad1e4980d1df495aa7b131ecde.ctex::
+Nairan - Support Ship - Engine.png::CompressedTexture2D/CompressedTexture2D::2337283071474019542::1772634609::1772681313::1::::<><><>0<>0<>503d7c6514865e214d6144c89fc851ff<>res://.godot/imported/Nairan - Support Ship - Engine.png-1f1c56fc1a344c175289fe40976c3196.ctex::
+Nairan - Torpedo Ship - Engine.png::CompressedTexture2D/CompressedTexture2D::1937107910713982639::1772634609::1772681313::1::::<><><>0<>0<>70a32c168e037ba369c9b5681cba4ccb<>res://.godot/imported/Nairan - Torpedo Ship - Engine.png-6cc8b7df0711912e31991d9a4aa67396.ctex::
+::res://assets/image/enemytype2/Nairan/Shields/::1772634609
+::res://assets/image/enemytype2/Nairan/Shields/Aseprite/::1772634609
+::res://assets/image/enemytype2/Nairan/Shields/PNGs/::1772681313
+Nairan - Battlecruiser - Shield.png::CompressedTexture2D/CompressedTexture2D::6126328591498827018::1772634609::1772681313::1::::<><><>0<>0<>77313fbc5720c4010a7fe609413f87c3<>res://.godot/imported/Nairan - Battlecruiser - Shield.png-e5a86c3c8625a50c2e9d159cf66d8d93.ctex::
+Nairan - Bomber - Shield.png::CompressedTexture2D/CompressedTexture2D::588393799983261078::1772634609::1772681312::1::::<><><>0<>0<>fe0549bf4180bc2a7c626b39f1515061<>res://.godot/imported/Nairan - Bomber - Shield.png-14e42804a6fe54be11307d1704e0aa22.ctex::
+Nairan - Dreadnought - Shield.png::CompressedTexture2D/CompressedTexture2D::2761710643795331568::1772634609::1772681312::1::::<><><>0<>0<>b4e1ff23fc22c87149139776413d204e<>res://.godot/imported/Nairan - Dreadnought - Shield.png-78f50673c0f84f7ec01a3ca084b1433c.ctex::
+Nairan - Fighter - Shield.png::CompressedTexture2D/CompressedTexture2D::6144351956291278917::1772634609::1772681312::1::::<><><>0<>0<>b40c253ace1f52042d95e18415376599<>res://.godot/imported/Nairan - Fighter - Shield.png-95b910e90dc385d07153372667bb5bca.ctex::
+Nairan - Frigate - Shield.png::CompressedTexture2D/CompressedTexture2D::965629985106578391::1772634609::1772681312::1::::<><><>0<>0<>8e07fbe4542032be1de7e81f5d5eb89b<>res://.godot/imported/Nairan - Frigate - Shield.png-3e1b6503eae7e8edd0a29e02567448ab.ctex::
+Nairan - Scout - Shield.png::CompressedTexture2D/CompressedTexture2D::5454351593739160036::1772634609::1772681312::1::::<><><>0<>0<>f35069f3701cbd4b431c8904fe996e81<>res://.godot/imported/Nairan - Scout - Shield.png-9c5530c72edaad2dcb2f1508ebe66918.ctex::
+Nairan - Torpedo Ship - Shield.png::CompressedTexture2D/CompressedTexture2D::3271195069569158065::1772634609::1772681312::1::::<><><>0<>0<>2b60ab21fd0ef372d4d9cf83873f244a<>res://.godot/imported/Nairan - Torpedo Ship - Shield.png-ba14beb3aeb1de62b22b095ab8526fa6.ctex::
+::res://assets/image/enemytype2/Nairan/Weapon Effects - Projectiles/::1772634609
+::res://assets/image/enemytype2/Nairan/Weapon Effects - Projectiles/Aseprite/::1772634609
+::res://assets/image/enemytype2/Nairan/Weapon Effects - Projectiles/PNGs/::1772681313
+Nairan - Bolt.png::CompressedTexture2D/CompressedTexture2D::4175905715794645183::1772634609::1772681312::1::::<><><>0<>0<>c03b5602bae04f65230d045fd3561a43<>res://.godot/imported/Nairan - Bolt.png-b0d40498fc99038cfd1257a50b472f07.ctex::
+Nairan - Ray.png::CompressedTexture2D/CompressedTexture2D::7664549737533408962::1772634609::1772681312::1::::<><><>0<>0<>0cc7409a9393ae6f87160d3b57f066a1<>res://.godot/imported/Nairan - Ray.png-45603bb41681f3d0d4eb491e77d015b7.ctex::
+Nairan - Rocket.png::CompressedTexture2D/CompressedTexture2D::8719322122306915655::1772634609::1772681313::1::::<><><>0<>0<>4516bb15bff2ab88180017d4d4b10a30<>res://.godot/imported/Nairan - Rocket.png-5863c782cced3d7a6bf88180a38372e5.ctex::
+Nairan - Torpedo.png::CompressedTexture2D/CompressedTexture2D::4379782796932982922::1772634609::1772681313::1::::<><><>0<>0<>5a6a730387d6010fdf0a7cae9a0243f1<>res://.godot/imported/Nairan - Torpedo.png-d0d409c2ac9a08c89049ee13b8f0ca14.ctex::
+::res://assets/image/enemytype2/Nairan/Weapons/::1772634609
+::res://assets/image/enemytype2/Nairan/Weapons/Aseprite/::1772634609
+::res://assets/image/enemytype2/Nairan/Weapons/PNGs/::1772681313
+Nairan - Battlecruiser - Weapons.png::CompressedTexture2D/CompressedTexture2D::418798606416200796::1772634609::1772681313::1::::<><><>0<>0<>dddd33c6615d6192100ae31f316102f8<>res://.godot/imported/Nairan - Battlecruiser - Weapons.png-c36bf7deef751e872abc7854155c6b86.ctex::
+Nairan - Dreadnought - Weapons.png::CompressedTexture2D/CompressedTexture2D::24711867665750203::1772634609::1772681313::1::::<><><>0<>0<>372108b0c738ffb5598a60e163c07a53<>res://.godot/imported/Nairan - Dreadnought - Weapons.png-3fa83051ba6c585cfbb85b96272fee47.ctex::
+Nairan - Fighter - Weapons.png::CompressedTexture2D/CompressedTexture2D::4543888287424599348::1772634609::1772681313::1::::<><><>0<>0<>6c0e06113ee72e1a0e30dcb8bf70cce8<>res://.godot/imported/Nairan - Fighter - Weapons.png-60fda013dc9d3426a1183fcacda4513d.ctex::
+Nairan - Frigate - Weapons.png::CompressedTexture2D/CompressedTexture2D::9065714132139039020::1772634609::1772681313::1::::<><><>0<>0<>fa714a6d4e5f4540a117de78837c20d4<>res://.godot/imported/Nairan - Frigate - Weapons.png-a2021c8ea5c2b4205a6770d122383bb6.ctex::
+Nairan - Scout - Weapons.png::CompressedTexture2D/CompressedTexture2D::8809794268091296868::1772634609::1772681313::1::::<><><>0<>0<>a4e0903d862b97a770fa648279a2a23c<>res://.godot/imported/Nairan - Scout - Weapons.png-de4b8129df98922911e9120264f00d02.ctex::
+Nairan - Torpedo Ship - Weapons.png::CompressedTexture2D/CompressedTexture2D::5148071834237345465::1772634609::1772681313::1::::<><><>0<>0<>6a9c33653034874a1e4c88cb9f0fb946<>res://.godot/imported/Nairan - Torpedo Ship - Weapons.png-e254170b6e9cf97e460714b5d22d3fbb.ctex::
+::res://assets/image/enemytype3/::1772681311
+Nautolan - Ships Preview.png::CompressedTexture2D/CompressedTexture2D::6298695355840247091::1772634650::1772681311::1::::<><><>0<>0<>ebe4991360d874c5323dc3090323c4d0<>res://.godot/imported/Nautolan - Ships Preview.png-08edc2537a6886da624101a1a8224e09.ctex::
+Readme.txt::TextFile/TextFile::-1::1772634650::0::1::::<><><>0<>0<><>::
+::res://assets/image/enemytype3/_Previews/::1772634650
+::res://assets/image/enemytype3/_Previews/Nautolan/::1772634651
+::res://assets/image/enemytype3/_Previews/Nautolan/Bases/::1772634650
+::res://assets/image/enemytype3/_Previews/Nautolan/Destruction/::1772634650
+::res://assets/image/enemytype3/_Previews/Nautolan/Engines/::1772634651
+::res://assets/image/enemytype3/_Previews/Nautolan/Projectiles/::1772634651
+::res://assets/image/enemytype3/_Previews/Nautolan/Shields/::1772634651
+::res://assets/image/enemytype3/_Previews/Nautolan/Weapons/::1772634651
+::res://assets/image/enemytype3/Nautolan/::1772634650
+::res://assets/image/enemytype3/Nautolan/Designs - Base/::1772634650
+::res://assets/image/enemytype3/Nautolan/Designs - Base/Aseprite/::1772634650
+::res://assets/image/enemytype3/Nautolan/Designs - Base/PNGs/::1772681313
+Nautolan Ship - Battlecruiser - Base.png::CompressedTexture2D/CompressedTexture2D::4850662459433193594::1772634650::1772681313::1::::<><><>0<>0<>cbd501b6dba1cb3b35bab5291eb5d5e8<>res://.godot/imported/Nautolan Ship - Battlecruiser - Base.png-31667c331d5b8e9b916f528107347659.ctex::
+Nautolan Ship - Bomber - Base.png::CompressedTexture2D/CompressedTexture2D::8194721183320753591::1772634650::1772681313::1::::<><><>0<>0<>d0b9e723e6d4a37fc1ec5294b2dcc906<>res://.godot/imported/Nautolan Ship - Bomber - Base.png-e1bcb3ea6f46fc6b6e38f9e0212108c9.ctex::
+Nautolan Ship - Dreadnought - Base.png::CompressedTexture2D/CompressedTexture2D::5883508630947161459::1772634650::1772681313::1::::<><><>0<>0<>ca6d6adc9f253c00110921b9099a7d62<>res://.godot/imported/Nautolan Ship - Dreadnought - Base.png-5548329645285dc4bc84ac3454930595.ctex::
+Nautolan Ship - Fighter - Base.png::CompressedTexture2D/CompressedTexture2D::7555961872571564702::1772634650::1772681313::1::::<><><>0<>0<>b4bd38e2a26b1d3a5fd213f5d7fb3d7d<>res://.godot/imported/Nautolan Ship - Fighter - Base.png-dc11d2fc470cb983c1ff7fd247b9381d.ctex::
+Nautolan Ship - Frigate - Base.png::CompressedTexture2D/CompressedTexture2D::3724970840229019339::1772634650::1772681313::1::::<><><>0<>0<>1c5bf1de0a2b30804343a217ab62031f<>res://.godot/imported/Nautolan Ship - Frigate - Base.png-1cd0bd74f14f5d6339cee691b2eacd8c.ctex::
+Nautolan Ship - Scout - Base.png::CompressedTexture2D/CompressedTexture2D::7390313857194193082::1772634650::1772681313::1::::<><><>0<>0<>19fdf5d8cdbc20acbc516e068961347a<>res://.godot/imported/Nautolan Ship - Scout - Base.png-87f39530885889e01e64f2344fb64751.ctex::
+Nautolan Ship - Support - Base.png::CompressedTexture2D/CompressedTexture2D::4239655341759242434::1772634650::1772681313::1::::<><><>0<>0<>9cdb876c7c4957c6139575dc1dd329b4<>res://.godot/imported/Nautolan Ship - Support - Base.png-6e8be9bd925c7f27b0bbcc0ea423a294.ctex::
+Nautolan Ship - Torpedo Ship.png::CompressedTexture2D/CompressedTexture2D::8086905627750604479::1772634650::1772681313::1::::<><><>0<>0<>479d7804dacf840de174d9280e47881f<>res://.godot/imported/Nautolan Ship - Torpedo Ship.png-6736b9bc299f66975b4d0fc47a9314d5.ctex::
+::res://assets/image/enemytype3/Nautolan/Destruction/::1772634650
+::res://assets/image/enemytype3/Nautolan/Destruction/Aseprite/::1772634650
+::res://assets/image/enemytype3/Nautolan/Destruction/PNGs/::1772681311
+Nautolan Ship - Battlecruiser.png::CompressedTexture2D/CompressedTexture2D::2185160804893463260::1772634650::1772681311::1::::<><><>0<>0<>53e38ce0893a22c9885ac6c8064b5a8b<>res://.godot/imported/Nautolan Ship - Battlecruiser.png-c336159a8e9b5966553c6edaea0adbbe.ctex::
+Nautolan Ship - Bomber.png::CompressedTexture2D/CompressedTexture2D::3578295403764685144::1772634650::1772681311::1::::<><><>0<>0<>385444af2099d577cabd50a4e9af5bec<>res://.godot/imported/Nautolan Ship - Bomber.png-c381c8d8690506e9d7ca0c4d9688c240.ctex::
+Nautolan Ship - Dreadnought.png::CompressedTexture2D/CompressedTexture2D::8133244889766535771::1772634650::1772681311::1::::<><><>0<>0<>14967c130da069c80eda96e97e5df678<>res://.godot/imported/Nautolan Ship - Dreadnought.png-c0bce31253954fc79fcf6c3aaf92f0c3.ctex::
+Nautolan Ship - Fighter.png::CompressedTexture2D/CompressedTexture2D::4260172940477471107::1772634650::1772681311::1::::<><><>0<>0<>a4b6803ce934d1137739edc9a4a936b2<>res://.godot/imported/Nautolan Ship - Fighter.png-08ea9c2270512bb561bdb0e599dc8f77.ctex::
+Nautolan Ship - Frigate.png::CompressedTexture2D/CompressedTexture2D::6024487061281495748::1772634650::1772681311::1::::<><><>0<>0<>22ebebd025c27aa2d0c5bcad49aa736f<>res://.godot/imported/Nautolan Ship - Frigate.png-b092ccf5e191653c66b9eba4e5de50ed.ctex::
+Nautolan Ship - Scout.png::CompressedTexture2D/CompressedTexture2D::5220257543219570056::1772634650::1772681311::1::::<><><>0<>0<>88ea71ba0e0dbb531c1779bd9d358043<>res://.godot/imported/Nautolan Ship - Scout.png-488580a7835b69ad1ccb406862b352b1.ctex::
+Nautolan Ship - Support.png::CompressedTexture2D/CompressedTexture2D::4304899737206757246::1772634650::1772681311::1::::<><><>0<>0<>a6fa9c1d26c79f6b0cec336b6d092417<>res://.godot/imported/Nautolan Ship - Support.png-e70da088be7c7bedf329b571cda2cb73.ctex::
+Nautolan Ship - Torpedo Ship.png::CompressedTexture2D/CompressedTexture2D::3977096329095087427::1772634650::1772681311::1::::<><><>0<>0<>0da221569a84464903658731dba7c9e4<>res://.godot/imported/Nautolan Ship - Torpedo Ship.png-be7458a5be2380465aaf63f911333bf9.ctex::
+::res://assets/image/enemytype3/Nautolan/Engine Effects/::1772634650
+::res://assets/image/enemytype3/Nautolan/Engine Effects/Aseprite/::1772634650
+::res://assets/image/enemytype3/Nautolan/Engine Effects/PNGs/::1772681311
+Nautolan Ship - Battlecruiser - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::1440112808314422669::1772634650::1772681311::1::::<><><>0<>0<>c0d842924df38b4246a7b07bfa9434a1<>res://.godot/imported/Nautolan Ship - Battlecruiser - Engine Effect.png-e4a86ca32edb51b979d49159b77953d0.ctex::
+Nautolan Ship - Bomber - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::7502885835116535182::1772634650::1772681311::1::::<><><>0<>0<>96a25fd9b26b75fbb08fd02a3a33b20b<>res://.godot/imported/Nautolan Ship - Bomber - Engine Effect.png-3b15818f9e1138b76b80a22745e14757.ctex::
+Nautolan Ship - Dreadnought - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::2396815309355283637::1772634650::1772681311::1::::<><><>0<>0<>11e445e552dab231136d22b731ad4eea<>res://.godot/imported/Nautolan Ship - Dreadnought - Engine Effect.png-a13fab5c91440a695d51004420906396.ctex::
+Nautolan Ship - Fighter - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::5610004480531504473::1772634650::1772681311::1::::<><><>0<>0<>94cd9c5a493b2cca2e6703f4737f81e6<>res://.godot/imported/Nautolan Ship - Fighter - Engine Effect.png-d093e3799a2923e7be2a73d698e576c0.ctex::
+Nautolan Ship - Frigate - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::7943190859723758560::1772634650::1772681311::1::::<><><>0<>0<>95a76a1ebb14f48f8542dad4d49cb35c<>res://.godot/imported/Nautolan Ship - Frigate - Engine Effect.png-c55f05a0441f861fe0d9886abb5329cb.ctex::
+Nautolan Ship - Scout - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::3935890730202298740::1772634650::1772681311::1::::<><><>0<>0<>af02683239c474ed8b30a73c6b0dd7a5<>res://.godot/imported/Nautolan Ship - Scout - Engine Effect.png-1eda5c49df55b94e7ac16dc9976480ce.ctex::
+Nautolan Ship - Support - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::7607862128523516688::1772634650::1772681311::1::::<><><>0<>0<>2a93f4e6838c66415c284118512f6168<>res://.godot/imported/Nautolan Ship - Support - Engine Effect.png-6943e0127d98e677034d4512f9a20f0c.ctex::
+Nautolan Ship - Torpedo Ship - Engine Effect.png::CompressedTexture2D/CompressedTexture2D::5305543773398709017::1772634650::1772681311::1::::<><><>0<>0<>72c7769f6e5a76095eb210b5abb76956<>res://.godot/imported/Nautolan Ship - Torpedo Ship - Engine Effect.png-05733020af318d3013ad4b1b33ae49b2.ctex::
+::res://assets/image/enemytype3/Nautolan/Shields/::1772634650
+::res://assets/image/enemytype3/Nautolan/Shields/Aseprite/::1772634650
+::res://assets/image/enemytype3/Nautolan/Shields/PNGs/::1772681311
+Nautolan Ship - Battlecruiser - Shield.png::CompressedTexture2D/CompressedTexture2D::7938307378232814350::1772634650::1772681311::1::::<><><>0<>0<>c3f086d8f524dc3ca5b4664746328f42<>res://.godot/imported/Nautolan Ship - Battlecruiser - Shield.png-cebfc8961528b0ee5540507348f2c55a.ctex::
+Nautolan Ship - Bomber - Shield.png::CompressedTexture2D/CompressedTexture2D::7477836808727736454::1772634650::1772681311::1::::<><><>0<>0<>fe818d3b2038e81035515637cc83eeea<>res://.godot/imported/Nautolan Ship - Bomber - Shield.png-3bd39c691c8b33fbd7dec126230ceddd.ctex::
+Nautolan Ship - Dreadnought - Shield.png::CompressedTexture2D/CompressedTexture2D::8508624629469286967::1772634650::1772681311::1::::<><><>0<>0<>2a188160fdbf6e8c2764dd48a50565ae<>res://.godot/imported/Nautolan Ship - Dreadnought - Shield.png-1afc7a94e3254299cb082513f5124ad1.ctex::
+Nautolan Ship - Fighter - Shield.png::CompressedTexture2D/CompressedTexture2D::4320291739120435421::1772634650::1772681311::1::::<><><>0<>0<>b40c973f121504ea28e333ff290a65b3<>res://.godot/imported/Nautolan Ship - Fighter - Shield.png-95b85bd279bfcae92d596862047bf175.ctex::
+Nautolan Ship - Frigate - Shield.png::CompressedTexture2D/CompressedTexture2D::6478708194850547319::1772634650::1772681311::1::::<><><>0<>0<>9f9ab57b1b4757d3a84bc16c8384f96f<>res://.godot/imported/Nautolan Ship - Frigate - Shield.png-61f9d4cfa768b2d791f8a1dd3ff0af60.ctex::
+Nautolan Ship - Scout - Shield.png::CompressedTexture2D/CompressedTexture2D::9148618605070779950::1772634650::1772681311::1::::<><><>0<>0<>464bc27f64102519d38cb46728ee123d<>res://.godot/imported/Nautolan Ship - Scout - Shield.png-cde5d11437f80b3464ffdb8705eddf72.ctex::
+Nautolan Ship - Torpedo Ship - Shield.png::CompressedTexture2D/CompressedTexture2D::925024802505662452::1772634650::1772681311::1::::<><><>0<>0<>e3a70ef3dc2076857adda1a64d01d01e<>res://.godot/imported/Nautolan Ship - Torpedo Ship - Shield.png-dc7353873b921df0b4360f371394a139.ctex::
+::res://assets/image/enemytype3/Nautolan/Weapon Effects - Projectiles/::1772634650
+::res://assets/image/enemytype3/Nautolan/Weapon Effects - Projectiles/Aseprite/::1772634650
+::res://assets/image/enemytype3/Nautolan/Weapon Effects - Projectiles/PNGs/::1772681311
+Nautolan - Bomb.png::CompressedTexture2D/CompressedTexture2D::2617496324940202494::1772634650::1772681311::1::::<><><>0<>0<>f7b7a905ce24f9aeab88bb330fb4ae5c<>res://.godot/imported/Nautolan - Bomb.png-550d2fbf61d6397f255f38d564a51f60.ctex::
+Nautolan - Bullet.png::CompressedTexture2D/CompressedTexture2D::7207614142117928313::1772634650::1772681311::1::::<><><>0<>0<>103a6c33aa01da3dcda8292ce22ae871<>res://.godot/imported/Nautolan - Bullet.png-02bd534450bda4a4a997d4d62a6f8d11.ctex::
+Nautolan - Ray.png::CompressedTexture2D/CompressedTexture2D::5494303511054762533::1772634650::1772681311::1::::<><><>0<>0<>69b5b99b81baefec4fd6e58c42a7beba<>res://.godot/imported/Nautolan - Ray.png-9353f0df21f5a4abcc66972fdc4f2918.ctex::
+Nautolan - Rocket.png::CompressedTexture2D/CompressedTexture2D::5905193049930606068::1772634650::1772681311::1::::<><><>0<>0<>f392744172632003ed97701a1a7687ed<>res://.godot/imported/Nautolan - Rocket.png-192e4600bdc7de1446f321715987afff.ctex::
+Nautolan - Spinning Bullet.png::CompressedTexture2D/CompressedTexture2D::8111118986756336199::1772634650::1772681311::1::::<><><>0<>0<>3a5860601b319b79cd541da1769171c5<>res://.godot/imported/Nautolan - Spinning Bullet.png-6e43ac5879bb3dd2d26149cd7e1aab64.ctex::
+Nautolan - Wave.png::CompressedTexture2D/CompressedTexture2D::1012824034878276097::1772634650::1772681311::1::::<><><>0<>0<>2b24ddb1ced2a0679a90a4eabc4e1c52<>res://.godot/imported/Nautolan - Wave.png-32660af5305def8a5e5cb3a01aedb2cc.ctex::
+::res://assets/image/enemytype3/Nautolan/Weapons/::1772634650
+::res://assets/image/enemytype3/Nautolan/Weapons/Aseprite/::1772634650
+::res://assets/image/enemytype3/Nautolan/Weapons/PNGs/::1772681311
+Nautolan Ship - Battlecruiser - Weapons.png::CompressedTexture2D/CompressedTexture2D::6070944690024544339::1772634650::1772681311::1::::<><><>0<>0<>78ed35666799bf28e04126d5253d5a7d<>res://.godot/imported/Nautolan Ship - Battlecruiser - Weapons.png-39269694e90f1697e4f00818ca27e339.ctex::
+Nautolan Ship - Dreadnought - Weapons.png::CompressedTexture2D/CompressedTexture2D::6299001230598094220::1772634650::1772681311::1::::<><><>0<>0<>ce4e9a3d3010f97da7cbafdf9bf196c7<>res://.godot/imported/Nautolan Ship - Dreadnought - Weapons.png-f996dfc834bc657d1dc62e1ab5644a7a.ctex::
+Nautolan Ship - Fighter - Weapons.png::CompressedTexture2D/CompressedTexture2D::5789583547784142814::1772634650::1772681311::1::::<><><>0<>0<>7043c5bac861924b988da1836bd24bfc<>res://.godot/imported/Nautolan Ship - Fighter - Weapons.png-b74d8eb1596f5de0fdfccd0cf9d121fc.ctex::
+Nautolan Ship - Frigate - Weapons.png::CompressedTexture2D/CompressedTexture2D::6001052998543892959::1772634650::1772681311::1::::<><><>0<>0<>219a9a2c93500a6116c4393b08520dfe<>res://.godot/imported/Nautolan Ship - Frigate - Weapons.png-70603a82a62e09b18690aaac021d261c.ctex::
+Nautolan Ship - Scout - Weapons.png::CompressedTexture2D/CompressedTexture2D::7137109807565285094::1772634650::1772681311::1::::<><><>0<>0<>bb68f818250ff642ee871cd004218ef9<>res://.godot/imported/Nautolan Ship - Scout - Weapons.png-eb99f8fc26a045ef10c38067e790b623.ctex::
+Nautolan Ship - Torpedo Ship - Weapons.png::CompressedTexture2D/CompressedTexture2D::4372664141315476592::1772634650::1772681311::1::::<><><>0<>0<>0f6197023640f6660de32e695279a7b7<>res://.godot/imported/Nautolan Ship - Torpedo Ship - Weapons.png-dd9868b02f67261a8b9035ffccf7c992.ctex::
+::res://assets/image/extra/::1772681312
+tinyShip1.png::CompressedTexture2D/CompressedTexture2D::1119109083581349330::1772634698::1772681311::1::::<><><>0<>0<>6c7c3605c4061cc3bb5625591be8584b<>res://.godot/imported/tinyShip1.png-167846886374ea8c7b7340b6488e2183.ctex::
+tinyShip2.png::CompressedTexture2D/CompressedTexture2D::7559414240762903047::1772634698::1772681311::1::::<><><>0<>0<>655db6429eeb5e2836054aaeeec4884b<>res://.godot/imported/tinyShip2.png-586e4192626087a22fed8cf93fc0a0d4.ctex::
+tinyShip3.png::CompressedTexture2D/CompressedTexture2D::3470882553751248000::1772634698::1772681311::1::::<><><>0<>0<>36e73326c6b7efee04f98d486874d50b<>res://.godot/imported/tinyShip3.png-ff19be2344206155604450804c531bbc.ctex::
+tinyShip4.png::CompressedTexture2D/CompressedTexture2D::3751999698347453285::1772634698::1772681311::1::::<><><>0<>0<>90c505f9d6be42d2babf127a6807f355<>res://.godot/imported/tinyShip4.png-151e0262bdd5757ac9ad0b49de2fb3ea.ctex::
+tinyShip5.png::CompressedTexture2D/CompressedTexture2D::3249515148519500953::1772634698::1772681311::1::::<><><>0<>0<>5290d1763c3b9a220e674d5d38dd1f8b<>res://.godot/imported/tinyShip5.png-edc82198a65e6512dc733127493cbfd6.ctex::
+tinyShip6.png::CompressedTexture2D/CompressedTexture2D::886370716366159967::1772634698::1772681311::1::::<><><>0<>0<>a51613d49e967211b73d8343226e137d<>res://.godot/imported/tinyShip6.png-a1df1ec3eae34d83560dbb6ec0785096.ctex::
+tinyShip7.png::CompressedTexture2D/CompressedTexture2D::6663162795484330713::1772634698::1772681311::1::::<><><>0<>0<>21bcb2ecd47c8ffe46226bf32c76b16e<>res://.godot/imported/tinyShip7.png-2ce4b86f34fe250b11d740e03f577dbd.ctex::
+tinyShip8.png::CompressedTexture2D/CompressedTexture2D::3892294122292799269::1772634698::1772681311::1::::<><><>0<>0<>7f175c8956e2c2fcb63a1f0fe5b16dc2<>res://.godot/imported/tinyShip8.png-f159a215b9d190a184416767ba2e78c6.ctex::
+tinyShip9.png::CompressedTexture2D/CompressedTexture2D::2546982498104745966::1772634698::1772681311::1::::<><><>0<>0<>c02680ce6e0e266e67faaa6fb6b00220<>res://.godot/imported/tinyShip9.png-f117459c20ae3069f4bef74b6e496077.ctex::
+tinyShip10.png::CompressedTexture2D/CompressedTexture2D::7033123739732037981::1772634698::1772681311::1::::<><><>0<>0<>1781a5e354e358ec589830beea6eee42<>res://.godot/imported/tinyShip10.png-5d518fa8853b9840661349f3699be0f8.ctex::
+tinyShip11.png::CompressedTexture2D/CompressedTexture2D::7886381971489167360::1772634698::1772681311::1::::<><><>0<>0<>17b6d248aa195d788bdf3b2617fde0db<>res://.godot/imported/tinyShip11.png-7ea3fd4f6c55c0bf1c708f88ebd2dea0.ctex::
+tinyShip12.png::CompressedTexture2D/CompressedTexture2D::6442229502693812101::1772634698::1772681311::1::::<><><>0<>0<>cb46743c017849b833eff24ee890a945<>res://.godot/imported/tinyShip12.png-0e3d81af846597d10fe10f0351ecd654.ctex::
+tinyShip13.png::CompressedTexture2D/CompressedTexture2D::74701390371547156::1772634698::1772681311::1::::<><><>0<>0<>4c5fe68caa51a304f246e74705cee01f<>res://.godot/imported/tinyShip13.png-4a06591ee8ab4684bc5a9635ee68f47d.ctex::
+tinyShip14.png::CompressedTexture2D/CompressedTexture2D::895513072691878929::1772634698::1772681311::1::::<><><>0<>0<>52de581c92070f3f1eca5d3353f874d6<>res://.godot/imported/tinyShip14.png-0629d95f6bf40a254b6f2087b05da20f.ctex::
+tinyShip15.png::CompressedTexture2D/CompressedTexture2D::8817940068346194396::1772634698::1772681312::1::::<><><>0<>0<>34a187e63792668c294b3736a833e049<>res://.godot/imported/tinyShip15.png-328f0b039d64f79fb19d8d2818adbc49.ctex::
+tinyShip16.png::CompressedTexture2D/CompressedTexture2D::212344164595156337::1772634698::1772681312::1::::<><><>0<>0<>eacc3c10225fdcf650fbc004eeefa429<>res://.godot/imported/tinyShip16.png-6f56253f718fdacd767d286643b224ef.ctex::
+tinyShip17.png::CompressedTexture2D/CompressedTexture2D::5824317164163693725::1772634698::1772681312::1::::<><><>0<>0<>b4497a0aa059379bfe490505ebe8fa8c<>res://.godot/imported/tinyShip17.png-fedf66a7f95baedd0112155bbe36fb5d.ctex::
+tinyShip18.png::CompressedTexture2D/CompressedTexture2D::4746929524038815911::1772634698::1772681312::1::::<><><>0<>0<>d7b24c47b7cf426a79a710439cca62fc<>res://.godot/imported/tinyShip18.png-f1373dd6b7accc996a3ce431368c56e7.ctex::
+tinyShip19.png::CompressedTexture2D/CompressedTexture2D::551206264545872357::1772634698::1772681312::1::::<><><>0<>0<>488d8fa7b1241617083d192314e19fb5<>res://.godot/imported/tinyShip19.png-ee27029f15a4ee2d8d01eb99fe6bca4c.ctex::
+tinyShip20.png::CompressedTexture2D/CompressedTexture2D::3043898456050204546::1772634698::1772681312::1::::<><><>0<>0<>396771c7692502237445dee8f18477a7<>res://.godot/imported/tinyShip20.png-49966e44a6f62803bef2a5fbb488e5ea.ctex::
+::res://assets/image/pickup1/::1772634681
+Readme.txt::TextFile/TextFile::-1::1772634680::0::1::::<><><>0<>0<><>::
+::res://assets/image/pickup1/Engines/::1772634680
+::res://assets/image/pickup1/Engines/Aseprite/::1772634680
+::res://assets/image/pickup1/Engines/PNGs/::1772681312
+Pickup Icon - Engines - Base Engine.png::CompressedTexture2D/CompressedTexture2D::9027604785299454424::1772634680::1772681312::1::::<><><>0<>0<>2b4b2be726d929d374e47b8f36d443c1<>res://.godot/imported/Pickup Icon - Engines - Base Engine.png-e8f412c68bcb37c955b6a3d8a0a08b46.ctex::
+Pickup Icon - Engines - Big Pulse Engine.png::CompressedTexture2D/CompressedTexture2D::6803653970325388874::1772634680::1772681312::1::::<><><>0<>0<>8ca9bcda4dca293b37e85d330c7af778<>res://.godot/imported/Pickup Icon - Engines - Big Pulse Engine.png-ab0c3ec11b09007b0800805251ce3510.ctex::
+Pickup Icon - Engines - Burst Engine.png::CompressedTexture2D/CompressedTexture2D::8848464355815514786::1772634680::1772681312::1::::<><><>0<>0<>d8baed7d30cce4165ee2c3a71365b824<>res://.godot/imported/Pickup Icon - Engines - Burst Engine.png-2b0fa5a1a6ab863d246f1516fa0e5b7e.ctex::
+Pickup Icon - Engines - Supercharged Engine.png::CompressedTexture2D/CompressedTexture2D::3587635363413010261::1772634680::1772681312::1::::<><><>0<>0<>0a1ec1ec310f7d3700ac53657cbbbe49<>res://.godot/imported/Pickup Icon - Engines - Supercharged Engine.png-efd2d02a86bdbfbb9371d15e444ce40e.ctex::
+::res://assets/image/pickup1/Shield Generators/::1772634680
+::res://assets/image/pickup1/Shield Generators/Aseprite/::1772634680
+::res://assets/image/pickup1/Shield Generators/PNGs/::1772681312
+Pickup Icon - Shield Generator - All around shield.png::CompressedTexture2D/CompressedTexture2D::8198445819584797864::1772634680::1772681312::1::::<><><>0<>0<>65f0b0055f6573b286aba333b070134d<>res://.godot/imported/Pickup Icon - Shield Generator - All around shield.png-1869f682d9bcaa02075ae89f0ce0afcf.ctex::
+Pickup Icon - Shield Generator - Front and Side Shield.png::CompressedTexture2D/CompressedTexture2D::3891475634678942369::1772634681::1772681312::1::::<><><>0<>0<>e86a02a00ff8ad2bdc5629a75b54e3e9<>res://.godot/imported/Pickup Icon - Shield Generator - Front and Side Shield.png-118373f2d9f9684ab33ff9e3cbc4cf9c.ctex::
+Pickup Icon - Shield Generator - Front Shield.png::CompressedTexture2D/CompressedTexture2D::2425016602256228934::1772634681::1772681312::1::::<><><>0<>0<>c0a9fdbc2aee5c7ff6acda9cd72b7e2e<>res://.godot/imported/Pickup Icon - Shield Generator - Front Shield.png-bf85adaabfda2e45c4237c2cf6b25de2.ctex::
+Pickup Icon - Shield Generator - Invincibility Shield.png::CompressedTexture2D/CompressedTexture2D::4693466690541981721::1772634681::1772681312::1::::<><><>0<>0<>b7114fd4118f6f64215fb54932136788<>res://.godot/imported/Pickup Icon - Shield Generator - Invincibility Shield.png-09d127dc744a26ec773939882b69c726.ctex::
+::res://assets/image/pickup1/Weapons/::1772634681
+::res://assets/image/pickup1/Weapons/Aseprite/::1772634681
+::res://assets/image/pickup1/Weapons/PNGs/::1772681312
+Pickup Icon - Weapons - Auto Cannons.png::CompressedTexture2D/CompressedTexture2D::3194474897685204304::1772634681::1772681312::1::::<><><>0<>0<>7b7ee9b520b01edca04c161fd1a8f129<>res://.godot/imported/Pickup Icon - Weapons - Auto Cannons.png-ca83d4faec9efab6d0a02e657f0045de.ctex::
+Pickup Icon - Weapons - Big Space Gun 2000.png::CompressedTexture2D/CompressedTexture2D::1337426589664515581::1772634681::1772681312::1::::<><><>0<>0<>b51a31cabedaaa4ba1a106b41bf082e0<>res://.godot/imported/Pickup Icon - Weapons - Big Space Gun 2000.png-cf88be652cff4b7e8fd3a836a55bd481.ctex::
+Pickup Icon - Weapons - Rocket.png::CompressedTexture2D/CompressedTexture2D::6848043879324092722::1772634681::1772681312::1::::<><><>0<>0<>d3e7160a4e851887602b2ca92a486875<>res://.godot/imported/Pickup Icon - Weapons - Rocket.png-19fc9aeb48212ba1c42eb39fa51554b3.ctex::
+Pickup Icon - Weapons - Zapper.png::CompressedTexture2D/CompressedTexture2D::3653808566911847777::1772634681::1772681312::1::::<><><>0<>0<>a952e900fb9c2c9baf8a8ae62f52c459<>res://.godot/imported/Pickup Icon - Weapons - Zapper.png-a07f7c43980e6db8212cc9ea5689866f.ctex::
+::res://assets/image/player+weapon/::1772634823
+::res://assets/image/player+weapon/mainship/::1772634799
+Readme.txt::TextFile/TextFile::-1::1772634799::0::1::::<><><>0<>0<><>::
+::res://assets/image/player+weapon/mainship/Main Ship/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/Aseprite/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/::1772681312
+Main Ship - Base - Damaged.png::CompressedTexture2D/CompressedTexture2D::8704586927926799524::1772634799::1772681312::1::::<><><>0<>0<>90a62046d749a3db9b2b7d0accdbdac8<>res://.godot/imported/Main Ship - Base - Damaged.png-e4a9d30281e69d79369d3b64c03b9ac0.ctex::
+Main Ship - Base - Full health.png::CompressedTexture2D/CompressedTexture2D::1628653461551113328::1772634799::1772681312::1::::<><><>0<>0<>451e9ede4e001d268834d577d26465cf<>res://.godot/imported/Main Ship - Base - Full health.png-d88af0696503873c04200c9d46d7fb51.ctex::
+Main Ship - Base - Slight damage.png::CompressedTexture2D/CompressedTexture2D::1201172857627058740::1772634799::1772681312::1::::<><><>0<>0<>2bd97af9ce8e1139853f6fd6bf00ff74<>res://.godot/imported/Main Ship - Base - Slight damage.png-edb2fda3c56f1d2ccfe180a534e53e4e.ctex::
+Main Ship - Base - Very damaged.png::CompressedTexture2D/CompressedTexture2D::1446100249298070854::1772634799::1772681312::1::::<><><>0<>0<>db2f9a8c173b0ca0811c6997a2d20fe6<>res://.godot/imported/Main Ship - Base - Very damaged.png-5fc3416e04bb29b3234f6bf9e618d4a3.ctex::
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Engine Effects/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Engine Effects/Aseprite/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Engine Effects/PNGs/::1772681312
+Main Ship - Engines - Base Engine - Idle.png::CompressedTexture2D/CompressedTexture2D::6095827172298641959::1772634799::1772681312::1::::<><><>0<>0<>fc8905e426f3cc6e15d46474b05e9a5b<>res://.godot/imported/Main Ship - Engines - Base Engine - Idle.png-f535402257d33601fb394151b9c51e67.ctex::
+Main Ship - Engines - Base Engine - Powering.png::CompressedTexture2D/CompressedTexture2D::7314694226052623511::1772634799::1772681312::1::::<><><>0<>0<>db0f2f29f2eecfaa333ad9784fd11bbf<>res://.godot/imported/Main Ship - Engines - Base Engine - Powering.png-ee830775ff66b3afc00fb75d656b3b7d.ctex::
+Main Ship - Engines - Base Engine - Spritesheet.png::CompressedTexture2D/CompressedTexture2D::3549384693215846398::1772634799::1772681312::1::::<><><>0<>0<>a7d90e35f260e8b2c97626a7897fad2a<>res://.godot/imported/Main Ship - Engines - Base Engine - Spritesheet.png-1e2f2ef9f3e833040ef69c514d7d6d30.ctex::
+Main Ship - Engines - Big Pulse Engine - Idle.png::CompressedTexture2D/CompressedTexture2D::5229843832549392179::1772634799::1772681311::1::::<><><>0<>0<>ca28b3bf3d876bc8b3596ae67227b0e6<>res://.godot/imported/Main Ship - Engines - Big Pulse Engine - Idle.png-3674d494e5c6dded1ea84a9226aad3b5.ctex::
+Main Ship - Engines - Big Pulse Engine - Powering.png::CompressedTexture2D/CompressedTexture2D::8269292881273103218::1772634799::1772681311::1::::<><><>0<>0<>45dd3c47156753cf3f19320230388b97<>res://.godot/imported/Main Ship - Engines - Big Pulse Engine - Powering.png-047cd4bfe818191dfbfa427ce2253a88.ctex::
+Main Ship - Engines - Big Pulse Engine - Spritesheet.png::CompressedTexture2D/CompressedTexture2D::8733902105864598213::1772634799::1772681311::1::::<><><>0<>0<>3f977c2dbc035634d29b018e51eb35c6<>res://.godot/imported/Main Ship - Engines - Big Pulse Engine - Spritesheet.png-4e04bcb4092761b370311e052c233764.ctex::
+Main Ship - Engines - Burst Engine - Idle.png::CompressedTexture2D/CompressedTexture2D::3671065753896836968::1772634799::1772681311::1::::<><><>0<>0<>9a1c4cee64eaf7bcbd47a6c6eb62a1df<>res://.godot/imported/Main Ship - Engines - Burst Engine - Idle.png-e06edd8f75ab2c4ebc206fed2cabff5f.ctex::
+Main Ship - Engines - Burst Engine - Powering.png::CompressedTexture2D/CompressedTexture2D::4786583851333533::1772634799::1772681311::1::::<><><>0<>0<>96bbab235143490ff824b0d1c072a788<>res://.godot/imported/Main Ship - Engines - Burst Engine - Powering.png-0314602e883f2f765822b87367e3ef1b.ctex::
+Main Ship - Engines - Burst Engine - Spritesheet.png::CompressedTexture2D/CompressedTexture2D::6189128199421705452::1772634799::1772681311::1::::<><><>0<>0<>8a806f0c6a18d9c41f53a7c3a8333d95<>res://.godot/imported/Main Ship - Engines - Burst Engine - Spritesheet.png-2059b6a59914cea17d05145523255f92.ctex::
+Main Ship - Engines - Supercharged Engine - Idle.png::CompressedTexture2D/CompressedTexture2D::7086221527566281438::1772634799::1772681311::1::::<><><>0<>0<>be68d9f425e1646133201c8c24db4a16<>res://.godot/imported/Main Ship - Engines - Supercharged Engine - Idle.png-9c86ed2024ef5e90c35045fb13c55e75.ctex::
+Main Ship - Engines - Supercharged Engine - Powering.png::CompressedTexture2D/CompressedTexture2D::8216824641767086971::1772634799::1772681311::1::::<><><>0<>0<>aa149b9380b3244e2fadec38c1e1bfa6<>res://.godot/imported/Main Ship - Engines - Supercharged Engine - Powering.png-db04549b5df7698fb8d008400f822ec7.ctex::
+Main Ship - Engines - Supercharged Engine - Spritesheet.png::CompressedTexture2D/CompressedTexture2D::8400307288187907984::1772634799::1772681311::1::::<><><>0<>0<>0bc976192cb8b85e6f53386aef7ff290<>res://.godot/imported/Main Ship - Engines - Supercharged Engine - Spritesheet.png-821a180836a2a0877dcdb5153419444f.ctex::
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Engines/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Engines/Aseprite/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Engines/PNGs/::1772681312
+Main Ship - Engines - Base Engine.png::CompressedTexture2D/CompressedTexture2D::6039911886724624772::1772634799::1772681311::1::::<><><>0<>0<>3ace05a562e4870ff738bf1a531ee8e3<>res://.godot/imported/Main Ship - Engines - Base Engine.png-3948ca221a84e3245bfb8a894ec98f1a.ctex::
+Main Ship - Engines - Big Pulse Engine.png::CompressedTexture2D/CompressedTexture2D::5939338934990046446::1772634799::1772681311::1::::<><><>0<>0<>54ca58b857c99e8f1b4ec5beef2ed848<>res://.godot/imported/Main Ship - Engines - Big Pulse Engine.png-76b870ecda55e28c2290cfae49d0bf91.ctex::
+Main Ship - Engines - Burst Engine.png::CompressedTexture2D/CompressedTexture2D::8024255449182338220::1772634799::1772681312::1::::<><><>0<>0<>c0454d74893b56403528de0d830e4043<>res://.godot/imported/Main Ship - Engines - Burst Engine.png-4d7c18c50870430eecd41a1c124a0192.ctex::
+Main Ship - Engines - Supercharged Engine.png::CompressedTexture2D/CompressedTexture2D::1122210019241843715::1772634799::1772681312::1::::<><><>0<>0<>44e07311da10f530b4696ca781477912<>res://.godot/imported/Main Ship - Engines - Supercharged Engine.png-440c1fb33ed624f6cc3ea15458321817.ctex::
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Shields/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Shields/Aseprite/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Shields/PNGs/::1772681312
+Main Ship - Shields - Front and Side Shield.png::CompressedTexture2D/CompressedTexture2D::8482233238498091194::1772634799::1772681312::1::::<><><>0<>0<>50fe61d718f4af3360bad23c3728017b<>res://.godot/imported/Main Ship - Shields - Front and Side Shield.png-d5684c86d801e3316a46788d960832c3.ctex::
+Main Ship - Shields - Front Shield.png::CompressedTexture2D/CompressedTexture2D::6220711343770059328::1772634799::1772681312::1::::<><><>0<>0<>cf580f9c4d3276f10b47c2377bfdffaa<>res://.godot/imported/Main Ship - Shields - Front Shield.png-6c64d4436b09a6f40377d8c0e0e79ecd.ctex::
+Main Ship - Shields - Invincibility Shield.png::CompressedTexture2D/CompressedTexture2D::1347104969736429844::1772634799::1772681312::1::::<><><>0<>0<>90c0b028fd855f07cea6516c9906fa04<>res://.godot/imported/Main Ship - Shields - Invincibility Shield.png-d8e35f58c71cffb4c14dbd9051e0596e.ctex::
+Main Ship - Shields - Round Shield.png::CompressedTexture2D/CompressedTexture2D::4262293213104047050::1772634799::1772681312::1::::<><><>0<>0<>5e1ae6c2b22203c4074a29f419246f47<>res://.godot/imported/Main Ship - Shields - Round Shield.png-50cdb652f6be76065f85ed8441691675.ctex::
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/Aseprite/::1772634799
+::res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/PNGs/::1772681312
+Main Ship - Weapons - Auto Cannon.png::CompressedTexture2D/CompressedTexture2D::6207150578123984084::1772634799::1772681312::1::::<><><>0<>0<>1adc348e4b7de2841b31361c02747213<>res://.godot/imported/Main Ship - Weapons - Auto Cannon.png-e5733932b3f53dd9d20f4488e84955f2.ctex::
+Main Ship - Weapons - Big Space Gun.png::CompressedTexture2D/CompressedTexture2D::7031279884537775650::1772634799::1772681312::1::::<><><>0<>0<>e013de89e075305b066958ba2aff3652<>res://.godot/imported/Main Ship - Weapons - Big Space Gun.png-77094dde006ceb248c8077927f99b646.ctex::
+Main Ship - Weapons - Rockets.png::CompressedTexture2D/CompressedTexture2D::1324753851546085209::1772634799::1772681312::1::::<><><>0<>0<>bebd137389b59ccc777a89f329ba58e4<>res://.godot/imported/Main Ship - Weapons - Rockets.png-bf70a66f31d697b0fdf220a251831b35.ctex::
+Main Ship - Weapons - Zapper.png::CompressedTexture2D/CompressedTexture2D::1046112112550347705::1772634799::1772681312::1::::<><><>0<>0<>7fb38c1608c5e4af4d2481011ce87d98<>res://.godot/imported/Main Ship - Weapons - Zapper.png-e50ab8d81a1987d2558d7d5b8a9b86d9.ctex::
+::res://assets/image/player+weapon/mainship/Main ship weapons/::1772634799
+::res://assets/image/player+weapon/mainship/Main ship weapons/Aseprite/::1772634799
+::res://assets/image/player+weapon/mainship/Main ship weapons/PNGs/::1772681312
+Main ship weapon - Projectile - Auto cannon bullet.png::CompressedTexture2D/CompressedTexture2D::7849202840229523594::1772634799::1772681312::1::::<><><>0<>0<>c8f5fb001ffcfd4e77d44d9c4da5e240<>res://.godot/imported/Main ship weapon - Projectile - Auto cannon bullet.png-5bd08758e25d30cd94b6ec810647f8cd.ctex::
+Main ship weapon - Projectile - Big Space Gun.png::CompressedTexture2D/CompressedTexture2D::939372423861454584::1772634799::1772681312::1::::<><><>0<>0<>121cd35b791071f40a9b7785ed289139<>res://.godot/imported/Main ship weapon - Projectile - Big Space Gun.png-75337e2449c7d8f647840539fd4a95e1.ctex::
+Main ship weapon - Projectile - Rocket.png::CompressedTexture2D/CompressedTexture2D::3166728995674514269::1772634799::1772681312::1::::<><><>0<>0<>ea72259955a29ca9cf31bf4e0d4b6ca4<>res://.godot/imported/Main ship weapon - Projectile - Rocket.png-5a08a2890d422c2d61bd4c50d3ae1716.ctex::
+Main ship weapon - Projectile - Zapper.png::CompressedTexture2D/CompressedTexture2D::3595720039360884864::1772634799::1772681312::1::::<><><>0<>0<>a2ad8b6df4da0691f3392e0b0a1a0989<>res://.godot/imported/Main ship weapon - Projectile - Zapper.png-acf3912ed673c57abd27d76ea530ccbe.ctex::
+::res://assets/sound/::1772517243
+::res://resouces/::1772681392
+::res://resouces/enemies/::1772873110
+::res://resouces/enemies/boss/::1772517024
+::res://resouces/enemies/normal/::1772517018
+::res://resouces/enemies/wave_pattern/::1772873084
+box_pattern.tres::Resource/WavePattern::5789837092026791380::1772873084::0::1::::<><><>0<>0<><>::uid://c75mkhufiyho::::res://Wave_pattern.gd
+::res://resouces/Orther/::1772681392
+::res://resouces/Orther/ModifiedCards/::1772517205
+::res://resouces/Orther/pickups/::1772517150
+::res://resouces/Orther/shop/::1772517376
+::res://resouces/player/::1772517359
+::res://resouces/player/character/::1772517060
+::res://resouces/player/weapon/::1772517070
+::res://scenes/::1772873703
+enemy_spawner.tscn::PackedScene::6549847142748618952::1772873703::0::1::::<><><>0<>0<><>::uid://k5nkf5w5u1ao::::res://script/enemy_spawner.gd
+gamemenu.tscn::PackedScene::8226415965870831414::1772870040::0::1::::<><><>0<>0<><>::
+gameplay.tscn::PackedScene::4486434463696492025::1772870265::0::1::::<><><>0<>0<><>::
+::res://scenes/enemies/::1772869924
+::res://scenes/enemies/boss/::1772869924
+::res://scenes/enemies/normal/::1772869918
+::res://scenes/pickup/::1772869906
+::res://scenes/player/::1772869885
+::res://script/::1772873703
+enemy_spawner.gd::GDScript::764627257848498870::1772873703::0::1::::EnenmySpawner<>Node2D<><>0<>0<><>::
+enemy_config.gd::GDScript::5957088449335867451::1772874122::0::1::::<>Node<><>0<>0<><>::

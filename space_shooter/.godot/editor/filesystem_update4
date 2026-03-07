@@ -1,0 +1,10 @@
+res://scenes/main.tscn
+res://scenes/gameplay.tscn
+res://scenes/enemy_spawner.tscn
+res://script/enemy_spawner.gd
+res://Wave_pattern.gd
+res://resouces/enemies/enemies_wave_pattern/box_pattern.tres
+res://script/enemy_config.gd
+res://script/skill.gd
+res://scenes/enemies/normal/normal_enemy.tscn
+res://script/normal_enemy.gd
