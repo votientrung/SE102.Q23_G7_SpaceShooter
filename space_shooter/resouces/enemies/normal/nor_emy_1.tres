@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bucnqarx44fl7"]
+
+[ext_resource type="Script" uid="uid://cd2g4t88wdtq4" path="res://script/EnemyType.gd" id="1_k3n8a"]
+[ext_resource type="Texture2D" uid="uid://c23jbvtehk6bu" path="res://assets/image/enemytype1/Kla'ed/Base/PNGs/Kla'ed - Scout - Base.png" id="2_jlxc1"]
+
+[resource]
+script = ExtResource("1_k3n8a")
+title = "nor_emy_1"
+texture = ExtResource("2_jlxc1")
+health = 10.0
+damage = 0.0
+drop = []
+metadata/_custom_type_script = "uid://cd2g4t88wdtq4"

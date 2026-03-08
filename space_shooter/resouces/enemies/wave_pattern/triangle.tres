@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="WavePattern" load_steps=2 format=3 uid="uid://bla1k85nk27qy"]
+
+[ext_resource type="Script" uid="uid://dvtpah83aorj3" path="res://script/WavePattern.gd" id="1_8qexb"]
+
+[resource]
+script = ExtResource("1_8qexb")
+pattern = Array[Array]([[-1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1], [-1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1], [-1, -1, -1, 1, 1, 1, 1, 1, -1, -1, -1], [-1, -1, -1, -1, 1, 1, 1, -1, -1, -1, -1], [-1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1]])
+metadata/_custom_type_script = "uid://dvtpah83aorj3"

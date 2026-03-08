@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0srplx8c4kjp"]
+
+[ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://enemy_spawner.gd" id="1_7biu0"]
+[ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
+[ext_resource type="PackedScene" uid="uid://gqsd8dkup0uq" path="res://scenes/enemies/enemy.tscn" id="2_ct7aa"]
+[ext_resource type="Resource" uid="uid://qjg5wq30lubi" path="res://resouces/enemies/wave_pattern/caro.tres" id="3_ct7aa"]
+
+[node name="Gameplay" type="Node2D"]
+
+[node name="EnemySpawner" type="Node2D" parent="." node_paths=PackedStringArray("formation")]
+script = ExtResource("1_7biu0")
+enemy_scene = ExtResource("2_ct7aa")
+wave_pattern = ExtResource("3_ct7aa")
+formation = NodePath("../EnemyFormation")
+
+[node name="EnemyFormation" type="Node2D" parent="."]
+script = ExtResource("2_00tan")
