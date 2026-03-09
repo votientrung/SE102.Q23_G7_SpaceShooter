@@ -45,11 +45,11 @@ func _process(delta):
 		fire_delta=fire_rate
 
 
-
+var can_shot = true
 func _input(event):
 	#player shoting
-	if Input.is_action_pressed("shot") :
-		
+	if event.is_action_pressed("shot") and can_shot:
+		can_shot = false
 		weapon.weapon_shot()
 		await get_tree().create_timer(0.1).timeout
-		
+		can_shot = true

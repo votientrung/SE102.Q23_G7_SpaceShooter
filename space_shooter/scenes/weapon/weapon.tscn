@@ -9,12 +9,12 @@
 script = ExtResource("1_lopa8")
 
 [node name="shot_origin" type="Node2D" parent="."]
-position = Vector2(-8, -36)
+position = Vector2(-9, -40)
 script = ExtResource("2_ylpk0")
 bullet_scene = ExtResource("3_ypwvo")
 
 [node name="shot_origin2" type="Node2D" parent="."]
-position = Vector2(7, -36)
+position = Vector2(9, -40)
 script = ExtResource("2_ylpk0")
 bullet_scene = ExtResource("3_ypwvo")
 
