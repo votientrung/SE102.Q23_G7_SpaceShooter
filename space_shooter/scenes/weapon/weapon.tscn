@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwa4uctk4tvdq"]
+
+[ext_resource type="Script" uid="uid://detty4bjbwr4n" path="res://script/weapon.gd" id="1_lopa8"]
+[ext_resource type="Script" uid="uid://p7ic0dgymayc" path="res://script/shoting.gd" id="2_ylpk0"]
+[ext_resource type="PackedScene" uid="uid://bq87p16s25urw" path="res://scenes/bullets/player_bullets.tscn" id="3_ypwvo"]
+[ext_resource type="Texture2D" uid="uid://dvps5ueusrm4k" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/PNGs/Main Ship - Weapons - Auto Cannon.png" id="4_lopa8"]
+
+[node name="weapon" type="Node2D"]
+script = ExtResource("1_lopa8")
+
+[node name="shot_origin" type="Node2D" parent="."]
+position = Vector2(-8, -36)
+script = ExtResource("2_ylpk0")
+bullet_scene = ExtResource("3_ypwvo")
+
+[node name="shot_origin2" type="Node2D" parent="."]
+position = Vector2(7, -36)
+script = ExtResource("2_ylpk0")
+bullet_scene = ExtResource("3_ypwvo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -24)
+texture = ExtResource("4_lopa8")
+region_enabled = true
+region_rect = Rect2(4, 4, 40, 40)

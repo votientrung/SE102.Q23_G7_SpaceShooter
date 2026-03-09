@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://rkrbyd3spntm"]
+[gd_scene load_steps=5 format=3 uid="uid://rkrbyd3spntm"]
 
 [ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="1_8afob"]
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
-[ext_resource type="Script" uid="uid://p7ic0dgymayc" path="res://script/shoting.gd" id="3_lvxji"]
-[ext_resource type="PackedScene" uid="uid://bq87p16s25urw" path="res://scenes/bullets/player_bullets.tscn" id="4_lvxji"]
+[ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon.tscn" id="3_gmlin"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(28, 24)
@@ -20,7 +19,5 @@ texture = ExtResource("1_8afob")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_g2els")
 
-[node name="shot_origin" type="Node2D" parent="."]
-position = Vector2(0, -12)
-script = ExtResource("3_lvxji")
-bullet_scene = ExtResource("4_lvxji")
+[node name="weapon" parent="." instance=ExtResource("3_gmlin")]
+position = Vector2(0, 23)
