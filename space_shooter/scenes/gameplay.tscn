@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=6 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
 [ext_resource type="PackedScene" uid="uid://gqsd8dkup0uq" path="res://scenes/enemies/enemy.tscn" id="2_ct7aa"]
 [ext_resource type="Resource" uid="uid://qjg5wq30lubi" path="res://resouces/enemies/wave_pattern/caro.tres" id="3_ct7aa"]
+[ext_resource type="PackedScene" uid="uid://rkrbyd3spntm" path="res://scenes/player/player.tscn" id="5_ocj2s"]
 
 [node name="Gameplay" type="Node2D"]
 
@@ -15,3 +16,8 @@ formation = NodePath("../EnemyFormation")
 
 [node name="EnemyFormation" type="Node2D" parent="."]
 script = ExtResource("2_00tan")
+
+[node name="player" parent="." instance=ExtResource("5_ocj2s")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(600, 400)
