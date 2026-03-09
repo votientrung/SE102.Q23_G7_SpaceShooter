@@ -7,6 +7,11 @@ var start_bound_x
 var end_bound_x
 var start_bound_y
 var end_bound_y
+#player stat
+var damage: float 
+var defence: float
+var gold: float
+# setting camera
 func _ready() -> void:
 	bound_size_x = collistion_rect.shape.get_rect().size.x
 	bound_size_y = collistion_rect.shape.get_rect().size.y
@@ -17,7 +22,7 @@ func _ready() -> void:
 	end_bound_x = camera_position.x + (rect.size.x)/2
 	start_bound_y = camera_position.y - (rect.size.y)/2
 	end_bound_y = camera_position.y + (rect.size.y)/2
-
+# moving
 func _process(delta):
 	# lay vi tri chuot
 	var mouse_pos = get_global_mouse_position()
