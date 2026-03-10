@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://rkrbyd3spntm"]
+[gd_scene load_steps=4 format=3 uid="uid://rkrbyd3spntm"]
 
-[ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="1_8afob"]
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
 [ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon.tscn" id="3_gmlin"]
 
@@ -14,7 +13,6 @@ script = ExtResource("1_dovo2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("1_8afob")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_g2els")

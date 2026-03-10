@@ -5,3 +5,5 @@ class_name bullets
 @export var direction= Vector2.UP
 func _process(delta):
 	position += direction*speed*delta
+	
+	if 

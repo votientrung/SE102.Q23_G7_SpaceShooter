@@ -10,9 +10,9 @@ var start_bound_y
 var end_bound_y
 
 #player stat
-var damage: float 
-var defence: float
-var gold: float
+var damage: float = 1
+var defence: float = 1
+var gold: float = 10
 
 # setting camera
 func _ready() -> void:
@@ -53,3 +53,11 @@ func _input(event):
 		weapon.weapon_shot()
 		await get_tree().create_timer(0.1).timeout
 		can_shot = true
+
+func gold_take(damage):
+	gold -= damage
+	if gold <= 0:
+		die()
+
+func die():
+	queue_free()
