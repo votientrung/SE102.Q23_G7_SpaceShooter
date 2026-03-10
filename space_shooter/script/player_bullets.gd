@@ -6,4 +6,11 @@ class_name bullets
 func _process(delta):
 	position += direction*speed*delta
 	
-	if 
+	if global_position.y > get_viewport_rect().size.y +1:
+		queue_free()
+	if global_position.y < -10:
+		queue_free()
+	if global_position.x > get_viewport_rect().size.x +1:
+		queue_free()
+	if global_position.x < -10:
+		queue_free()
