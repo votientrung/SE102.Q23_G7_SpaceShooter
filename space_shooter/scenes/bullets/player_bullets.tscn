@@ -20,3 +20,5 @@ region_rect = Rect2(0, 0, 32, 32)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_ruv3k")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -9,6 +9,7 @@ height = 18.0
 
 [node name="enemy_bullet" type="Area2D"]
 light_mask = 16
+collision_layer = 16
 script = ExtResource("1_ajmct")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -21,3 +22,5 @@ region_rect = Rect2(23.5803, -0.116245, 8.91862, 16.4557)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_ajmct")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

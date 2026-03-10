@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 @onready var collistion_rect:CollisionShape2D = $CollisionShape2D
 @onready var weapon =$weapon
 #bound size
@@ -12,7 +12,7 @@ var end_bound_y
 #player stat
 var damage: float = 1
 var defence: float = 1
-var gold: float = 10
+var gold: float = 100
 
 # setting camera
 func _ready() -> void:
@@ -38,11 +38,14 @@ func _process(delta):
 	, end_bound_y - bound_size_y * transform.get_scale().y)
 	
 	position = mouse_pos
-	
+	#auto fire
 	fire_delta=fire_delta-delta
 	if Input.is_action_pressed("shot") and fire_delta <=0 :
 		weapon.weapon_shot()
 		fire_delta=fire_rate
+	#die
+	if gold <= 0:
+		die()
 
 
 var can_shot = true
@@ -53,12 +56,13 @@ func _input(event):
 		weapon.weapon_shot()
 		await get_tree().create_timer(0.1).timeout
 		can_shot = true
-
+#take dam
 func gold_take(damage):
 	print("take dmg")
+	print("dmg " , damage)
 	gold -= damage
-	if gold <= 0:
-		die()
+	print("gold left " , gold)
+	
 
 func die():
 	queue_free()
