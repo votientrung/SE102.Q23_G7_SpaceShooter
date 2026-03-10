@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=7 format=3 uid="uid://c0srplx8c4kjp"]
-=======
 [gd_scene load_steps=11 format=3 uid="uid://c0srplx8c4kjp"]
->>>>>>> a06ad9c5618c77fcea1d5b3f02a14289bdce80ac
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -14,7 +10,6 @@
 [ext_resource type="Resource" uid="uid://dra18hq3m1td0" path="res://resouces/enemies/normal/nor_emy_2.tres" id="4_hbo4f"]
 [ext_resource type="Resource" uid="uid://bla1k85nk27qy" path="res://resouces/enemies/wave_pattern/triangle.tres" id="5_101mb"]
 [ext_resource type="PackedScene" uid="uid://rkrbyd3spntm" path="res://scenes/player/player.tscn" id="5_ocj2s"]
-[ext_resource type="PackedScene" uid="uid://4u0mhdvu5uy0" path="res://scenes/bullets/bullet_catcher.tscn" id="6_din8e"]
 
 [node name="Gameplay" type="Node2D"]
 
@@ -33,5 +28,3 @@ script = ExtResource("2_00tan")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(600, 400)
-
-[node name="bullet_catcher" parent="." instance=ExtResource("6_din8e")]
