@@ -55,6 +55,7 @@ func _input(event):
 		can_shot = true
 
 func gold_take(damage):
+	print("take dmg")
 	gold -= damage
 	if gold <= 0:
 		die()

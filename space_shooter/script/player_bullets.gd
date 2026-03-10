@@ -1,8 +1,8 @@
 extends Area2D
 class_name bullets
-@export var damage =1
-@export var speed =300
-@export var direction= Vector2.UP
+@export var damage : float = 1
+@export var speed : float = 300
+@export var direction : Vector2
 func _process(delta):
 	position += direction*speed*delta
 	
