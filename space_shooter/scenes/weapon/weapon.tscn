@@ -9,7 +9,7 @@
 script = ExtResource("1_lopa8")
 
 [node name="shot_origin" type="Node2D" parent="."]
-position = Vector2(-9, -40)
+position = Vector2(0, -40)
 script = ExtResource("2_ylpk0")
 bullet_scene = ExtResource("3_ypwvo")
 
@@ -17,6 +17,9 @@ bullet_scene = ExtResource("3_ypwvo")
 position = Vector2(9, -40)
 script = ExtResource("2_ylpk0")
 bullet_scene = ExtResource("3_ypwvo")
+
+[node name="shot_origin3" type="Node2D" parent="."]
+position = Vector2(-9, -40)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
