@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://gqsd8dkup0uq" path="res://scenes/enemies/enemy.tscn" id="2_ct7aa"]
 [ext_resource type="Resource" uid="uid://qjg5wq30lubi" path="res://resouces/enemies/wave_pattern/caro.tres" id="3_ct7aa"]
 [ext_resource type="Resource" uid="uid://060dkfobmqb4" path="res://resouces/enemies/wave_pattern/box_pattern.tres" id="3_e124b"]
-[ext_resource type="Resource" uid="uid://dra18hq3m1td0" path="res://resouces/enemies/normal/nor_emy_2.tres" id="4_hbo4f"]
+[ext_resource type="Resource" uid="uid://bucnqarx44fl7" path="res://resouces/enemies/normal/nor_emy_1.tres" id="3_hbo4f"]
 [ext_resource type="Resource" uid="uid://bla1k85nk27qy" path="res://resouces/enemies/wave_pattern/triangle.tres" id="5_101mb"]
 [ext_resource type="PackedScene" uid="uid://rkrbyd3spntm" path="res://scenes/player/player.tscn" id="5_ocj2s"]
 
@@ -18,7 +18,7 @@ script = ExtResource("1_7biu0")
 enemy_scene = ExtResource("2_ct7aa")
 player_scene = NodePath("../player")
 formation = NodePath("../EnemyFormation")
-enemy_types = Array[ExtResource("2_101mb")]([ExtResource("4_hbo4f")])
+enemy_types = Array[ExtResource("2_101mb")]([ExtResource("3_hbo4f")])
 waves = Array[ExtResource("2_4bh5q")]([ExtResource("3_e124b"), ExtResource("3_ct7aa"), ExtResource("5_101mb")])
 
 [node name="EnemyFormation" type="Node2D" parent="."]

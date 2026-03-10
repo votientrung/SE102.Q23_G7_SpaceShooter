@@ -6,4 +6,8 @@ class_name Enemy
 @export var texture : Texture2D
 @export var health : float
 @export var damage : float
-@export var drop : Array
+@export var drop : int
+@export var skill : EnemySkill
+@export var point : float
+@export var golddrop : int
+@export var CD : float

@@ -5,9 +5,12 @@ var move_speed := 150
 var direction := 1
 var drop_distance := 40
 var dropping = false
+var start = false
 
 func _process(delta):
-
+	if start:
+		global_position = Vector2.ZERO
+		return
 	if dropping:
 		return
 

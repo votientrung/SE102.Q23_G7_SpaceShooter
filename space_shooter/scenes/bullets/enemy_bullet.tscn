@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceuenk0e2u8li"]
+
+[ext_resource type="Script" uid="uid://bi1qt0mvcwkvc" path="res://script/enemy_bullet.gd" id="1_ajmct"]
+[ext_resource type="Texture2D" uid="uid://dlcg5hck1rmfl" path="res://assets/image/enemytype1/Kla'ed/Projectiles/PNGs/Kla'ed - Big Bullet.png" id="2_bb6co"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ajmct"]
+radius = 6.0
+height = 18.0
+
+[node name="enemy_bullet" type="Area2D"]
+light_mask = 16
+script = ExtResource("1_ajmct")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_bb6co")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(23.5803, -0.116245, 8.91862, 16.4557)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_ajmct")
