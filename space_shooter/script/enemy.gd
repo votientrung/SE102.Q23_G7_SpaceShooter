@@ -3,7 +3,7 @@ extends CharacterBody2D
 var target_position : Vector2
 var move_speed := 600
 var is_entering := true
-@export var player_reference : Area2D
+@export var player_reference : CharacterBody2D
 
 var drop
 var damage: float 
@@ -48,13 +48,27 @@ func _process(delta: float) -> void:
 		CD -= delta
 		var temp : int = randi() % 1000
 		if CD <= 0 and temp < 50:
-			skill.skillcast(self, Vector2.DOWN, get_tree())
+			skill.skillcast(self, player_reference, get_tree())
 			CD = skill.cooldown
 	
 	# pass camera
 	if global_position.y > get_viewport_rect().size.y +1:
 		queue_free()
 		
-	#die
-	if health<=0:
+
+
+
+
+	
+
+
+func damage_take(damage : float):
+	health -= damage
+	if health <= 0:
 		queue_free()
+
+
+func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
+	if body.has_method("gold_take"):
+			body.gold_take(damage)
+			print("hit")

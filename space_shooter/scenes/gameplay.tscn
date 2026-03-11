@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=13 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -8,8 +8,10 @@
 [ext_resource type="Resource" uid="uid://qjg5wq30lubi" path="res://resouces/enemies/wave_pattern/caro.tres" id="3_ct7aa"]
 [ext_resource type="Resource" uid="uid://060dkfobmqb4" path="res://resouces/enemies/wave_pattern/box_pattern.tres" id="3_e124b"]
 [ext_resource type="Resource" uid="uid://dra18hq3m1td0" path="res://resouces/enemies/normal/nor_emy_2.tres" id="4_hbo4f"]
+[ext_resource type="Resource" uid="uid://bucnqarx44fl7" path="res://resouces/enemies/normal/nor_emy_1.tres" id="4_qixtg"]
 [ext_resource type="Resource" uid="uid://bla1k85nk27qy" path="res://resouces/enemies/wave_pattern/triangle.tres" id="5_101mb"]
 [ext_resource type="PackedScene" uid="uid://rkrbyd3spntm" path="res://scenes/player/player.tscn" id="5_ocj2s"]
+[ext_resource type="Resource" uid="uid://c5e0pgtxc06lc" path="res://resouces/enemies/normal/nor_emy_3.tres" id="6_nt65e"]
 
 [node name="Gameplay" type="Node2D"]
 
@@ -18,7 +20,7 @@ script = ExtResource("1_7biu0")
 enemy_scene = ExtResource("2_ct7aa")
 player_scene = NodePath("../player")
 formation = NodePath("../EnemyFormation")
-enemy_types = Array[ExtResource("2_101mb")]([ExtResource("4_hbo4f")])
+enemy_types = Array[ExtResource("2_101mb")]([ExtResource("4_qixtg"), ExtResource("4_hbo4f"), ExtResource("6_nt65e")])
 waves = Array[ExtResource("2_4bh5q")]([ExtResource("3_e124b"), ExtResource("3_ct7aa"), ExtResource("5_101mb")])
 
 [node name="EnemyFormation" type="Node2D" parent="."]

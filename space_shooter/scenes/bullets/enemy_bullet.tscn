@@ -15,12 +15,11 @@ script = ExtResource("1_ajmct")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
 texture = ExtResource("2_bb6co")
-flip_v = true
 region_enabled = true
 region_rect = Rect2(23.5803, -0.116245, 8.91862, 16.4557)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
+position = Vector2(0, -3)
 shape = SubResource("CapsuleShape2D_ajmct")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

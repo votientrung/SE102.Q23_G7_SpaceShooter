@@ -14,7 +14,7 @@ func spawn_bullet(source, direction, scene_tree):
 
 	bullet.global_position = source.global_position
 	bullet.direction = direction
+	bullet.rotation = direction.angle() + PI/2
 	bullet.damage = source.damage
 	bullet.speed = 200
 	scene_tree.current_scene.add_child(bullet)
-	print("fire")
