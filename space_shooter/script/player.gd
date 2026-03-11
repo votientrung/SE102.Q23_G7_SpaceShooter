@@ -44,7 +44,7 @@ func _process(delta):
 		weapon.weapon_shot()
 		fire_delta=fire_rate
 	#die
-	if gold <= 0:
+	if gold < 0:
 		die()
 
 

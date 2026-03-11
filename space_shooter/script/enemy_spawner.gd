@@ -3,7 +3,7 @@ extends Node2D
 class_name EnemySpawner
 
 @export var enemy_scene : PackedScene
-@export var player_scene : Area2D
+@export var player_scene : CharacterBody2D
 var wave_pattern : WavePattern
 @export var formation : Node2D
 @export var horizontal_spacing := 40

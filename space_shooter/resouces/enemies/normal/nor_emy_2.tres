@@ -8,7 +8,7 @@
 script = ExtResource("1_onyfl")
 title = "nor_emy_2"
 texture = ExtResource("4_o44rn")
-health = 20.0
+health = 5.0
 damage = 10.0
 drop = 0
 skill = ExtResource("2_onyfl")
