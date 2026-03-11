@@ -12,7 +12,7 @@ var end_bound_y
 #player stat
 var damage: float = 1
 var defence: float = 1
-var gold: float = 100
+var gold: float = 1000
 
 # setting camera
 func _ready() -> void:
@@ -44,7 +44,7 @@ func _process(delta):
 		weapon.weapon_shot()
 		fire_delta=fire_rate
 	#die
-	if gold <= 0:
+	if gold < 0:
 		die()
 
 
