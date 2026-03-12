@@ -1,5 +1,7 @@
 extends Area2D
 
+@onready var handle_enemy_bullet_animation = $AnimatedSprite2D
+
 var speed : float = 200
 var damage : float = 1
 var direction : Vector2
@@ -21,7 +23,11 @@ func _process(delta: float) -> void:
 	if global_position.x < -10:
 		queue_free()
 	
+	handle_animation()
 func _on_body_entered(body):
 	if body.has_method("gold_take"):
 			body.gold_take(damage)
 			queue_free()
+
+func handle_animation():
+	handle_enemy_bullet_animation.play("default")

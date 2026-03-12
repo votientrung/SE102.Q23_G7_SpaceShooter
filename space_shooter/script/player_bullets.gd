@@ -1,7 +1,7 @@
 extends Area2D
 class_name bullets
 
-@onready var ha= $AnimatedSprite2D
+@onready var handle_player_bullet_animation= $AnimatedSprite2D
 @export var damage : float = 1
 @export var speed : float = 300
 @export var direction : Vector2
@@ -27,4 +27,4 @@ func _on_body_entered(body: CharacterBody2D) -> void:
 
 
 func handle_animation():
-	ha.play("default")
+	handle_player_bullet_animation.play("default")
