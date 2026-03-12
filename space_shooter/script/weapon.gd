@@ -20,15 +20,13 @@ var fire_delta =0
 func _process(delta) :
 	#auto fire
 	fire_delta=fire_delta-delta
-	if Input.is_action_pressed("shot") and fire_delta <=0 :
+	if Input.is_action_pressed("hold") and fire_delta <=0 and not Input.is_action_pressed("click"):
 		weapon_shot()
 		fire_delta=stat.fire_rate
 
-var can_shot = true
 func _input(event):
 	#player shoting
-	if event.is_action_pressed("shot") and can_shot:
-		can_shot = false
+	if event.is_action_pressed("click") and fire_delta <=0 and not Input.is_action_pressed("hold") :
 		weapon_shot()
-		await get_tree().create_timer(0.1).timeout
-		can_shot = true
+		fire_delta=stat.fire_rate * 0.4
+	
