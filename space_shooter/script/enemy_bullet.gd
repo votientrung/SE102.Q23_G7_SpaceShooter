@@ -28,6 +28,6 @@ func _on_body_entered(body):
 	if body.has_method("gold_take"):
 			body.gold_take(damage)
 			queue_free()
-
+# handle enemy animation
 func handle_animation():
 	handle_enemy_bullet_animation.play("default")

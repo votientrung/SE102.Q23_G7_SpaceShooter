@@ -1,11 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://rkrbyd3spntm"]
+[gd_scene load_steps=8 format=3 uid="uid://rkrbyd3spntm"]
 
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
 [ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="2_gmlin"]
 [ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon.tscn" id="3_gmlin"]
+[ext_resource type="PackedScene" uid="uid://bq87p16s25urw" path="res://scenes/bullets/player_bullets.tscn" id="4_lvxji"]
+[ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="4_p47bc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(28, 24)
+
+[sub_resource type="Resource" id="Resource_75vfm"]
+script = ExtResource("4_p47bc")
+fire_rate = 0.2
+weapon_level = 1.0
+damage = 1
+speed = 300
+max_pierce = 1
+metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
 [node name="player" type="CharacterBody2D"]
 position = Vector2(600, 750)
@@ -20,4 +31,8 @@ texture = ExtResource("2_gmlin")
 shape = SubResource("RectangleShape2D_g2els")
 
 [node name="weapon" parent="." instance=ExtResource("3_gmlin")]
-position = Vector2(0, 23)
+position = Vector2(0, 4)
+stat = SubResource("Resource_75vfm")
+
+[node name="bullet" parent="weapon" instance=ExtResource("4_lvxji")]
+position = Vector2(0, -4)

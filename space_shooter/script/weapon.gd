@@ -2,14 +2,33 @@ extends Node2D
 @onready var shot_origin = $shot_origin
 @onready var shot_origin2 = $shot_origin2
 @onready var shot_origin3 = $shot_origin3
-var weapon_level : float = 1
+
+@export var stat : weapon_stat
 func weapon_shot():
-	if weapon_level == 1:
+	if  stat.weapon_level == 1:
 		shot_origin.shoting(Vector2.UP)
-	if weapon_level == 2: 
+	if stat.weapon_level == 2: 
 		shot_origin2.shoting(Vector2.UP)
 		shot_origin3.shoting(Vector2.UP)
-	if weapon_level == 3:
+	if stat.weapon_level == 3:
 		shot_origin.shoting(Vector2.UP)
 		shot_origin2.shoting(Vector2.UP)
 		shot_origin3.shoting(Vector2.UP)
+
+#shoting 
+var fire_delta =0
+func _process(delta) :
+	#auto fire
+	fire_delta=fire_delta-delta
+	if Input.is_action_pressed("shot") and fire_delta <=0 :
+		weapon_shot()
+		fire_delta=stat.fire_rate
+
+var can_shot = true
+func _input(event):
+	#player shoting
+	if event.is_action_pressed("shot") and can_shot:
+		can_shot = false
+		weapon_shot()
+		await get_tree().create_timer(0.1).timeout
+		can_shot = true

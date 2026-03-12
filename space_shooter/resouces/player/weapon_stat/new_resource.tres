@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="weapon_stat" load_steps=2 format=3 uid="uid://xrn3pq6b85sh"]
+
+[ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="1_cwqjr"]
+
+[resource]
+script = ExtResource("1_cwqjr")
+fire_rate = 2.0
+weapon_level = 2.0
+damage = 1
+speed = 100
+max_pierce = 1
+metadata/_custom_type_script = "uid://ci81lyjydthi2"

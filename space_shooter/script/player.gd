@@ -26,8 +26,7 @@ func _ready() -> void:
 	start_bound_y = camera_position.y - (rect.size.y)/2
 	end_bound_y = camera_position.y + (rect.size.y)/2
 
-var fire_rate =0.2
-var fire_delta =0
+
 func _process(delta):
 	# lay vi tri chuot
 	var mouse_pos = get_global_mouse_position()
@@ -38,24 +37,13 @@ func _process(delta):
 	, end_bound_y - bound_size_y * transform.get_scale().y)
 	
 	position = mouse_pos
-	#auto fire
-	fire_delta=fire_delta-delta
-	if Input.is_action_pressed("shot") and fire_delta <=0 :
-		weapon.weapon_shot()
-		fire_delta=fire_rate
+	
 	#die
 	if gold < 0:
 		die()
 
 
-var can_shot = true
-func _input(event):
-	#player shoting
-	if event.is_action_pressed("shot") and can_shot:
-		can_shot = false
-		weapon.weapon_shot()
-		await get_tree().create_timer(0.1).timeout
-		can_shot = true
+
 #take dam
 func gold_take(damage):
 	print("take dmg")
