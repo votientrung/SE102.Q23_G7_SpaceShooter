@@ -50,4 +50,4 @@ func deactivate():
 func activate():
 	show()
 	stat.activate = true
-	handle_player_weapon_animation.play("default")
+	

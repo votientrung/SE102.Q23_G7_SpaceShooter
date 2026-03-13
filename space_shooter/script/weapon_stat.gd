@@ -1,6 +1,6 @@
 extends Resource
 class_name weapon_stat
-@export_range(0.1, 2.0 ,0.1) var fire_rate =0.2
+@export_range(0.001, 2.0 ,0.001) var fire_rate =0.2
 
 @export_group("attack")
 @export var weapon_level :float = 1

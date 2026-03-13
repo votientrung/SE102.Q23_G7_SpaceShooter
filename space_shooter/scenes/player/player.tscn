@@ -47,5 +47,5 @@ position = Vector2(0, -1)
 stat = SubResource("Resource_75vfm")
 
 [node name="weapon_laze" parent="." instance=ExtResource("5_p47bc")]
-visible = false
+position = Vector2(0, -1)
 stat = SubResource("Resource_p47bc")
