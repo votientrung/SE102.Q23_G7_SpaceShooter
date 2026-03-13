@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
 [ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="2_gmlin"]
-[ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon_default.tscn" id="3_gmlin"]
+[ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon_defaul.tscn" id="3_gmlin"]
 [ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="4_p47bc"]
 [ext_resource type="PackedScene" uid="uid://di4yts2ml34vl" path="res://scenes/weapon/weapon_laze.tscn" id="5_p47bc"]
 
@@ -26,7 +26,7 @@ weapon_level = 1.0
 damage = 1
 speed = 300
 max_pierce = 1
-activate = true
+activate = false
 metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
 [node name="player" type="CharacterBody2D"]
@@ -41,11 +41,10 @@ texture = ExtResource("2_gmlin")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_g2els")
 
-[node name="weapon_default" parent="." instance=ExtResource("3_gmlin")]
-visible = false
+[node name="weapon_defaul" parent="." instance=ExtResource("3_gmlin")]
 position = Vector2(0, -1)
 stat = SubResource("Resource_75vfm")
 
 [node name="weapon_laze" parent="." instance=ExtResource("5_p47bc")]
-visible = false
+position = Vector2(0, -19)
 stat = SubResource("Resource_p47bc")

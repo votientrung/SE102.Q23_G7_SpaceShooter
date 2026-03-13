@@ -1,6 +1,11 @@
 extends CharacterBody2D
 @onready var collistion_rect:CollisionShape2D = $CollisionShape2D
-@onready var weapon =$weapon
+
+@onready var default = $weapon_default
+@onready var laze = $weapon_laze
+
+@onready var weapons_array = [default,laze]
+var current_weapon_index = 0
 #bound size
 var bound_size_x
 var bound_size_y
@@ -25,6 +30,9 @@ func _ready() -> void:
 	end_bound_x = camera_position.x + (rect.size.x)/2
 	start_bound_y = camera_position.y - (rect.size.y)/2
 	end_bound_y = camera_position.y + (rect.size.y)/2
+	
+	default.activate()
+	laze.deactivate()
 
 
 func _process(delta):
@@ -42,7 +50,14 @@ func _process(delta):
 	if gold < 0:
 		die()
 
-
+var switch_weapon_delay = 5
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("switch"):
+		weapons_array[current_weapon_index].deactivate()
+		current_weapon_index = current_weapon_index + 1
+		if current_weapon_index >= weapons_array.size():
+			current_weapon_index = 0
+		weapons_array[current_weapon_index].activate()
 
 #take dam
 func gold_take(damage):
@@ -50,7 +65,6 @@ func gold_take(damage):
 	print("dmg " , damage)
 	gold -= damage
 	print("gold left " , gold)
-	
 
 func die():
 	queue_free()

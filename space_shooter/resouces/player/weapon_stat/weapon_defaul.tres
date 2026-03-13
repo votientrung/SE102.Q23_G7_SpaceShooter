@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="weapon_stat" load_steps=2 format=3 uid="uid://xrn3pq6b85sh"]
 
-[ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="1_cwqjr"]
+[ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="1_ua6am"]
 
 [resource]
-script = ExtResource("1_cwqjr")
+script = ExtResource("1_ua6am")
 fire_rate = 0.1
 weapon_level = 2.0
 damage = 1
