@@ -80,6 +80,8 @@ stat = SubResource("Resource_dkvs1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_hppc7")
+frame = 6
+frame_progress = 1.0
 
 [node name="shot_origin" type="Node2D" parent="."]
 position = Vector2(0, -15)

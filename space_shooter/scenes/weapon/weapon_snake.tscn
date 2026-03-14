@@ -1,9 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://xb8p4ncclrl2"]
+[gd_scene load_steps=17 format=3 uid="uid://xb8p4ncclrl2"]
 
 [ext_resource type="Script" uid="uid://b8jl6q1pdi1dn" path="res://script/weapon_snake.gd" id="1_o536n"]
 [ext_resource type="Texture2D" uid="uid://dllyfojlsvpv4" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/PNGs/Main Ship - Weapons - Big Space Gun.png" id="2_6xmtd"]
 [ext_resource type="PackedScene" uid="uid://cq3ki8c8l4sf7" path="res://scenes/bullets/player bullets/snake_bullet.tscn" id="3_2h35m"]
-[ext_resource type="Script" uid="uid://ch048qyen78ow" path="res://script/snake_bullet.gd" id="4_anjbj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2h35m"]
 atlas = ExtResource("2_6xmtd")
@@ -110,4 +109,3 @@ frame_progress = 0.473806
 [node name="snake_bullet" parent="." instance=ExtResource("3_2h35m")]
 position = Vector2(0, -62)
 scale = Vector2(2, 2)
-script = ExtResource("4_anjbj")

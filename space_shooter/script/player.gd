@@ -33,8 +33,8 @@ func _ready() -> void:
 	end_bound_y = camera_position.y + (rect.size.y)/2
 	
 	default.deactivate()
-	laze.activate()
-	snake.deactivate()
+	laze.deactivate()
+	snake.activate()
 
 
 func _process(delta):

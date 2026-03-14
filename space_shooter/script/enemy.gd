@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+@onready var animation_detruct = $detruct
 var target_position : Vector2
 var move_speed := 600
 var is_entering := true
@@ -53,10 +53,12 @@ func _process(delta: float) -> void:
 	
 	# pass camera
 	if global_position.y > get_viewport_rect().size.y +1:
+		handle_animation()
 		queue_free()
 		
 
-
+func handle_animation():
+	animation_detruct.play("default")
 
 
 	
