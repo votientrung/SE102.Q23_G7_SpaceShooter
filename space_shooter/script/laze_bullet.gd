@@ -25,7 +25,7 @@ func _process(delta):
 	# gay dmg theo delta
 	for body in get_overlapping_bodies():
 		if body.has_method("damage_take"):
-			body.damage_take(1 * delta)
+			body.damage_take(damage)
 	
 	
 

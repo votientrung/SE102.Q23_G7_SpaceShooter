@@ -1,0 +1,99 @@
+[gd_scene load_steps=15 format=3 uid="uid://cq3ki8c8l4sf7"]
+
+[ext_resource type="Texture2D" uid="uid://b8o1cpypwbp5u" path="res://assets/image/player+weapon/mainship/Main ship weapons/PNGs/Main ship weapon - Projectile - Big Space Gun.png" id="1_7burd"]
+[ext_resource type="Script" uid="uid://ch048qyen78ow" path="res://script/snake_bullet.gd" id="1_vwul1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i371e"]
+atlas = ExtResource("1_7burd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yuhu6"]
+atlas = ExtResource("1_7burd")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tyl7d"]
+atlas = ExtResource("1_7burd")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ut3p"]
+atlas = ExtResource("1_7burd")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyiw7"]
+atlas = ExtResource("1_7burd")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fockx"]
+atlas = ExtResource("1_7burd")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hf7i7"]
+atlas = ExtResource("1_7burd")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orau6"]
+atlas = ExtResource("1_7burd")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n7io"]
+atlas = ExtResource("1_7burd")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eowwg"]
+atlas = ExtResource("1_7burd")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jid8s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i371e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yuhu6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyl7d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ut3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyiw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fockx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hf7i7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orau6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n7io")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eowwg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwul1"]
+size = Vector2(21.3333, 32)
+
+[node name="snake_bullet" type="Area2D"]
+script = ExtResource("1_vwul1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_jid8s")
+frame = 5
+frame_progress = 0.0698693
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7.15256e-07, 0)
+scale = Vector2(1.5, 1)
+shape = SubResource("RectangleShape2D_vwul1")
