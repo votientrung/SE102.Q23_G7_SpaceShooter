@@ -1,3 +1,4 @@
+[gd_scene load_steps=11 format=3 uid="uid://rkrbyd3spntm"]
 
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
 [ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="2_gmlin"]
