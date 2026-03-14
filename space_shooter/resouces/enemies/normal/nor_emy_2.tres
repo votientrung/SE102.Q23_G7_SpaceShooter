@@ -1,8 +1,129 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://dra18hq3m1td0"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=22 format=3 uid="uid://dra18hq3m1td0"]
 
+[ext_resource type="Texture2D" uid="uid://c1kegagkt7kmj" path="res://assets/image/enemytype2/Nairan/Destruction/PNGs/Nairan - Scout -  Destruction.png" id="1_ecbmh"]
 [ext_resource type="Script" uid="uid://cd2g4t88wdtq4" path="res://script/EnemyType.gd" id="1_onyfl"]
 [ext_resource type="Resource" uid="uid://cnbt13finlxyv" path="res://resouces/enemies/enemySkill/ShootDown.tres" id="2_onyfl"]
 [ext_resource type="Texture2D" uid="uid://c7o1q74koyq02" path="res://assets/image/enemytype2/Nairan/Designs - Base/PNGs/Nairan - Scout - Base.png" id="4_o44rn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o44rn"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07yxw"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umcr3"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0j3x"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_by8c4"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_istqj"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhmqv"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xptq7"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rblx"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3hdy"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5yhh"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_do4cy"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dk4b"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(768, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w7kmw"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(832, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ro8lr"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(896, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lyyc3"]
+atlas = ExtResource("1_ecbmh")
+region = Rect2(960, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nctwl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o44rn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07yxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umcr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0j3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_by8c4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_istqj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhmqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xptq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rblx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3hdy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5yhh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_do4cy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dk4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w7kmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ro8lr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lyyc3")
+}],
+"loop": false,
+"name": &"die",
+"speed": 12.0
+}]
 
 [resource]
 script = ExtResource("1_onyfl")
@@ -15,4 +136,6 @@ skill = ExtResource("2_onyfl")
 point = 0.0
 golddrop = 0
 CD = 0.0
+bullet_speed = 200.0
+frames = SubResource("SpriteFrames_nctwl")
 metadata/_custom_type_script = "uid://cd2g4t88wdtq4"

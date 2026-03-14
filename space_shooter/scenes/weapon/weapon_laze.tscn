@@ -90,4 +90,6 @@ frame = 7
 frame_progress = 1.0
 
 [node name="laze_bullet" parent="." instance=ExtResource("5_d1myb")]
+light_mask = 2
+visibility_layer = 24
 position = Vector2(0, -12)

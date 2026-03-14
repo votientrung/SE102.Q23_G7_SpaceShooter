@@ -6,12 +6,22 @@ var speed : float = 200
 var damage : float = 1
 var direction : Vector2
 var source
+
+var trace_able = false
+var trace_time : float =2
+var target : CharacterBody2D
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if trace_able and trace_time > 0:
+		direction =  (target.global_position - global_position).normalized()
+		rotation = direction.angle() + PI/2
+		trace_able -= delta
+	
 	global_position += direction*speed*delta
 	
 	if global_position.y > get_viewport_rect().size.y +1:

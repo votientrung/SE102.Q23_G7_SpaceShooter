@@ -11,27 +11,35 @@ var health: float
 var golddrop : int
 var point : float
 @export var wave_count :int =0
+
 var skill : EnemySkill
 var CD : float =0
+var bullet_speed : float
 
 var type : Enemy:
 	set(value):
 		type = value
 		$Sprite2D.texture = value.texture
+		$AnimatedSprite2D.sprite_frames = value.frames
 		damage = value.damage
 		health = value.health
 		golddrop = value.golddrop
 		point = value.point
 		skill = value.skill
+		bullet_speed = value.bullet_speed
 
+var is_dead : bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	is_dead = false
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if is_dead:
+		return
 	#enter
 	if is_entering:
 		var dir = (target_position - global_position).normalized()
@@ -56,19 +64,28 @@ func _process(delta: float) -> void:
 		queue_free()
 		
 
-
-
-
-	
-
-
 func damage_take(damage : float):
 	health -= damage
+	hit_flash()
 	if health <= 0:
-		queue_free()
+		die()
 
 
 func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
 	if body.has_method("gold_take"):
 			body.gold_take(damage)
 			print("hit")
+
+func hit_flash():
+	$AnimatedSprite2D.modulate = Color(1,0.3,0.3)
+	await get_tree().create_timer(0.1).timeout
+	$AnimatedSprite2D.modulate = Color(1,1,1)
+
+func die():
+	if is_dead:
+		return
+	is_dead = true
+	
+	$AnimatedSprite2D.play("die")
+	await $AnimatedSprite2D.animation_finished
+	queue_free()

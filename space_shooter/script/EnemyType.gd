@@ -11,3 +11,5 @@ class_name Enemy
 @export var point : float
 @export var golddrop : int
 @export var CD : float
+@export var bullet_speed : float
+@export var frames : SpriteFrames

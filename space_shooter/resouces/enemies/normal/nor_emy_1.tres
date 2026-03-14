@@ -1,7 +1,86 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bucnqarx44fl7"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=15 format=3 uid="uid://bucnqarx44fl7"]
 
+[ext_resource type="Texture2D" uid="uid://c3p4722pxs8yi" path="res://assets/image/enemytype1/Kla'ed/Destruction/PNGs/Kla'ed - Scout - Destruction.png" id="1_jlxc1"]
 [ext_resource type="Script" uid="uid://cd2g4t88wdtq4" path="res://script/EnemyType.gd" id="1_k3n8a"]
 [ext_resource type="Texture2D" uid="uid://c23jbvtehk6bu" path="res://assets/image/enemytype1/Kla'ed/Base/PNGs/Kla'ed - Scout - Base.png" id="2_jlxc1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujs5a"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6osl"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_050fr"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkphx"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_raxlw"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1hup"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q061v"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtrtu"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjxnn"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3gnh"]
+atlas = ExtResource("1_jlxc1")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ulnfu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujs5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6osl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_050fr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkphx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_raxlw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1hup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q061v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtrtu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjxnn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l3gnh")
+}],
+"loop": false,
+"name": &"die",
+"speed": 12.0
+}]
 
 [resource]
 script = ExtResource("1_k3n8a")
@@ -13,4 +92,6 @@ drop = 0
 point = 0.0
 golddrop = 0
 CD = 0.0
+bullet_speed = 0.0
+frames = SubResource("SpriteFrames_ulnfu")
 metadata/_custom_type_script = "uid://cd2g4t88wdtq4"
