@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 @onready var default = $weapon_default
 @onready var laze = $weapon_laze
+@onready var snake = $weapon_snake
 
 @onready var weapons_array = [default,laze]
 var current_weapon_index = 0
@@ -31,8 +32,9 @@ func _ready() -> void:
 	start_bound_y = camera_position.y - (rect.size.y)/2
 	end_bound_y = camera_position.y + (rect.size.y)/2
 	
-	default.activate()
+	default.deactivate()
 	laze.deactivate()
+	snake.activate()
 
 
 func _process(delta):

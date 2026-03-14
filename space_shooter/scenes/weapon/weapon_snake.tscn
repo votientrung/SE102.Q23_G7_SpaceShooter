@@ -1,0 +1,111 @@
+[gd_scene load_steps=17 format=3 uid="uid://xb8p4ncclrl2"]
+
+[ext_resource type="Script" uid="uid://b8jl6q1pdi1dn" path="res://script/weapon_snake.gd" id="1_o536n"]
+[ext_resource type="Texture2D" uid="uid://dllyfojlsvpv4" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/PNGs/Main Ship - Weapons - Big Space Gun.png" id="2_6xmtd"]
+[ext_resource type="PackedScene" uid="uid://cq3ki8c8l4sf7" path="res://scenes/bullets/player bullets/snake_bullet.tscn" id="3_2h35m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2h35m"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anjbj"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_puxw5"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y7y50"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcfoj"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dq7bq"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3putu"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(288, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wikw"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(336, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0jnm"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(384, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkv2d"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(432, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ywnt"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(480, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxwvt"]
+atlas = ExtResource("2_6xmtd")
+region = Rect2(528, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5xgih"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2h35m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anjbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_puxw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y7y50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcfoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dq7bq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3putu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wikw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0jnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkv2d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ywnt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxwvt")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="weapon_snake" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_o536n")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_5xgih")
+frame = 8
+frame_progress = 0.473806
+
+[node name="snake_bullet" parent="." instance=ExtResource("3_2h35m")]
+position = Vector2(0, -62)
+scale = Vector2(2, 2)

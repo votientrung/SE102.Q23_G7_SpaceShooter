@@ -3,9 +3,6 @@
 [ext_resource type="Script" uid="uid://de1t84npvyp63" path="res://script/laze_bullet.gd" id="1_ibj2j"]
 [ext_resource type="Texture2D" uid="uid://dvvkbf1xcbtrx" path="res://assets/image/player+weapon/mainship/Main ship weapons/PNGs/Main ship weapon - Projectile - Zapper.png" id="1_yg2y0"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ibj2j"]
-size = Vector2(6, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_gc15a"]
 atlas = ExtResource("1_yg2y0")
 region = Rect2(0, 0, 32, 32)
@@ -70,15 +67,13 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ibj2j"]
+size = Vector2(6, 32)
+
 [node name="laze_bullet" type="Area2D"]
 collision_layer = 2
 collision_mask = 12
 script = ExtResource("1_ibj2j")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -400)
-scale = Vector2(1, 25)
-shape = SubResource("RectangleShape2D_ibj2j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -88,5 +83,10 @@ scale = Vector2(1, 25)
 sprite_frames = SubResource("SpriteFrames_b40dr")
 frame = 7
 frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -400)
+scale = Vector2(1, 25)
+shape = SubResource("RectangleShape2D_ibj2j")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -2,12 +2,10 @@ extends Node2D
 @onready var handle_player_weapon_animation = $AnimatedSprite2D
 
 @onready var shot_laze_butllet = $laze_bullet
-@onready var lazing_origin = $lazing_origin
 
 @export var stat : weapon_stat
 #shoting laze
 var fire_delta =0
-
 var time_charge = 0
 var time_tick = 0
 func _process(delta) :

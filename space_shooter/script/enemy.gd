@@ -38,8 +38,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if is_dead:
-		return
 	#enter
 	if is_entering:
 		var dir = (target_position - global_position).normalized()
@@ -82,9 +80,6 @@ func hit_flash():
 	$AnimatedSprite2D.modulate = Color(1,1,1)
 
 func die():
-	if is_dead:
-		return
-	is_dead = true
 	
 	$AnimatedSprite2D.play("die")
 	await $AnimatedSprite2D.animation_finished
