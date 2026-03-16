@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Boss_MultiShoot" load_steps=3 format=3 uid="uid://dil1nkekc04tk"]
+
+[ext_resource type="PackedScene" uid="uid://ceuenk0e2u8li" path="res://scenes/bullets/enemy_bullet/enemy_bullet.tscn" id="1_gdmbu"]
+[ext_resource type="Script" uid="uid://dlghxdxiewsb2" path="res://script/Boss_MultiShoot.gd" id="2_ocg4s"]
+
+[resource]
+script = ExtResource("2_ocg4s")
+em_normal_bullet = ExtResource("1_gdmbu")
+bullet_speed = 0.0
+wavecount = 0
+phase = 0
+damage = 10
+cooldown = 2.0
+title = "Boss_MultiShoot"
+metadata/_custom_type_script = "uid://dlghxdxiewsb2"

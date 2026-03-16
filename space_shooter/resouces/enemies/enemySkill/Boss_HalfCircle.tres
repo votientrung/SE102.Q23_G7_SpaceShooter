@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="HalfCircle" load_steps=3 format=3 uid="uid://h3d2uytisu26"]
+
+[ext_resource type="PackedScene" uid="uid://ceuenk0e2u8li" path="res://scenes/bullets/enemy_bullet/enemy_bullet.tscn" id="1_afkid"]
+[ext_resource type="Script" uid="uid://doc5u74vjdco7" path="res://script/Boss_SkillHalfCircle_right.gd" id="2_fvkil"]
+
+[resource]
+script = ExtResource("2_fvkil")
+em_normal_bullet = ExtResource("1_afkid")
+bullet_speed = 0.0
+wavecount = 0
+phase = 0
+damage = 10
+cooldown = 4.0
+title = "HalfCircle"
+metadata/_custom_type_script = "uid://doc5u74vjdco7"

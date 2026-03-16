@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SkillTraceBullet" load_steps=3 format=3 uid="uid://dmiktsjor46hf"]
+
+[ext_resource type="PackedScene" uid="uid://ceuenk0e2u8li" path="res://scenes/bullets/enemy_bullet/enemy_bullet.tscn" id="1_5w5fm"]
+[ext_resource type="Script" uid="uid://ddylntrc75pcg" path="res://script/Enemy_ShootTrace.gd" id="2_dce4b"]
+
+[resource]
+script = ExtResource("2_dce4b")
+em_normal_bullet = ExtResource("1_5w5fm")
+bullet_speed = 0.0
+damage = 10
+cooldown = 7.0
+title = "Trace Bullet"
+metadata/_custom_type_script = "uid://ddylntrc75pcg"
