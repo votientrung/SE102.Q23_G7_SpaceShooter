@@ -20,13 +20,12 @@ var in_boss_fight : bool
 func _ready():
 	in_boss_fight = false
 	wavecount = 1
-	print(boss_types.size())
 	spawn_wave()
 
 func _process(delta):
 	if formation.get_child_count() == 0 and !formation.start and !in_boss_fight:
 		wavecount +=1
-		if wavecount % 4 ==0 :
+		if wavecount % 2 ==0 :
 			boss_spawn()
 			return
 		start_next_wave()
@@ -43,7 +42,7 @@ func boss_spawn():
 	var spawn_pos = pos + Vector2(0,-400)
 	boss.global_position = spawn_pos
 	boss.target_position = pos
-	print(boss.global_position)
+
 	add_child(boss)
 
 func spawn_wave():
@@ -70,13 +69,14 @@ func spawn_wave():
 			var spawn_pos = pos + Vector2(0,-200)
 			enemy.global_position = spawn_pos
 			enemy.target_position = formation.global_position + pos
-
+			
 			formation.add_child(enemy)
 
 
 func start_next_wave():
-
 	formation.start = true
-	await get_tree().create_timer(0.3).timeout
+	formation.direction = 1
 	spawn_wave()
+	await get_tree().create_timer(0.3).timeout
 	formation.start = false
+	formation.droping = false

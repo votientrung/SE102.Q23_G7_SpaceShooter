@@ -10,6 +10,6 @@ func enter():
 
 func transition():
 	if owner.check_phase :
-		get_parent().change_state("Phasechange")
+		get_parent().change_state("PhaseChange")
 	if owner.is_dead:
 		get_parent().change_state("Death")
