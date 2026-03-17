@@ -11,6 +11,8 @@ func skillcast(source, target, scene_tree):
 	spawn_bullet(source, target, scene_tree)
 
 func spawn_bullet(source, direction, scene_tree):
+	if source == null:
+		return
 	var bullet = em_normal_bullet.instantiate()
 
 	bullet.global_position = source.global_position
