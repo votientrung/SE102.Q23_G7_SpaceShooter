@@ -8,6 +8,7 @@
 [ext_resource type="Resource" uid="uid://qjg5wq30lubi" path="res://resouces/enemies/wave_pattern/caro.tres" id="3_ct7aa"]
 [ext_resource type="Resource" uid="uid://060dkfobmqb4" path="res://resouces/enemies/wave_pattern/box_pattern.tres" id="3_e124b"]
 [ext_resource type="PackedScene" uid="uid://ciwllc84q6kgd" path="res://scenes/enemies/boss/boss.tscn" id="3_s5y6v"]
+[ext_resource type="PackedScene" uid="uid://b2qsxld4hmmsw" path="res://scenes/enemies/boss.tscn" id="3_s5y6v"]
 [ext_resource type="Resource" uid="uid://dra18hq3m1td0" path="res://resouces/enemies/normal/nor_emy_2.tres" id="4_hbo4f"]
 [ext_resource type="Resource" uid="uid://bucnqarx44fl7" path="res://resouces/enemies/normal/nor_emy_1.tres" id="4_qixtg"]
 [ext_resource type="Resource" uid="uid://bla1k85nk27qy" path="res://resouces/enemies/wave_pattern/triangle.tres" id="5_101mb"]

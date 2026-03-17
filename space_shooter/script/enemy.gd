@@ -51,6 +51,11 @@ func _process(delta: float) -> void:
 		velocity = Vector2.ZERO
 	else:
 		return
+		if global_position.distance_to(target_position) < 5:
+			global_position = target_position
+			is_entering = false
+			velocity = Vector2.ZERO
+
 	
 	#skill
 	if skill != null and !is_entering:
