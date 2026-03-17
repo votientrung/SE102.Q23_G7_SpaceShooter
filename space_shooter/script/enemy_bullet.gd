@@ -20,7 +20,7 @@ func _process(delta: float) -> void:
 	if trace_able and trace_time > 0:
 		direction =  (target.global_position - global_position).normalized()
 		rotation = direction.angle() + PI/2
-		trace_able -= delta
+		trace_time -= delta
 	
 	global_position += direction*speed*delta
 	

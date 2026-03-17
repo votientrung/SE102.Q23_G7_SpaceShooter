@@ -4,6 +4,7 @@ class_name EnemySpawner
 
 @export var enemy_scene : PackedScene
 @export var player_scene : CharacterBody2D
+@export var boss_scene : PackedScene
 var wave_pattern : WavePattern
 @export var formation : Node2D
 @export var horizontal_spacing := 40
@@ -11,13 +12,39 @@ var wave_pattern : WavePattern
 
 @export var start_y := 40
 @export var enemy_types : Array[Enemy]
+@export var boss_types	: Array[Boss]
 @export var waves : Array[WavePattern]
+var wavecount : int
+var in_boss_fight : bool
+
 func _ready():
-		spawn_wave()
+	in_boss_fight = false
+	wavecount = 1
+	print(boss_types.size())
+	spawn_wave()
 
 func _process(delta):
-	if formation.get_child_count() == 0 and !formation.start:
+	if formation.get_child_count() == 0 and !formation.start and !in_boss_fight:
+		wavecount +=1
+		if wavecount % 4 ==0 :
+			boss_spawn()
+			return
 		start_next_wave()
+	if get_child_count() == 0 and in_boss_fight and !formation.start:
+		in_boss_fight = false
+
+func boss_spawn():
+	in_boss_fight = true
+	var boss = boss_scene.instantiate()
+	boss.type = boss_types.pick_random()
+	boss.wavecount = wavecount
+	boss.player_reference = player_scene
+	var pos = Vector2(600 + global_position.x, global_position.y + 200)
+	var spawn_pos = pos + Vector2(0,-400)
+	boss.global_position = spawn_pos
+	boss.target_position = pos
+	print(boss.global_position)
+	add_child(boss)
 
 func spawn_wave():
 	wave_pattern = waves.pick_random()
@@ -33,7 +60,7 @@ func spawn_wave():
 				print("No enemy types!")
 				return
 			enemy.type = enemy_types.pick_random()
-			
+			enemy.wavecount = wavecount
 			enemy.player_reference = player_scene
 			
 			var pos = Vector2(

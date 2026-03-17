@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Boss_MultiAimShoot" load_steps=3 format=3 uid="uid://chf5crry5v8iq"]
+
+[ext_resource type="PackedScene" uid="uid://ceuenk0e2u8li" path="res://scenes/bullets/enemy_bullet/enemy_bullet.tscn" id="1_odjjp"]
+[ext_resource type="Script" uid="uid://b4c6l4rlm30dp" path="res://script/Boss_MultiAimShoot.gd" id="2_xbihg"]
+
+[resource]
+script = ExtResource("2_xbihg")
+em_normal_bullet = ExtResource("1_odjjp")
+bullet_speed = 0.0
+wavecount = 0
+phase = 0
+damage = 10
+cooldown = 3.0
+title = "Multi Aim Shoot"
+metadata/_custom_type_script = "uid://b4c6l4rlm30dp"

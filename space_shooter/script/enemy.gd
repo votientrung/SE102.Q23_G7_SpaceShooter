@@ -3,6 +3,7 @@ extends CharacterBody2D
 var target_position : Vector2
 var move_speed := 600
 var is_entering := true
+var is_dead := false
 @export var player_reference : CharacterBody2D
 
 var drop
@@ -10,12 +11,11 @@ var damage: float
 var health: float
 var golddrop : int
 var point : float
-@export var wave_count :int =0
+var wavecount :int 
 
 var skill : EnemySkill
 var CD : float =0
 var bullet_speed : float
-
 var type : Enemy:
 	set(value):
 		type = value
@@ -28,7 +28,6 @@ var type : Enemy:
 		skill = value.skill
 		bullet_speed = value.bullet_speed
 
-var is_dead : bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -38,16 +37,20 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if is_dead :
+		return
 	#enter
 	if is_entering:
 		var dir = (target_position - global_position).normalized()
 		velocity = dir * move_speed
 		move_and_slide()
 
-		if global_position.distance_to(target_position) < 5:
-			global_position = target_position
-			is_entering = false
-			velocity = Vector2.ZERO
+	if global_position.distance_to(target_position) < 5:
+		global_position = target_position
+		is_entering = false
+		velocity = Vector2.ZERO
+	else:
+		return
 	
 	#skill
 	if skill != null and !is_entering:
@@ -80,7 +83,11 @@ func hit_flash():
 	$AnimatedSprite2D.modulate = Color(1,1,1)
 
 func die():
-	
+	if is_dead:
+		return
+	is_dead = true
+	$Sprite2D.visible = false
 	$AnimatedSprite2D.play("die")
 	await $AnimatedSprite2D.animation_finished
+	$AnimatedSprite2D.visible = false
 	queue_free()

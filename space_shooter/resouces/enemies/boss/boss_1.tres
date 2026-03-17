@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="Boss" load_steps=23 format=3 uid="uid://buui3llpp6a8m"]
+
+[ext_resource type="Texture2D" uid="uid://bnx8osk6xybb0" path="res://assets/image/enemytype1/Kla'ed/Destruction/PNGs/Kla'ed - Battlecruiser - Destruction.png" id="1_l6qb8"]
+[ext_resource type="Script" uid="uid://bsxbk5n66aeoa" path="res://script/BossType.gd" id="2_22adq"]
+[ext_resource type="Script" uid="uid://c5m6bsv3safrt" path="res://script/enemy_skill.gd" id="3_np362"]
+[ext_resource type="Resource" uid="uid://dil1nkekc04tk" path="res://resouces/enemies/enemySkill/Boss_MultiShoot.tres" id="4_l6qb8"]
+[ext_resource type="Resource" uid="uid://chf5crry5v8iq" path="res://resouces/enemies/enemySkill/Boss_MultiAimShoot.tres" id="5_l6qb8"]
+[ext_resource type="Resource" uid="uid://h3d2uytisu26" path="res://resouces/enemies/enemySkill/Boss_HalfCircle.tres" id="6_l6qb8"]
+[ext_resource type="Texture2D" uid="uid://b4qtrqeilv8ir" path="res://assets/image/enemytype1/Kla'ed/Base/PNGs/Kla'ed - Battlecruiser - Base.png" id="7_g0pmv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7s0vp"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pccwh"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_md0y4"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w30hg"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_an3bn"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqxse"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d25su"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jec4i"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v83f8"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc02x"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxl1o"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnag8"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jlsm"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(1536, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3fty1"]
+atlas = ExtResource("1_l6qb8")
+region = Rect2(1664, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ns41"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7s0vp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pccwh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_md0y4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w30hg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_an3bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqxse")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d25su")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jec4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v83f8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wc02x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxl1o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnag8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jlsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3fty1")
+}],
+"loop": false,
+"name": &"die",
+"speed": 12.0
+}]
+
+[resource]
+script = ExtResource("2_22adq")
+title = "Boss_1"
+texture = ExtResource("7_g0pmv")
+frames = SubResource("SpriteFrames_7ns41")
+damage = 10.0
+health = 5.0
+speed = 200.0
+bullet_speed = 200.0
+firerate = 1.0
+skills = Array[ExtResource("3_np362")]([ExtResource("4_l6qb8"), ExtResource("5_l6qb8"), ExtResource("6_l6qb8")])
+phase_hp = Array[float]([0.0])
+drop = 0
+golddrop = 0
+point = 0.0
+metadata/_custom_type_script = "uid://bsxbk5n66aeoa"

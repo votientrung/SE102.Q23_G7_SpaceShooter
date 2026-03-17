@@ -92,6 +92,6 @@ drop = 0
 point = 0.0
 golddrop = 0
 CD = 0.0
-bullet_speed = 0.0
+bullet_speed = 200.0
 frames = SubResource("SpriteFrames_ulnfu")
 metadata/_custom_type_script = "uid://cd2g4t88wdtq4"

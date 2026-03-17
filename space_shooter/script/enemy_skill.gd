@@ -3,6 +3,8 @@ class_name EnemySkill
 
 @export var em_normal_bullet : PackedScene = preload("res://scenes/bullets/enemy_bullet/enemy_bullet.tscn")
 @export var bullet_speed : float
+@export var wavecount : int
+@export var phase : int
 
 func skillcast(source, target, scene_tree):
 
@@ -22,7 +24,7 @@ func spawn_trace(source, target, scene_tree):
 	var bullet = em_normal_bullet.instantiate()
 	
 	bullet.global_position = source.global_position
-	bullet.target = source.target
+	bullet.target = target
 	bullet.damage = source.damage
 	bullet.speed = source.bullet_speed
 	bullet.trace_able = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://gqsd8dkup0uq"]
+[gd_scene load_steps=6 format=3 uid="uid://gqsd8dkup0uq"]
 
 [ext_resource type="Script" uid="uid://c8rbv2w8nxfm8" path="res://script/enemy.gd" id="1_6xk8f"]
 [ext_resource type="Texture2D" uid="uid://c23jbvtehk6bu" path="res://assets/image/enemytype1/Kla'ed/Base/PNGs/Kla'ed - Scout - Base.png" id="2_8e3ao"]
@@ -8,6 +8,14 @@ radius = 12.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8e3ao"]
 radius = 12.0416
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8e3ao"]
+animations = [{
+"frames": [],
+"loop": false,
+"name": &"die",
+"speed": 12.0
+}]
 
 [node name="Enemy" type="CharacterBody2D"]
 z_index = 2
@@ -28,7 +36,8 @@ shape = SubResource("CircleShape2D_38ino")
 shape = SubResource("CircleShape2D_8e3ao")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-animation = &""
+sprite_frames = SubResource("SpriteFrames_8e3ao")
+animation = &"die"
 flip_v = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
