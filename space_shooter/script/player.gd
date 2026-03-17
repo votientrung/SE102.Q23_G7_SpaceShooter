@@ -52,14 +52,18 @@ func _process(delta):
 	if gold < 0:
 		die()
 
-var switch_weapon_delay = 5
+# doi vu khi
+@onready var can_swich_weapon: bool = true
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("switch"):
+	if event.is_action_pressed("switch") and can_swich_weapon == true:
+		can_swich_weapon = false
 		weapons_array[current_weapon_index].deactivate()
 		current_weapon_index = current_weapon_index + 1
 		if current_weapon_index >= weapons_array.size():
 			current_weapon_index = 0
 		weapons_array[current_weapon_index].activate()
+		await  get_tree().create_timer(3).timeout
+		can_swich_weapon = true
 
 #take dam
 var can_take_dmg =true
