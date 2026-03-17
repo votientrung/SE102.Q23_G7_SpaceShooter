@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=3 uid="uid://ciwllc84q6kgd"]
+
+[ext_resource type="Texture2D" uid="uid://b4qtrqeilv8ir" path="res://assets/image/enemytype1/Kla'ed/Base/PNGs/Kla'ed - Battlecruiser - Base.png" id="1_cnur3"]
+[ext_resource type="Script" uid="uid://bf7igwmp4w4b" path="res://script/boss.gd" id="1_qj1sm"]
+[ext_resource type="Script" uid="uid://dtx4np48l8c1y" path="res://script/state_machine.gd" id="3_hfju7"]
+[ext_resource type="Script" uid="uid://bvtb2sf6rb1c1" path="res://script/Boss_state_idle.gd" id="4_eig4w"]
+[ext_resource type="Script" uid="uid://5qk4xktmg2n3" path="res://script/Boss_state_Attack.gd" id="5_pnkcg"]
+[ext_resource type="Script" uid="uid://cawx06gqilkem" path="res://script/Boss_state_PhaseChange.gd" id="6_iagua"]
+[ext_resource type="Script" uid="uid://cstjokv1y3dsy" path="res://script/Boss_state_Death.gd" id="7_y2dww"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qj1sm"]
+radius = 34.0
+height = 90.0
+
+[node name="Boss" type="CharacterBody2D"]
+collision_layer = 8
+collision_mask = 3
+script = ExtResource("1_qj1sm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cnur3")
+flip_v = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="StateMachine" type="Node2D" parent="."]
+script = ExtResource("3_hfju7")
+
+[node name="idle" type="Node2D" parent="StateMachine"]
+script = ExtResource("4_eig4w")
+
+[node name="Attack" type="Node2D" parent="StateMachine"]
+script = ExtResource("5_pnkcg")
+
+[node name="Phasechange" type="Node2D" parent="StateMachine"]
+script = ExtResource("6_iagua")
+
+[node name="Death" type="Node2D" parent="StateMachine"]
+script = ExtResource("7_y2dww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_qj1sm")
