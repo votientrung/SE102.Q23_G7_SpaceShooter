@@ -1,11 +1,17 @@
-[gd_scene load_steps=11 format=3 uid="uid://rkrbyd3spntm"]
+[gd_scene load_steps=16 format=3 uid="uid://rkrbyd3spntm"]
 
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
+[ext_resource type="Shader" uid="uid://c7scpbpmblrgu" path="res://shader/flash.gdshader" id="2_0owmy"]
 [ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="2_gmlin"]
 [ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon_default.tscn" id="3_gmlin"]
 [ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="4_p47bc"]
 [ext_resource type="PackedScene" uid="uid://di4yts2ml34vl" path="res://scenes/weapon/weapon_laze.tscn" id="5_p47bc"]
 [ext_resource type="PackedScene" uid="uid://xb8p4ncclrl2" path="res://scenes/weapon/weapon_snake.tscn" id="6_75vfm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qek5x"]
+shader = ExtResource("2_0owmy")
+shader_parameter/flash_color = Color(1, 0, 0, 1)
+shader_parameter/flash_range = 0.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(28, 24)
@@ -40,14 +46,52 @@ max_pierce = 1
 activate = false
 metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
+[sub_resource type="Animation" id="Animation_5gtgg"]
+resource_name = "flash"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("full_heal:material:shader_parameter/flash_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.5, 0.0, 0.5]
+}
+
+[sub_resource type="Animation" id="Animation_h17s1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("full_heal:material:shader_parameter/flash_range")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_je7p5"]
+_data = {
+&"RESET": SubResource("Animation_h17s1"),
+&"flash": SubResource("Animation_5gtgg")
+}
+
 [node name="player" type="CharacterBody2D"]
 z_index = 4
 position = Vector2(600, 750)
 collision_mask = 28
 script = ExtResource("1_dovo2")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="full_heal" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_qek5x")
 texture = ExtResource("2_gmlin")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -64,5 +108,11 @@ position = Vector2(0, -1)
 stat = SubResource("Resource_p47bc")
 
 [node name="weapon_snake" parent="." instance=ExtResource("6_75vfm")]
+visible = false
 position = Vector2(0, 2)
 stat = SubResource("Resource_0owmy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_je7p5")
+}

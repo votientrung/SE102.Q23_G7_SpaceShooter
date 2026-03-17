@@ -1,11 +1,11 @@
 extends CharacterBody2D
 @onready var collistion_rect:CollisionShape2D = $CollisionShape2D
-
+@onready var animation_player_get_hit =$AnimationPlayer
 @onready var default = $weapon_default
 @onready var laze = $weapon_laze
 @onready var snake = $weapon_snake
 
-@onready var weapons_array = [default,laze]
+@onready var weapons_array = [default,laze,snake]
 var current_weapon_index = 0
 #bound size
 var bound_size_x
@@ -32,9 +32,9 @@ func _ready() -> void:
 	start_bound_y = camera_position.y - (rect.size.y)/2
 	end_bound_y = camera_position.y + (rect.size.y)/2
 	
-	default.deactivate()
+	default.activate()
 	laze.deactivate()
-	snake.activate()
+	snake.deactivate()
 
 
 func _process(delta):
@@ -62,10 +62,18 @@ func _input(event: InputEvent) -> void:
 		weapons_array[current_weapon_index].activate()
 
 #take dam
+var can_take_dmg =true
 func gold_take(damage):
+	if can_take_dmg == false:
+		return
+	can_take_dmg =false
 	print("take dmg")
 	print("dmg " , damage)
 	gold -= damage
+	animation_player_get_hit.play("flash")
+	await  get_tree().create_timer(6).timeout
+	animation_player_get_hit.stop()
+	can_take_dmg =true
 	print("gold left " , gold)
 
 func die():

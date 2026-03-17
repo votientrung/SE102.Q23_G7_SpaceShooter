@@ -4,6 +4,7 @@ class_name snakes
 @export var damage : float = 1
 @export var speed : float = 300
 @export var direction : Vector2
+@export var fire = false
 
 func _process(delta):
 	# run animation 
@@ -17,7 +18,8 @@ func _process(delta):
 		direction=Vector2.RIGHT
 	if Input.is_action_just_pressed("move_bullet_up"):
 		direction=Vector2.UP
-	position += direction*speed*delta
+	if fire == true :
+		position += direction*speed*delta
 	# remove bullet from scene
 	if global_position.y > get_viewport_rect().size.y +1:
 		queue_free()
@@ -27,6 +29,15 @@ func _process(delta):
 		queue_free()
 	if global_position.x < -10:
 		queue_free()
+
+func explode():
+	scale = Vector2(3,3)
+	direction =Vector2.ZERO
+	damage=damage*10
+	await get_tree().create_timer(0.3).timeout
+	queue_free()
+
+
 
 func _on_body_entered(body: CharacterBody2D) -> void:
 	if body.has_method("damage_take"):
