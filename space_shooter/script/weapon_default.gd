@@ -7,6 +7,7 @@ extends Node2D
 @onready var shot_origin3 = $shot_origin3
 
 @export var stat : weapon_stat
+
 func weapon_shot():
 	if  stat.weapon_level == 1:
 		shot_origin.shoting(Vector2.UP)
