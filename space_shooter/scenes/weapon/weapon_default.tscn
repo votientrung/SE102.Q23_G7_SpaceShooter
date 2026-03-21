@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://bwa4uctk4tvdq"]
+[gd_scene load_steps=14 format=3 uid="uid://bwa4uctk4tvdq"]
 
 [ext_resource type="Script" uid="uid://detty4bjbwr4n" path="res://script/weapon_default.gd" id="1_lopa8"]
 [ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="2_n6yc0"]
-[ext_resource type="Script" uid="uid://p7ic0dgymayc" path="res://script/shot_defaul_origin.gd" id="2_ylpk0"]
 [ext_resource type="PackedScene" uid="uid://bq87p16s25urw" path="res://scenes/bullets/player bullets/player_bullets.tscn" id="3_ypwvo"]
 [ext_resource type="Texture2D" uid="uid://dvps5ueusrm4k" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/PNGs/Main Ship - Weapons - Auto Cannon.png" id="4_lopa8"]
 
@@ -10,10 +9,9 @@
 script = ExtResource("2_n6yc0")
 fire_rate = 0.2
 weapon_level = 1.0
-damage = 1
+damage = 1.0
 speed = 300
 max_pierce = 1
-activate = false
 metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qk5sl"]
@@ -75,6 +73,7 @@ animations = [{
 
 [node name="weapon_default" type="Node2D"]
 script = ExtResource("1_lopa8")
+bullet_scene = ExtResource("3_ypwvo")
 stat = SubResource("Resource_dkvs1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -82,18 +81,3 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_hppc7")
 frame = 6
 frame_progress = 1.0
-
-[node name="shot_origin" type="Node2D" parent="."]
-position = Vector2(0, -15)
-script = ExtResource("2_ylpk0")
-bullet_scene = ExtResource("3_ypwvo")
-
-[node name="shot_origin2" type="Node2D" parent="."]
-position = Vector2(9, -15)
-script = ExtResource("2_ylpk0")
-bullet_scene = ExtResource("3_ypwvo")
-
-[node name="shot_origin3" type="Node2D" parent="."]
-position = Vector2(-9, -15)
-script = ExtResource("2_ylpk0")
-bullet_scene = ExtResource("3_ypwvo")

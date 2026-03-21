@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://di4yts2ml34vl"]
+[gd_scene load_steps=23 format=3 uid="uid://di4yts2ml34vl"]
 
 [ext_resource type="Script" uid="uid://bb0tk333saopl" path="res://script/weapon_laze.gd" id="1_ym8l3"]
 [ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="2_0aeg0"]
@@ -9,11 +9,42 @@
 script = ExtResource("2_0aeg0")
 fire_rate = 0.001
 weapon_level = 1.0
-damage = 1
+damage = 1.0
 speed = 300
 max_pierce = 1
-activate = true
 metadata/_custom_type_script = "uid://ci81lyjydthi2"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7ap1"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(336, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wce5"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(288, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01tbp"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpwje"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krd0h"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxw36"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qx8l4"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4x38c"]
+atlas = ExtResource("2_ym8l3")
+region = Rect2(0, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p6wkd"]
 atlas = ExtResource("2_ym8l3")
@@ -51,6 +82,35 @@ region = Rect2(336, 0, 48, 48)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_t7ap1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wce5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01tbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpwje")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krd0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxw36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qx8l4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4x38c")
+}],
+"loop": false,
+"name": &"deactivate",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_p6wkd")
 }, {
 "duration": 1.0,
@@ -86,8 +146,6 @@ stat = SubResource("Resource_d1myb")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_qx8l4")
-frame = 7
-frame_progress = 1.0
 
 [node name="laze_bullet" parent="." instance=ExtResource("5_d1myb")]
 light_mask = 2

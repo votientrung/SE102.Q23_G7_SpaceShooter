@@ -1,12 +1,11 @@
 extends Area2D
 class_name snakes
 @onready var handle_player_bullet_animation= $AnimatedSprite2D
-@export var damage : float = 1
-@export var speed : float = 300
+@export var damage : float 
+@export var speed : float 
 @export var direction : Vector2
 @export var fire = false
-
-func _process(delta):
+func _process(delta): 
 	# run animation 
 	handle_animation()
 	# di chuyen dan 
@@ -30,8 +29,9 @@ func _process(delta):
 	if global_position.x < -10:
 		queue_free()
 
-func explode():
-	scale = Vector2(3,3)
+func explode(snake_bullet_size):
+	scale = Vector2(snake_bullet_size+1,snake_bullet_size+1)
+	fire =false
 	direction =Vector2.ZERO
 	damage=damage*10
 	await get_tree().create_timer(0.3).timeout
@@ -40,7 +40,7 @@ func explode():
 
 
 func _on_body_entered(body: CharacterBody2D) -> void:
-	if body.has_method("damage_take"):
+	if body.has_method("damage_take") :
 			body.damage_take(damage)
 
 

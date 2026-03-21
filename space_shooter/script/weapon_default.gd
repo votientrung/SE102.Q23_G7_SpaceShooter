@@ -1,30 +1,28 @@
 extends Node2D
 
 @onready var handle_player_weapon_animation = $AnimatedSprite2D
-
-@onready var shot_origin = $shot_origin
-@onready var shot_origin2 = $shot_origin2
-@onready var shot_origin3 = $shot_origin3
+@onready var defaul_bullet =$player_bullets
+@export var bullet_scene : PackedScene
 
 @export var stat : weapon_stat
-
+var active = false
 func weapon_shot():
 	if  stat.weapon_level == 1:
-		shot_origin.shoting(Vector2.UP)
+		shoting(Vector2.UP, global_position)
 	if stat.weapon_level == 2: 
-		shot_origin2.shoting(Vector2.UP)
-		shot_origin3.shoting(Vector2.UP)
+		shoting(Vector2.UP ,global_position + Vector2(-9,-9))
+		shoting(Vector2.UP ,global_position + Vector2(9,-9))
 	if stat.weapon_level == 3:
-		shot_origin.shoting(Vector2.UP)
-		shot_origin2.shoting(Vector2.UP)
-		shot_origin3.shoting(Vector2.UP)
+		shoting(Vector2.UP , global_position + Vector2(0,-18))
+		shoting(Vector2.UP ,global_position + Vector2(-9,-9))
+		shoting(Vector2.UP ,global_position + Vector2(9,-9))
 
 #shoting 
 var fire_delta =0
 func _process(delta) :
 	#auto fire
 	fire_delta=fire_delta-delta
-	if Input.is_action_pressed("hold") and fire_delta <=0 and not Input.is_action_pressed("click") and stat.activate == true:
+	if Input.is_action_pressed("hold") and fire_delta <=0 and not Input.is_action_pressed("click") and active == true:
 		weapon_shot()
 		handle_animation()
 		fire_delta=stat.fire_rate
@@ -34,21 +32,31 @@ func _process(delta) :
 
 func _input(event):
 	#player shoting
-	if event.is_action_pressed("click") and fire_delta <=0 and not Input.is_action_pressed("hold") and stat.activate == true:
+	if event.is_action_pressed("click") and fire_delta <=0 and not Input.is_action_pressed("hold") and active == true:
 		weapon_shot()
 		handle_animation()
 		fire_delta=stat.fire_rate * 0.4
 	
 
+func shoting(direc:Vector2 , pos : Vector2):
+	defaul_bullet = bullet_scene.instantiate() as bullets
+	defaul_bullet.damage = stat.damage
+	defaul_bullet.speed = stat.speed
+	defaul_bullet.global_position = pos
+	defaul_bullet.direction = direc
+	get_tree().current_scene.add_child(defaul_bullet)
+
 func handle_animation():
 	handle_player_weapon_animation.play("default")
 
 func deactivate():
+	set_process(false)
 	hide()
-	stat.activate = false
+	active = false
 	handle_player_weapon_animation.stop()
+	
 
 func activate():
 	show()
-	stat.activate = true
-	
+	active = true
+	set_process(true)

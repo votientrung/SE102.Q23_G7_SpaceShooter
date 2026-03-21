@@ -4,7 +4,6 @@ class_name weapon_stat
 
 @export_group("attack")
 @export var weapon_level :float = 1
-@export var damage : = 1
+@export var damage :float = 1
 @export var speed : = 300
 @export var max_pierce : = 1
-@export var activate : = false

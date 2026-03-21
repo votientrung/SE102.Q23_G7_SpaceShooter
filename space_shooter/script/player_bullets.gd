@@ -2,8 +2,8 @@ extends Area2D
 class_name bullets
 
 @onready var handle_player_bullet_animation= $AnimatedSprite2D
-@export var damage : float = 1
-@export var speed : float = 300
+@export var damage : float 
+@export var speed : float 
 @export var direction : Vector2
 func _process(delta):
 	position += direction*speed*delta

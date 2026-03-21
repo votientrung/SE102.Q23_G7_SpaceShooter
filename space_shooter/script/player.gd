@@ -5,6 +5,8 @@ extends CharacterBody2D
 @onready var laze = $weapon_laze
 @onready var snake = $weapon_snake
 
+@export var stat : weapon_stat
+
 @onready var weapons_array = [default,laze,snake]
 var current_weapon_index = 0
 #bound size
@@ -22,6 +24,7 @@ var gold: float = 1000
 
 # setting camera
 func _ready() -> void:
+	stat.weapon_level = 1
 	bound_size_x = collistion_rect.shape.get_rect().size.x
 	bound_size_y = collistion_rect.shape.get_rect().size.y
 	var rect = get_viewport().get_visible_rect()
@@ -35,6 +38,8 @@ func _ready() -> void:
 	default.activate()
 	laze.deactivate()
 	snake.deactivate()
+	
+	
 
 
 func _process(delta):
@@ -62,8 +67,13 @@ func _input(event: InputEvent) -> void:
 		if current_weapon_index >= weapons_array.size():
 			current_weapon_index = 0
 		weapons_array[current_weapon_index].activate()
-		await  get_tree().create_timer(3).timeout
+		await  get_tree().create_timer(1).timeout
 		can_swich_weapon = true
+	
+	if event.is_action_pressed("lv_up") :
+		stat.weapon_level += 1
+		if stat.weapon_level >3 :
+			stat.weapon_level =1
 
 #take dam
 var can_take_dmg =true

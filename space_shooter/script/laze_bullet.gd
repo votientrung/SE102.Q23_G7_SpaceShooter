@@ -2,7 +2,7 @@ extends Area2D
 class_name lazes
 
 @onready var handle_player_laze_animation= $AnimatedSprite2D
-@export var damage : float = 1
+@export var damage : float 
 
 func  _ready():
 	visible = false
@@ -26,16 +26,17 @@ func _process(delta):
 	for body in get_overlapping_bodies():
 		if body.has_method("damage_take"):
 			body.damage_take(damage)
+			print(damage)
 	
 	
 
-func laze_charge(time_charge):
-	scale = Vector2(time_charge * 10,1)
-	damage = time_charge * 5
+func laze_charge(time_charge : float , damage_charge :float):
+	scale = Vector2(pow(1.5,time_charge),1)
+	damage = damage_charge
 	handle_animation()
 
-func laze_charge_end():
-	damage=1
+func laze_charge_end(original_damage : float):
+	damage=original_damage
 	global_scale=Vector2(1,1)
 
 func handle_animation():

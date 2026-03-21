@@ -1,10 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://rkrbyd3spntm"]
+[gd_scene load_steps=13 format=3 uid="uid://rkrbyd3spntm"]
 
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
 [ext_resource type="Shader" uid="uid://c7scpbpmblrgu" path="res://shader/flash.gdshader" id="2_0owmy"]
 [ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="2_gmlin"]
+[ext_resource type="Resource" uid="uid://xrn3pq6b85sh" path="res://resouces/player/weapon_stat/weapon_defaul.tres" id="2_qek5x"]
 [ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon_default.tscn" id="3_gmlin"]
-[ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="4_p47bc"]
 [ext_resource type="PackedScene" uid="uid://di4yts2ml34vl" path="res://scenes/weapon/weapon_laze.tscn" id="5_p47bc"]
 [ext_resource type="PackedScene" uid="uid://xb8p4ncclrl2" path="res://scenes/weapon/weapon_snake.tscn" id="6_75vfm"]
 
@@ -15,36 +15,6 @@ shader_parameter/flash_range = 0.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(28, 24)
-
-[sub_resource type="Resource" id="Resource_75vfm"]
-script = ExtResource("4_p47bc")
-fire_rate = 0.2
-weapon_level = 1.0
-damage = 1
-speed = 300
-max_pierce = 1
-activate = false
-metadata/_custom_type_script = "uid://ci81lyjydthi2"
-
-[sub_resource type="Resource" id="Resource_p47bc"]
-script = ExtResource("4_p47bc")
-fire_rate = 0.2
-weapon_level = 1.0
-damage = 1
-speed = 300
-max_pierce = 1
-activate = true
-metadata/_custom_type_script = "uid://ci81lyjydthi2"
-
-[sub_resource type="Resource" id="Resource_0owmy"]
-script = ExtResource("4_p47bc")
-fire_rate = 0.2
-weapon_level = 1.0
-damage = 1
-speed = 300
-max_pierce = 1
-activate = false
-metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
 [sub_resource type="Animation" id="Animation_h17s1"]
 length = 0.001
@@ -88,6 +58,7 @@ z_index = 4
 position = Vector2(600, 750)
 collision_mask = 28
 script = ExtResource("1_dovo2")
+stat = ExtResource("2_qek5x")
 
 [node name="full_heal" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -100,17 +71,17 @@ shape = SubResource("RectangleShape2D_g2els")
 [node name="weapon_default" parent="." instance=ExtResource("3_gmlin")]
 visible = false
 position = Vector2(0, -1)
-stat = SubResource("Resource_75vfm")
+stat = ExtResource("2_qek5x")
 
 [node name="weapon_laze" parent="." instance=ExtResource("5_p47bc")]
 visible = false
 position = Vector2(0, -1)
-stat = SubResource("Resource_p47bc")
+stat = ExtResource("2_qek5x")
 
 [node name="weapon_snake" parent="." instance=ExtResource("6_75vfm")]
 visible = false
 position = Vector2(0, 2)
-stat = SubResource("Resource_0owmy")
+stat = ExtResource("2_qek5x")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
