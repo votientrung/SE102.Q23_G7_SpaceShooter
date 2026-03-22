@@ -5,7 +5,8 @@ var move_speed := 600
 var is_entering := true
 var is_dead := false
 @export var player_reference : CharacterBody2D
-
+@export var pick_up_sence : PackedScene
+@export var drop_list : Array[pick_up] = []
 var drop
 var damage: float 
 var health: float
@@ -31,6 +32,9 @@ var type : Enemy:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# de goi bien ngau nhien 
+	randomize()
+	
 	is_dead = false
 	pass # Replace with function body.
 
@@ -86,6 +90,19 @@ func die():
 	is_dead = true
 	$Sprite2D.visible = false
 	$AnimatedSprite2D.play("die")
+	drop_item()
 	await $AnimatedSprite2D.animation_finished
 	$AnimatedSprite2D.visible = false
 	queue_free()
+
+# ham drop item
+func drop_item():
+	# var random nay la bien ngau nhien giao dong tu 0 -> 1
+	var random = randf()
+	# ti le de rot do la 80%
+	if random >0.1 :
+		return
+	var item = pick_up_sence.instantiate()
+	item.global_position = global_position
+	item.stat = drop_list.pick_random()
+	get_tree().current_scene.add_child(item)

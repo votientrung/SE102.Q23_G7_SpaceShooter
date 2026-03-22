@@ -9,5 +9,4 @@ weapon_level = 2.0
 damage = 1.0
 speed = 300
 max_pierce = 1
-activate = false
 metadata/_custom_type_script = "uid://ci81lyjydthi2"

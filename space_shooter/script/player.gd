@@ -92,3 +92,27 @@ func gold_take(damage):
 
 func die():
 	queue_free()
+
+func switch_to_defaul():
+	if current_weapon_index != 0:
+		weapons_array[current_weapon_index].deactivate()
+		current_weapon_index = 0 
+		weapons_array[current_weapon_index].activate()
+	elif current_weapon_index == 0  and stat.weapon_level <3:
+		stat.weapon_level +=1
+
+func switch_to_laze():
+	if current_weapon_index != 1:
+		weapons_array[current_weapon_index].deactivate()
+		current_weapon_index = 1
+		weapons_array[current_weapon_index].activate()
+	elif  current_weapon_index == 1  and stat.weapon_level <3:
+		stat.weapon_level +=1
+
+func switch_to_snake():
+	if current_weapon_index != 2:
+		weapons_array[current_weapon_index].deactivate()
+		current_weapon_index = 2
+		weapons_array[current_weapon_index].activate()
+	elif current_weapon_index == 2  and stat.weapon_level <3:
+		stat.weapon_level +=1
