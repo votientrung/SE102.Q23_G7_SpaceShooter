@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://cm50ugra6fcx2" path="res://resouces/pick_up/gold.tres" id="2_u1304"]
 
 [node name="pick_up_base" type="Area2D"]
+texture_filter = 1
 collision_layer = 4
 script = ExtResource("1_23e3j")
 stat = ExtResource("2_u1304")

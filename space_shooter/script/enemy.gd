@@ -6,7 +6,8 @@ var is_entering := true
 var is_dead := false
 @export var player_reference : CharacterBody2D
 @export var pick_up_sence : PackedScene
-@export var drop_list : Array[pick_up] = []
+@export var drop_list_weapon : Array[pick_up] = []
+@export var drop_list_gold_and_energy : Array[pick_up] = []
 var drop
 var damage: float 
 var health: float
@@ -99,10 +100,16 @@ func die():
 func drop_item():
 	# var random nay la bien ngau nhien giao dong tu 0 -> 1
 	var random = randf()
-	# ti le de rot do la 80%
-	if random >0.1 :
+	# ti le de rot do la 10%
+	if random <0.1 :
+		var item = pick_up_sence.instantiate()
+		item.global_position = global_position
+		item.stat = drop_list_weapon.pick_random()
+		get_tree().current_scene.add_child(item)
+	elif  random >=0.1 and random <0.9:
+		var item = pick_up_sence.instantiate()
+		item.global_position = global_position
+		item.stat = drop_list_gold_and_energy.pick_random()
+		get_tree().current_scene.add_child(item)
+	else :
 		return
-	var item = pick_up_sence.instantiate()
-	item.global_position = global_position
-	item.stat = drop_list.pick_random()
-	get_tree().current_scene.add_child(item)

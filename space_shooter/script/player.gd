@@ -21,7 +21,7 @@ var end_bound_y
 var damage: float = 1
 var defence: float = 1
 var gold: float = 1000
-
+var energy : float = 0
 # setting camera
 func _ready() -> void:
 	stat.weapon_level = 1
@@ -116,3 +116,15 @@ func switch_to_snake():
 		weapons_array[current_weapon_index].activate()
 	elif current_weapon_index == 2  and stat.weapon_level <3:
 		stat.weapon_level +=1
+
+func level_up():
+	if stat.weapon_level < 3:
+		stat.weapon_level +=1
+
+func pick_gold(gold_colected):
+	print("you take ",gold_colected," gold")
+	gold += gold_colected
+
+func pick_energy(energy_colected):
+	print("you take ",energy_colected," energy")
+	energy += energy_colected

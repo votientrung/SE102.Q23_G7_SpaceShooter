@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="pick_up" load_steps=5 format=3 uid="uid://b8m106ytjelpx"]
+
+[ext_resource type="Texture2D" uid="uid://bf5wyjuco06pi" path="res://assets/image/cardspickup/LineAcross2dMegaAssetsPack/Assets/RPG_Items.png" id="1_vl1ly"]
+[ext_resource type="Script" uid="uid://ccnca73pvgj5f" path="res://script/pick_up.gd" id="2_3fu5g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3fu5g"]
+atlas = ExtResource("1_vl1ly")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ldeg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3fu5g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("2_3fu5g")
+frame = SubResource("SpriteFrames_7ldeg")
+animation = "default"
+type = 0
+scale = Vector2(2.5, 2.5)
+speed = 400.0
+direction = Vector2(0, 1)
+stat = 10.0
+metadata/_custom_type_script = "uid://ccnca73pvgj5f"

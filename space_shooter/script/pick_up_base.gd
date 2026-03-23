@@ -4,6 +4,7 @@ extends Area2D
 @onready var animation = $AnimatedSprite2D
 @onready var coligen = $Node2D
 func _ready() -> void:
+	scale = stat.scale
 	animation.sprite_frames = stat.frame
 	animation.play(stat.animation)
 	tao_coligen()
@@ -28,6 +29,15 @@ func _on_body_entered(body: CharacterBody2D) -> void:
 		queue_free()
 	if body.has_method("switch_to_snake") and stat.type == stat.types.weapon_change_to_snake:
 		body.switch_to_snake()
+		queue_free()
+	if body.has_method("level_up") and stat.type == stat.types.level_up:
+		body.level_up()
+		queue_free()
+	if body.has_method("pick_gold") and stat.type == stat.types.gold:
+		body.pick_gold(stat.stat)
+		queue_free()
+	if body.has_method("pick_energy") and stat.type == stat.types.energy:
+		body.pick_energy(stat.stat)
 		queue_free()
 
 func tao_coligen():

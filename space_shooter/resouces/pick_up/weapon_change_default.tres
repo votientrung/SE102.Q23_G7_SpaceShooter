@@ -113,7 +113,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 12.0
 }]
 
 [resource]
@@ -121,6 +121,7 @@ script = ExtResource("2_12r4q")
 frame = SubResource("SpriteFrames_crqim")
 animation = "default"
 type = 2
+scale = Vector2(1, 1)
 speed = 300.0
 direction = Vector2(0, 1)
 stat = 1.0
