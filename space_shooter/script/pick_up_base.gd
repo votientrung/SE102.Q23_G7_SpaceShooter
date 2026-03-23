@@ -39,6 +39,12 @@ func _on_body_entered(body: CharacterBody2D) -> void:
 	if body.has_method("pick_energy") and stat.type == stat.types.energy:
 		body.pick_energy(stat.stat)
 		queue_free()
+	if body.has_method("incre_damage") and stat.type == stat.types.damage:
+		body.incre_damage(stat.stat)
+		queue_free()
+	if body.has_method("incre_defence") and stat.type == stat.types.def:
+		body.incre_defence(stat.stat)
+		queue_free()
 
 func tao_coligen():
 	var texture = animation.sprite_frames.get_frame_texture(stat.animation, 0)

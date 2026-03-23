@@ -8,6 +8,7 @@ var is_dead := false
 @export var pick_up_sence : PackedScene
 @export var drop_list_weapon : Array[pick_up] = []
 @export var drop_list_gold_and_energy : Array[pick_up] = []
+@export var drop_list_stat : Array[pick_up] = []
 var drop
 var damage: float 
 var health: float
@@ -106,10 +107,15 @@ func drop_item():
 		item.global_position = global_position
 		item.stat = drop_list_weapon.pick_random()
 		get_tree().current_scene.add_child(item)
-	elif  random >=0.1 and random <0.9:
+	elif random <0.4:
 		var item = pick_up_sence.instantiate()
 		item.global_position = global_position
 		item.stat = drop_list_gold_and_energy.pick_random()
+		get_tree().current_scene.add_child(item)
+	elif random <0.7:
+		var item = pick_up_sence.instantiate()
+		item.global_position = global_position
+		item.stat = drop_list_stat.pick_random()
 		get_tree().current_scene.add_child(item)
 	else :
 		return

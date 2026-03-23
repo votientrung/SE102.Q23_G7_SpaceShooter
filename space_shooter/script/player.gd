@@ -128,3 +128,11 @@ func pick_gold(gold_colected):
 func pick_energy(energy_colected):
 	print("you take ",energy_colected," energy")
 	energy += energy_colected
+
+func incre_damage(stat_damage_incre):
+	stat.damage += stat_damage_incre
+	print(stat.damage)
+
+func incre_defence(stat_defence_incre):
+	defence += stat_defence_incre
+	print(default)
