@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=3 uid="uid://btlj5da3j4oxv"]
+
+[ext_resource type="Script" uid="uid://6lsye6ji8k3n" path="res://script/shop_scene.gd" id="1_p7evi"]
+[ext_resource type="Texture2D" uid="uid://de0nift8i5a7s" path="res://assets/image/UIUX/PNG/Ship_Shop/Window.png" id="1_r1uou"]
+[ext_resource type="PackedScene" uid="uid://cudq3a2fkdcrc" path="res://scenes/sell_card.tscn" id="2_hovpq"]
+[ext_resource type="Texture2D" uid="uid://b01uu4a7rcsbv" path="res://assets/image/UIUX/PNG/Ship_Shop/Backward_BTN.png" id="4_ykrk4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ykrk4"]
+font_size = 24
+
+[node name="ShopScene" type="Control" node_paths=PackedStringArray("card_container", "Skill_card_container", "exit_frame")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_p7evi")
+sell_card = ExtResource("2_hovpq")
+card_container = NodePath("window/CardContainer")
+Skill_card = ExtResource("2_hovpq")
+Skill_card_container = NodePath("window/SkillCardContainer")
+exit_frame = NodePath("window/Continue")
+
+[node name="window" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 1173.0
+offset_bottom = 767.0
+texture = ExtResource("1_r1uou")
+expand_mode = 1
+
+[node name="CardContainer" type="HBoxContainer" parent="window"]
+custom_minimum_size = Vector2(1040, 300)
+layout_mode = 0
+offset_left = 36.0
+offset_top = 80.0
+offset_right = 1117.0
+offset_bottom = 430.0
+theme_override_constants/separation = 40
+
+[node name="SkillCardContainer" type="HBoxContainer" parent="window"]
+custom_minimum_size = Vector2(250, 300)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.5
+offset_top = -323.0
+offset_right = 128.5
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Continue" type="TextureRect" parent="window"]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -259.0
+offset_top = -205.0
+offset_right = -27.0
+offset_bottom = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("4_ykrk4")
+expand_mode = 1
+flip_h = true
+
+[node name="GoldLeft" type="Label" parent="window"]
+light_mask = 256
+visibility_layer = 256
+z_index = 3
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -270.5
+offset_right = 270.5
+offset_bottom = 66.0
+grow_horizontal = 2
+text = "100000"
+label_settings = SubResource("LabelSettings_ykrk4")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
