@@ -1,0 +1,26 @@
+[gd_scene load_steps=18 format=3 uid="uid://cekoojmi7qxuc"]
+
+[ext_resource type="Script" uid="uid://oegvnokaqf1l" path="res://script/pick_up_manager.gd" id="1_4hmoc"]
+[ext_resource type="PackedScene" uid="uid://cn30ew75756tp" path="res://scenes/pick_up/pick_up_base.tscn" id="2_7jom1"]
+[ext_resource type="Script" uid="uid://ccnca73pvgj5f" path="res://script/pick_up.gd" id="2_k6vxu"]
+[ext_resource type="Resource" uid="uid://b46yj5p18w3sl" path="res://resouces/pick_up/weapon_change_default.tres" id="3_givi7"]
+[ext_resource type="Resource" uid="uid://ceqjg4ifv2tpi" path="res://resouces/pick_up/weapon_change_laze.tres" id="4_inod7"]
+[ext_resource type="Resource" uid="uid://ceyt8hgn4lhy1" path="res://resouces/pick_up/weapon_change_snake.tres" id="5_y0km2"]
+[ext_resource type="Resource" uid="uid://cmgis4kjtdqb7" path="res://resouces/pick_up/level_up.tres" id="6_ivowe"]
+[ext_resource type="Resource" uid="uid://db7tu05qdnlmq" path="res://resouces/pick_up/pick_up_card.tres" id="7_ghxh5"]
+[ext_resource type="Resource" uid="uid://cm50ugra6fcx2" path="res://resouces/pick_up/gold.tres" id="8_qyon4"]
+[ext_resource type="Resource" uid="uid://b8m106ytjelpx" path="res://resouces/pick_up/medium_gold.tres" id="9_3xd6a"]
+[ext_resource type="Resource" uid="uid://ca17y15gtrxum" path="res://resouces/pick_up/big_gold.tres" id="10_n6m81"]
+[ext_resource type="Resource" uid="uid://cr6cx8xkjpk7q" path="res://resouces/pick_up/energy.tres" id="11_prwj8"]
+[ext_resource type="Resource" uid="uid://3v3h54olo20t" path="res://resouces/pick_up/big_energy.tres" id="12_iw1y0"]
+[ext_resource type="Resource" uid="uid://caj0jifkeml54" path="res://resouces/pick_up/damage.tres" id="13_ynj46"]
+[ext_resource type="Resource" uid="uid://c0vns4jhqshl7" path="res://resouces/pick_up/big_damage.tres" id="14_1flki"]
+[ext_resource type="Resource" uid="uid://chyt5mwaqv65q" path="res://resouces/pick_up/defence.tres" id="15_ra346"]
+[ext_resource type="Resource" uid="uid://br3j3udqygch" path="res://resouces/pick_up/big_defence.tres" id="16_fn0p8"]
+
+[node name="pick_up_manager" type="Node2D"]
+script = ExtResource("1_4hmoc")
+pick_up_sence = ExtResource("2_7jom1")
+drop_list_weapon = Array[ExtResource("2_k6vxu")]([ExtResource("3_givi7"), ExtResource("4_inod7"), ExtResource("5_y0km2"), ExtResource("6_ivowe"), ExtResource("7_ghxh5")])
+drop_list_gold_and_energy = Array[ExtResource("2_k6vxu")]([ExtResource("8_qyon4"), ExtResource("9_3xd6a"), ExtResource("10_n6m81"), ExtResource("11_prwj8"), ExtResource("12_iw1y0")])
+drop_list_stat = Array[ExtResource("2_k6vxu")]([ExtResource("13_ynj46"), ExtResource("14_1flki"), ExtResource("15_ra346"), ExtResource("16_fn0p8")])

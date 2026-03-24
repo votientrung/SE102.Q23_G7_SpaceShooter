@@ -5,10 +5,7 @@ var move_speed := 600
 var is_entering := true
 var is_dead := false
 @export var player_reference : CharacterBody2D
-@export var pick_up_sence : PackedScene
-@export var drop_list_weapon : Array[pick_up] = []
-@export var drop_list_gold_and_energy : Array[pick_up] = []
-@export var drop_list_stat : Array[pick_up] = []
+
 var drop
 var damage: float 
 var health: float
@@ -34,9 +31,6 @@ var type : Enemy:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	# de goi bien ngau nhien 
-	randomize()
-	
 	is_dead = false
 	pass # Replace with function body.
 
@@ -97,25 +91,5 @@ func die():
 	$AnimatedSprite2D.visible = false
 	queue_free()
 
-# ham drop item
 func drop_item():
-	# var random nay la bien ngau nhien giao dong tu 0 -> 1
-	var random = randf()
-	# ti le de rot do la 10%
-	if random <0.1 :
-		var item = pick_up_sence.instantiate()
-		item.global_position = global_position
-		item.stat = drop_list_weapon.pick_random()
-		get_tree().current_scene.add_child(item)
-	elif random <0.4:
-		var item = pick_up_sence.instantiate()
-		item.global_position = global_position
-		item.stat = drop_list_gold_and_energy.pick_random()
-		get_tree().current_scene.add_child(item)
-	elif random <0.7:
-		var item = pick_up_sence.instantiate()
-		item.global_position = global_position
-		item.stat = drop_list_stat.pick_random()
-		get_tree().current_scene.add_child(item)
-	else :
-		return
+	PickUpManager.drop_item(global_position)

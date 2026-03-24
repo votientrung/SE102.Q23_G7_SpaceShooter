@@ -16,6 +16,11 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"
 
+[autoload]
+
+PickUpManager="*res://scenes/pick_up/pick_up_manager.tscn"
+CardManager="*res://scenes/card/card_manager.tscn"
+
 [display]
 
 window/size/viewport_width=1200

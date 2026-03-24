@@ -39,8 +39,6 @@ func _ready() -> void:
 	laze.deactivate()
 	snake.deactivate()
 	
-	
-
 
 func _process(delta):
 	# lay vi tri chuot
@@ -116,23 +114,3 @@ func switch_to_snake():
 		weapons_array[current_weapon_index].activate()
 	elif current_weapon_index == 2  and stat.weapon_level <3:
 		stat.weapon_level +=1
-
-func level_up():
-	if stat.weapon_level < 3:
-		stat.weapon_level +=1
-
-func pick_gold(gold_colected):
-	print("you take ",gold_colected," gold")
-	gold += gold_colected
-
-func pick_energy(energy_colected):
-	print("you take ",energy_colected," energy")
-	energy += energy_colected
-
-func incre_damage(stat_damage_incre):
-	stat.damage += stat_damage_incre
-	print(stat.damage)
-
-func incre_defence(stat_defence_incre):
-	defence += stat_defence_incre
-	print(default)

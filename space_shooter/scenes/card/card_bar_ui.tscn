@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3a5h2vk6y7bj"]
+
+[ext_resource type="Script" uid="uid://cacji11kk25j4" path="res://script/card_bar_ui.gd" id="1_erxjt"]
+[ext_resource type="PackedScene" uid="uid://kwsusjkw07o2" path="res://scenes/card/card_ui.tscn" id="2_qauds"]
+
+[node name="card_bar_ui" type="Control" node_paths=PackedStringArray("container")]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 300.0
+offset_top = -250.0
+offset_right = -300.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_erxjt")
+card_scene = ExtResource("2_qauds")
+container = NodePath("card_container")
+
+[node name="card_container" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

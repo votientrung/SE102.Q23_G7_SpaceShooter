@@ -21,31 +21,9 @@ func _process(delta: float) -> void:
 		queue_free()
 
 func _on_body_entered(body: CharacterBody2D) -> void:
-	if body.has_method("switch_to_defaul") and stat.type == stat.types.weapon_change_to_default:
-		body.switch_to_defaul()
+	if body is CharacterBody2D:
+		stat.apply(body)
 		queue_free()
-	if body.has_method("switch_to_laze") and stat.type == stat.types.weapon_change_to_laze:
-		body.switch_to_laze()
-		queue_free()
-	if body.has_method("switch_to_snake") and stat.type == stat.types.weapon_change_to_snake:
-		body.switch_to_snake()
-		queue_free()
-	if body.has_method("level_up") and stat.type == stat.types.level_up:
-		body.level_up()
-		queue_free()
-	if body.has_method("pick_gold") and stat.type == stat.types.gold:
-		body.pick_gold(stat.stat)
-		queue_free()
-	if body.has_method("pick_energy") and stat.type == stat.types.energy:
-		body.pick_energy(stat.stat)
-		queue_free()
-	if body.has_method("incre_damage") and stat.type == stat.types.damage:
-		body.incre_damage(stat.stat)
-		queue_free()
-	if body.has_method("incre_defence") and stat.type == stat.types.def:
-		body.incre_defence(stat.stat)
-		queue_free()
-
 func tao_coligen():
 	var texture = animation.sprite_frames.get_frame_texture(stat.animation, 0)
 	var size = texture.get_size()

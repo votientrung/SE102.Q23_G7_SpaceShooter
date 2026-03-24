@@ -7,8 +7,6 @@ extends Node2D
 var time_charge = 0
 var time_tick = 0
 var active = false
-func _ready() -> void:
-	shot_laze_butllet.damage = stat.damage/10
 func _process(delta) :
 	if Input.is_action_pressed("click") and not Input.is_action_pressed("hold") and active == true:
 		time_tick = time_tick + delta * stat.weapon_level
@@ -41,6 +39,7 @@ func stat_laze():
 		handle_animation()
 		shot_laze_butllet.activate_laze()
 		shot_laze_butllet.scale = Vector2(stat.weapon_level,1)
+		shot_laze_butllet.damage = stat.damage/10
 
 #tat animation hold va tat laze
 func stop_laze():

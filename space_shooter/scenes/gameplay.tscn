@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=18 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -15,6 +15,8 @@
 [ext_resource type="Resource" uid="uid://c5e0pgtxc06lc" path="res://resouces/enemies/normal/nor_emy_3.tres" id="6_nt65e"]
 [ext_resource type="Script" uid="uid://bsxbk5n66aeoa" path="res://script/BossType.gd" id="8_407ns"]
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
+[ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
+[ext_resource type="PackedScene" uid="uid://b3a5h2vk6y7bj" path="res://scenes/card/card_bar_ui.tscn" id="17_w3w6i"]
 
 [node name="Gameplay" type="Node2D"]
 
@@ -36,3 +38,9 @@ script = ExtResource("2_00tan")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(600, 400)
+
+[node name="pick_up_manager" parent="." instance=ExtResource("16_407ns")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="card_bar_ui" parent="CanvasLayer" instance=ExtResource("17_w3w6i")]
