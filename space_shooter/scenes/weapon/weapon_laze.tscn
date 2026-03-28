@@ -7,11 +7,10 @@
 
 [sub_resource type="Resource" id="Resource_d1myb"]
 script = ExtResource("2_0aeg0")
-fire_rate = 0.001
 weapon_level = 1.0
 damage = 1.0
-speed = 300
-max_pierce = 1
+speed = 300.0
+max_pierce = 1.0
 metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t7ap1"]

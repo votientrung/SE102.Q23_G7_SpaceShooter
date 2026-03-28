@@ -4,9 +4,8 @@
 
 [resource]
 script = ExtResource("1_ua6am")
-fire_rate = 0.1
 weapon_level = 1.0
 damage = 1.0
-speed = 300
-max_pierce = 1
+speed = 300.0
+max_pierce = 1.0
 metadata/_custom_type_script = "uid://ci81lyjydthi2"

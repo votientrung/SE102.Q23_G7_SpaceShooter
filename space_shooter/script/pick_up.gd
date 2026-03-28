@@ -7,8 +7,9 @@ class_name pick_up
 @export var scale : Vector2 = Vector2(1,1)
 @export var speed : float = 300
 @export var direction : Vector2 = Vector2.DOWN
-@export var stat : float = 1
+@export var upgrade : stats
 @export var card_pool_in_game :card_pool
+var player_reference
 enum types {
 	gold,
 	energy,
@@ -21,28 +22,26 @@ enum types {
 	damage,
 	def
 }
-
-func apply(player):
-	match type:
-		types.weapon_change_to_default:
-			player.switch_to_defaul()
-		types.weapon_change_to_laze:
-			player.switch_to_laze()
-		types.weapon_change_to_snake:
-			player.switch_to_snake()
-		types.level_up:
-			if player.stat.weapon_level < 3:
-				player.stat.weapon_level +=1
-		types.gold:
-			print("you take ",stat," gold")
-			player.gold += stat
-		types.energy:
-			print("you take ",stat," energy")
-			player.energy += stat
-		types.damage:
-			player.stat.damage += stat
-		types.def:
-			player.defence += stat
-		types.pick_up_card:
-			var random_card = card_pool_in_game.cards.pick_random()
-			CardManager.add_card(random_card)
+func upgrade_item(player_reference):
+	if player_reference == null:
+		print("player not found")
+		return
+	
+	player_reference.gold+=upgrade.gold
+	player_reference.mana+=upgrade.mana
+	player_reference.gold_regent+=upgrade.gold_regent
+	player_reference.mana_regent+=upgrade.mana_regent
+	player_reference.gold_modified+=upgrade.gold_modified
+	player_reference.mana_modified+=upgrade.mana_modified
+	player_reference.armor+=upgrade.armor
+	player_reference.damage+=upgrade.damage
+	player_reference.damage_modified+=upgrade.damage_modified
+	player_reference.might+=upgrade.might
+	player_reference.scale_bullet+=upgrade.scale_bullet
+	player_reference.speed+=upgrade.speed
+	player_reference.luck+=upgrade.luck
+	player_reference.weapon_lv += upgrade.weapon_lv
+	player_reference.weapon_current = upgrade.weapon_current
+func pick_up_card():
+	var random_card = card_pool_in_game.cards.pick_random()
+	CardManager.add_card(random_card)

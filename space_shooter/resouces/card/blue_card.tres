@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="card" load_steps=3 format=3 uid="uid://dey4cg6ivyjme"]
+
+[ext_resource type="Texture2D" uid="uid://cktqrne45es0d" path="res://assets/image/cardspickup/energy.png" id="1_sfaxl"]
+[ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="2_nosf7"]
+
+[resource]
+script = ExtResource("2_nosf7")
+image = ExtResource("1_sfaxl")
+scale = Vector2(1, 1)
+type = 1
+rare = 1
+cost = 1
+name = ""
+description = "no man hinh"
+metadata/_custom_type_script = "uid://dp6nxcs4xtyyw"

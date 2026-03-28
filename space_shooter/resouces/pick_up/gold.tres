@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="pick_up" load_steps=5 format=3 uid="uid://cm50ugra6fcx2"]
+[gd_resource type="Resource" script_class="pick_up" load_steps=7 format=3 uid="uid://cm50ugra6fcx2"]
 
 [ext_resource type="Script" uid="uid://ccnca73pvgj5f" path="res://script/pick_up.gd" id="1_3j8yw"]
 [ext_resource type="Texture2D" uid="uid://bf5wyjuco06pi" path="res://assets/image/cardspickup/LineAcross2dMegaAssetsPack/Assets/RPG_Items.png" id="1_pjvtl"]
+[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="3_pjvtl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8425k"]
 atlas = ExtResource("1_pjvtl")
@@ -18,6 +19,25 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="Resource" id="Resource_8425k"]
+script = ExtResource("3_pjvtl")
+gold = 1.0
+mana = 0.0
+gold_regent = 0.0
+mana_regent = 0.0
+gold_modified = 0.0
+mana_modified = 0.0
+armor = 0.0
+damage = 0.0
+damage_modified = 0.0
+might = 0.0
+scale_bullet = 0.0
+speed = 0.0
+luck = 0.0
+weapon_lv = 0.0
+weapon_current = -1.0
+metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
+
 [resource]
 script = ExtResource("1_3j8yw")
 frame = SubResource("SpriteFrames_jl3s2")
@@ -26,5 +46,5 @@ type = 0
 scale = Vector2(2, 2)
 speed = 100.0
 direction = Vector2(0, 1)
-stat = 1.0
+upgrade = SubResource("Resource_8425k")
 metadata/_custom_type_script = "uid://ccnca73pvgj5f"

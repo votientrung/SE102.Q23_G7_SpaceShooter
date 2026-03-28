@@ -5,7 +5,7 @@ extends CharacterBody2D
 @onready var laze = $weapon_laze
 @onready var snake = $weapon_snake
 
-@export var stat : weapon_stat
+@export var base_stat : stats
 
 @onready var weapons_array = [default,laze,snake]
 var current_weapon_index = 0
@@ -17,14 +17,70 @@ var end_bound_x
 var start_bound_y
 var end_bound_y
 
-#player stat
-var damage: float = 1
-var defence: float = 1
-var gold: float = 1000
-var energy : float = 0
-# setting camera
+#player stat thuc te
+var gold : float = 1000 :
+	set(value):
+		gold= max(value,0)
+		#ui bar gold
+		if gold <=0:
+			die()
+var mana : float = 12 :
+	set(value):
+		mana =value
+		#ui mana bar 
+var gold_regent : float =0 :
+	set(value):
+		gold_regent=value
+var mana_regent : float =1:
+	set(value):
+		mana_regent=value
+var gold_modified : float =1.0:
+	set(value):
+		gold_modified =value
+var mana_modified : float =1.0:
+	set(value):
+		mana_modified =value
+var armor : float =0:
+	set(value):
+		armor=value
+var damage : float =1:
+	set(value):
+		damage=value
+var damage_modified : float =1.0:
+	set(value):
+		damage_modified=value
+var might : float =1.0:
+	set(value):
+		might=value
+var scale_bullet : float =1.0:
+	set(value):
+		scale_bullet=value
+var speed : float = 300 :
+	set(value):
+		speed=value
+var luck : float =  -10:
+	set(value):
+		luck = value
+var weapon_lv : float = 1:
+	set(value):
+		weapon_lv = value
+var weapon_current : float = 0:
+	set(value):
+		if value <0 or value >=weapons_array.size():
+			return
+		if (current_weapon_index != value):
+			weapons_array[current_weapon_index].deactivate()
+			current_weapon_index = value
+			weapon_current = value
+			weapons_array[current_weapon_index].activate()
+		else:
+			if weapon_lv <3:
+				weapon_lv += 1
+
+
 func _ready() -> void:
-	stat.weapon_level = 1
+	set_base_stats(base_stat)
+	# setting camera
 	bound_size_x = collistion_rect.shape.get_rect().size.x
 	bound_size_y = collistion_rect.shape.get_rect().size.y
 	var rect = get_viewport().get_visible_rect()
@@ -55,24 +111,6 @@ func _process(delta):
 	if gold < 0:
 		die()
 
-# doi vu khi
-@onready var can_swich_weapon: bool = true
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("switch") and can_swich_weapon == true:
-		can_swich_weapon = false
-		weapons_array[current_weapon_index].deactivate()
-		current_weapon_index = current_weapon_index + 1
-		if current_weapon_index >= weapons_array.size():
-			current_weapon_index = 0
-		weapons_array[current_weapon_index].activate()
-		await  get_tree().create_timer(1).timeout
-		can_swich_weapon = true
-	
-	if event.is_action_pressed("lv_up") :
-		stat.weapon_level += 1
-		if stat.weapon_level >3 :
-			stat.weapon_level =1
-
 #take dam
 var can_take_dmg =true
 func gold_take(damage):
@@ -91,26 +129,22 @@ func gold_take(damage):
 func die():
 	queue_free()
 
-func switch_to_defaul():
-	if current_weapon_index != 0:
-		weapons_array[current_weapon_index].deactivate()
-		current_weapon_index = 0 
-		weapons_array[current_weapon_index].activate()
-	elif current_weapon_index == 0  and stat.weapon_level <3:
-		stat.weapon_level +=1
+func set_base_stats(s : stats):
+	gold=s.gold
+	mana=s.mana
+	gold_regent=s.gold_regent
+	mana_regent=s.mana_regent
+	gold_modified=s.gold_modified
+	mana_modified=s.mana_modified
+	armor=s.armor
+	damage=s.damage
+	damage_modified=s.damage_modified
+	might=s.might
+	scale_bullet=s.scale_bullet
+	speed=s.speed
+	luck=s.luck
+	weapon_lv=s.weapon_lv
+	weapon_current=s.weapon_current
 
-func switch_to_laze():
-	if current_weapon_index != 1:
-		weapons_array[current_weapon_index].deactivate()
-		current_weapon_index = 1
-		weapons_array[current_weapon_index].activate()
-	elif  current_weapon_index == 1  and stat.weapon_level <3:
-		stat.weapon_level +=1
-
-func switch_to_snake():
-	if current_weapon_index != 2:
-		weapons_array[current_weapon_index].deactivate()
-		current_weapon_index = 2
-		weapons_array[current_weapon_index].activate()
-	elif current_weapon_index == 2  and stat.weapon_level <3:
-		stat.weapon_level +=1
+func gain_gold(amount) :
+	gold += amount

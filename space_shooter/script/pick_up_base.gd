@@ -3,6 +3,9 @@ extends Area2D
 @export var stat : pick_up
 @onready var animation = $AnimatedSprite2D
 @onready var coligen = $Node2D
+@export var player_reference : CharacterBody2D:
+	set(value):
+		player_reference = value
 func _ready() -> void:
 	scale = stat.scale
 	animation.sprite_frames = stat.frame
@@ -20,10 +23,26 @@ func _process(delta: float) -> void:
 	if global_position.x < -10:
 		queue_free()
 
-func _on_body_entered(body: CharacterBody2D) -> void:
-	if body is CharacterBody2D:
-		stat.apply(body)
+func _on_body_entered(body : Node2D) -> void:
+	if body == null :
+		print("player not found")
+		return
+	player_reference = body
+	if stat.type == stat.types.pick_up_card:
+		activate()
+	if stat.type != stat.types.pick_up_card:
+		pick_up()
+
+func pick_up():
+	if player_reference:
+		print("co player")
+		stat.upgrade_item(player_reference)
 		queue_free()
+
+func activate():
+	stat.pick_up_card()
+	queue_free()
+
 func tao_coligen():
 	var texture = animation.sprite_frames.get_frame_texture(stat.animation, 0)
 	var size = texture.get_size()

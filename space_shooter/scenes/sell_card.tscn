@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cudq3a2fkdcrc"]
+[gd_scene load_steps=6 format=3 uid="uid://ccgusg7esawyn"]
 
-[ext_resource type="Script" uid="uid://bctnf5blucxq7" path="res://script/sell_card.gd" id="1_whhaa"]
+[ext_resource type="Script" path="res://script/sell_card.gd" id="1_whhaa"]
 [ext_resource type="Texture2D" uid="uid://c60fy3vmfolde" path="res://assets/image/UIUX/PNG/Ship_Shop/Table_01.png" id="2_g4yjk"]
 [ext_resource type="Texture2D" uid="uid://jj33g6wcocst" path="res://assets/image/UIUX/PNG/Ship_Shop/Table_02.png" id="3_bo3ye"]
 [ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="4_g4yjk"]

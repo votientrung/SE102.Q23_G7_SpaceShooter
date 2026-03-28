@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="pick_up" load_steps=19 format=3 uid="uid://cmgis4kjtdqb7"]
+[gd_resource type="Resource" script_class="pick_up" load_steps=21 format=3 uid="uid://cmgis4kjtdqb7"]
 
 [ext_resource type="Texture2D" uid="uid://tkkrq8l4asyy" path="res://assets/image/pickup1/Shield Generators/PNGs/Pickup Icon - Shield Generator - Invincibility Shield.png" id="1_nflnr"]
 [ext_resource type="Script" uid="uid://ccnca73pvgj5f" path="res://script/pick_up.gd" id="2_hdwv2"]
+[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="3_hdwv2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_au80d"]
 atlas = ExtResource("1_nflnr")
@@ -116,6 +117,25 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="Resource" id="Resource_au80d"]
+script = ExtResource("3_hdwv2")
+gold = 0.0
+mana = 0.0
+gold_regent = 0.0
+mana_regent = 0.0
+gold_modified = 0.0
+mana_modified = 0.0
+armor = 0.0
+damage = 0.0
+damage_modified = 0.0
+might = 0.0
+scale_bullet = 0.0
+speed = 0.0
+luck = 0.0
+weapon_lv = 1.0
+weapon_current = -1.0
+metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
+
 [resource]
 script = ExtResource("2_hdwv2")
 frame = SubResource("SpriteFrames_vbkt1")
@@ -124,5 +144,5 @@ type = 7
 scale = Vector2(1, 1)
 speed = 300.0
 direction = Vector2(0, 1)
-stat = 1.0
+upgrade = SubResource("Resource_au80d")
 metadata/_custom_type_script = "uid://ccnca73pvgj5f"

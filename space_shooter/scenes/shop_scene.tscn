@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://btlj5da3j4oxv"]
+[gd_scene load_steps=6 format=3 uid="uid://bw768rjjbeets"]
 
-[ext_resource type="Script" uid="uid://6lsye6ji8k3n" path="res://script/shop_scene.gd" id="1_p7evi"]
+[ext_resource type="Script" path="res://script/shop_scene.gd" id="1_p7evi"]
 [ext_resource type="Texture2D" uid="uid://de0nift8i5a7s" path="res://assets/image/UIUX/PNG/Ship_Shop/Window.png" id="1_r1uou"]
-[ext_resource type="PackedScene" uid="uid://cudq3a2fkdcrc" path="res://scenes/sell_card.tscn" id="2_hovpq"]
+[ext_resource type="PackedScene" uid="uid://ccgusg7esawyn" path="res://scenes/sell_card.tscn" id="2_hovpq"]
 [ext_resource type="Texture2D" uid="uid://b01uu4a7rcsbv" path="res://assets/image/UIUX/PNG/Ship_Shop/Backward_BTN.png" id="4_ykrk4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ykrk4"]
