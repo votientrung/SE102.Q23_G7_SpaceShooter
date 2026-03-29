@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="1_iikda"]
 [ext_resource type="Script" uid="uid://bfifa1q0bkxj2" path="res://script/card_pool.gd" id="2_ndq8k"]
-[ext_resource type="Resource" uid="uid://ms6cqa2ce5cx" path="res://resouces/card/red_card.tres" id="2_r1e2u"]
-[ext_resource type="Resource" uid="uid://dey4cg6ivyjme" path="res://resouces/card/blue_card.tres" id="3_r1e2u"]
+[ext_resource type="Resource" uid="uid://ms6cqa2ce5cx" path="res://resouces/card/modified_card/red_card.tres" id="2_r1e2u"]
+[ext_resource type="Resource" uid="uid://dey4cg6ivyjme" path="res://resouces/card/Skill_card/blue_card.tres" id="3_r1e2u"]
 
 [resource]
 script = ExtResource("2_ndq8k")

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="card" load_steps=5 format=3 uid="uid://dey4cg6ivyjme"]
+
+[ext_resource type="Texture2D" uid="uid://cktqrne45es0d" path="res://assets/image/cardspickup/energy.png" id="1_82lhj"]
+[ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="2_gkexg"]
+[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="3_ls8v3"]
+
+[sub_resource type="Resource" id="Resource_ri5hp"]
+script = ExtResource("3_ls8v3")
+gold = 0.0
+mana = 0.0
+gold_regent = 0.0
+mana_regent = 0.0
+gold_modified = 0.0
+mana_modified = 0.0
+armor = 0.0
+damage = 0.0
+damage_modified = 0.0
+might = 0.0
+scale_bullet = 0.0
+speed = 0.0
+luck = 0.0
+weapon_lv = 0.0
+weapon_current = 0.0
+metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
+
+[resource]
+script = ExtResource("2_gkexg")
+image = ExtResource("1_82lhj")
+rare = 1
+cost = 1
+name = ""
+description = "no man hinh"
+animation = "default"
+type = 6
+scale = Vector2(1, 1)
+speed = 300.0
+direction = Vector2(0, 1)
+upgrade = SubResource("Resource_ri5hp")
+metadata/_custom_type_script = "uid://dp6nxcs4xtyyw"

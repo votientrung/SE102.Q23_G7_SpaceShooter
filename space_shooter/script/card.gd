@@ -1,13 +1,11 @@
-extends Resource
+extends pick_up
 class_name card
 @export var image : Texture2D
-@export var scale : Vector2 = Vector2(1,1)
-@export var type : types
 @export var rare : rares
 @export var cost : int
 @export var name : String
 @export var description : String
-enum types {
+enum Card_types {
 	red,
 	blue,
 	green,

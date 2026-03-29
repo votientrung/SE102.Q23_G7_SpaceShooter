@@ -10,6 +10,7 @@ class_name pick_up
 @export var upgrade : stats
 @export var card_pool_in_game :card_pool
 var player_reference
+
 enum types {
 	gold,
 	energy,
@@ -42,6 +43,8 @@ func upgrade_item(player_reference):
 	player_reference.luck+=upgrade.luck
 	player_reference.weapon_lv += upgrade.weapon_lv
 	player_reference.weapon_current = upgrade.weapon_current
+
+
 func pick_up_card():
 	var random_card = card_pool_in_game.cards.pick_random()
 	CardManager.add_card(random_card)

@@ -2,7 +2,22 @@ extends Control
 class_name SellCard
 
 @export var card_frame: TextureRect
+
+var upgrade : stats
+
+
+var player_reference:CharacterBody2D
 var hovering: bool
+var card_info : card:
+	set(value):
+		card_info = value
+		$TextureRect/ImageFrame/Image.texture = card_info.image
+		$TextureRect/Description.text = card_info.description
+		$TextureRect/Cost/CostText.text = str(card_info.cost)
+		
+		card_info.upgrade = value.upgrade
+
+
 
 func _process(_delta):
 	if is_mouse_over_card():
@@ -21,6 +36,6 @@ func _input(event) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed and hovering:
 			
-			#add thing to do here
+			#lam gi khi mua card
 			
 			self.queue_free()

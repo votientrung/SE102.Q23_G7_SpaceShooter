@@ -17,8 +17,12 @@ var wave_pattern : WavePattern
 var wavecount : int
 var in_boss_fight : bool
 
+@export var shop : Control
+
 func _ready():
+	
 	in_boss_fight = false
+	shop.Open(0)
 	wavecount = 1
 	spawn_wave()
 

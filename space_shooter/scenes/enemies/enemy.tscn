@@ -1,23 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://gqsd8dkup0uq"]
+[gd_scene load_steps=6 format=3 uid="uid://gqsd8dkup0uq"]
 
 [ext_resource type="Script" uid="uid://c8rbv2w8nxfm8" path="res://script/enemy.gd" id="1_6xk8f"]
 [ext_resource type="Texture2D" uid="uid://c23jbvtehk6bu" path="res://assets/image/enemytype1/Kla'ed/Base/PNGs/Kla'ed - Scout - Base.png" id="2_8e3ao"]
-[ext_resource type="PackedScene" uid="uid://cn30ew75756tp" path="res://scenes/pick_up/pick_up_base.tscn" id="2_38ino"]
-[ext_resource type="Script" uid="uid://ccnca73pvgj5f" path="res://script/pick_up.gd" id="3_nb6gf"]
-[ext_resource type="Resource" uid="uid://ceyt8hgn4lhy1" path="res://resouces/pick_up/weapon_change_snake.tres" id="4_nb6gf"]
-[ext_resource type="Resource" uid="uid://ceqjg4ifv2tpi" path="res://resouces/pick_up/weapon_change_laze.tres" id="5_jt03m"]
-[ext_resource type="Resource" uid="uid://b46yj5p18w3sl" path="res://resouces/pick_up/weapon_change_default.tres" id="5_n7575"]
-[ext_resource type="Resource" uid="uid://cmgis4kjtdqb7" path="res://resouces/pick_up/level_up.tres" id="6_jt03m"]
-[ext_resource type="Resource" uid="uid://cm50ugra6fcx2" path="res://resouces/pick_up/gold.tres" id="8_tihwb"]
-[ext_resource type="Resource" uid="uid://db7tu05qdnlmq" path="res://resouces/pick_up/pick_up_card.tres" id="8_x3klb"]
-[ext_resource type="Resource" uid="uid://b8m106ytjelpx" path="res://resouces/pick_up/medium_gold.tres" id="9_p7w77"]
-[ext_resource type="Resource" uid="uid://ca17y15gtrxum" path="res://resouces/pick_up/big_gold.tres" id="10_k4gvh"]
-[ext_resource type="Resource" uid="uid://cr6cx8xkjpk7q" path="res://resouces/pick_up/energy.tres" id="11_p7w77"]
-[ext_resource type="Resource" uid="uid://3v3h54olo20t" path="res://resouces/pick_up/big_energy.tres" id="12_k4gvh"]
-[ext_resource type="Resource" uid="uid://caj0jifkeml54" path="res://resouces/pick_up/damage.tres" id="13_sb86v"]
-[ext_resource type="Resource" uid="uid://c0vns4jhqshl7" path="res://resouces/pick_up/big_damage.tres" id="14_pe3k2"]
-[ext_resource type="Resource" uid="uid://chyt5mwaqv65q" path="res://resouces/pick_up/defence.tres" id="15_kugq1"]
-[ext_resource type="Resource" uid="uid://br3j3udqygch" path="res://resouces/pick_up/big_defence.tres" id="16_x3klb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_38ino"]
 radius = 12.0
@@ -38,10 +22,6 @@ z_index = 2
 collision_layer = 8
 collision_mask = 3
 script = ExtResource("1_6xk8f")
-pick_up_sence = ExtResource("2_38ino")
-drop_list_weapon = Array[ExtResource("3_nb6gf")]([ExtResource("6_jt03m"), ExtResource("5_n7575"), ExtResource("5_jt03m"), ExtResource("4_nb6gf"), ExtResource("8_x3klb")])
-drop_list_gold_and_energy = Array[ExtResource("3_nb6gf")]([ExtResource("8_tihwb"), ExtResource("9_p7w77"), ExtResource("10_k4gvh"), ExtResource("11_p7w77"), ExtResource("12_k4gvh")])
-drop_list_stat = Array[ExtResource("3_nb6gf")]([ExtResource("13_sb86v"), ExtResource("14_pe3k2"), ExtResource("15_kugq1"), ExtResource("16_x3klb")])
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 3.14159

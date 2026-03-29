@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=19 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -17,10 +17,11 @@
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
 [ext_resource type="PackedScene" uid="uid://b3a5h2vk6y7bj" path="res://scenes/card/card_bar_ui.tscn" id="17_w3w6i"]
+[ext_resource type="PackedScene" uid="uid://bw768rjjbeets" path="res://scenes/shop_scene.tscn" id="18_pv71h"]
 
 [node name="Gameplay" type="Node2D"]
 
-[node name="EnemySpawner" type="Node2D" parent="." node_paths=PackedStringArray("player_scene", "formation")]
+[node name="EnemySpawner" type="Node2D" parent="." node_paths=PackedStringArray("player_scene", "formation", "shop")]
 script = ExtResource("1_7biu0")
 enemy_scene = ExtResource("2_ct7aa")
 player_scene = NodePath("../player")
@@ -29,6 +30,7 @@ formation = NodePath("../EnemyFormation")
 enemy_types = Array[ExtResource("2_101mb")]([ExtResource("4_qixtg"), ExtResource("4_hbo4f"), ExtResource("6_nt65e")])
 boss_types = Array[ExtResource("8_407ns")]([ExtResource("9_w3w6i")])
 waves = Array[ExtResource("2_4bh5q")]([ExtResource("3_e124b"), ExtResource("3_ct7aa"), ExtResource("5_101mb")])
+shop = NodePath("../ShopScene")
 
 [node name="EnemyFormation" type="Node2D" parent="."]
 light_mask = 0
@@ -44,3 +46,9 @@ position = Vector2(600, 400)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="card_bar_ui" parent="CanvasLayer" instance=ExtResource("17_w3w6i")]
+
+[node name="ShopScene" parent="." node_paths=PackedStringArray("player_reference") instance=ExtResource("18_pv71h")]
+light_mask = 0
+visibility_layer = 128
+z_index = 7
+player_reference = NodePath("../player")

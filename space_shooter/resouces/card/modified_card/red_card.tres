@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="card" load_steps=5 format=3 uid="uid://ms6cqa2ce5cx"]
+
+[ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="1_qbu5r"]
+[ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="2_qte3j"]
+[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="3_2jtct"]
+
+[sub_resource type="Resource" id="Resource_gml2c"]
+script = ExtResource("3_2jtct")
+gold = 0.0
+mana = 0.0
+gold_regent = 0.0
+mana_regent = 0.0
+gold_modified = 0.0
+mana_modified = 0.0
+armor = 0.0
+damage = 5.0
+damage_modified = 0.0
+might = 0.0
+scale_bullet = 0.0
+speed = 0.0
+luck = 0.0
+weapon_lv = 0.0
+weapon_current = 0.0
+metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
+
+[resource]
+script = ExtResource("2_qte3j")
+image = ExtResource("1_qbu5r")
+rare = 0
+cost = 100
+name = "+ATK"
+description = "+ 5 atk"
+animation = "default"
+type = 8
+scale = Vector2(1, 1)
+speed = 300.0
+direction = Vector2(0, 1)
+upgrade = SubResource("Resource_gml2c")
+metadata/_custom_type_script = "uid://dp6nxcs4xtyyw"
