@@ -3,13 +3,16 @@ extends Node2D
 
 @onready var shot_laze_butllet = $laze_bullet
 
-@export var stat : weapon_stat
+@export var player_reference : CharacterBody2D
+
+func _ready() -> void:
+	player_reference= get_parent()
 var time_charge = 0
 var time_tick = 0
 var active = false
 func _process(delta) :
 	if Input.is_action_pressed("click") and not Input.is_action_pressed("hold") and active == true:
-		time_tick = time_tick + delta * stat.weapon_level
+		time_tick = time_tick + delta * player_reference.weapon_lv
 		if time_tick >= 1 and time_charge <= 5 :
 			time_tick =0
 			time_charge = time_charge + 1
@@ -17,7 +20,7 @@ func _process(delta) :
 		shot_laze_butllet.activate_laze()
 		shot_laze_butllet.laze_charge(time_charge , shot_laze_butllet.damage * pow(1.5,time_charge))
 		await get_tree().create_timer(1).timeout
-		shot_laze_butllet.laze_charge_end(stat.damage/10)
+		shot_laze_butllet.laze_charge_end(player_reference.damage/10)
 		stop_laze()
 		time_charge = 0
 
@@ -38,8 +41,8 @@ func stat_laze():
 	if not handle_player_weapon_animation.is_playing():
 		handle_animation()
 		shot_laze_butllet.activate_laze()
-		shot_laze_butllet.scale = Vector2(stat.weapon_level,1)
-		shot_laze_butllet.damage = stat.damage/10
+		shot_laze_butllet.scale = Vector2(player_reference.weapon_lv,1)
+		shot_laze_butllet.damage = player_reference.damage/10
 
 #tat animation hold va tat laze
 func stop_laze():

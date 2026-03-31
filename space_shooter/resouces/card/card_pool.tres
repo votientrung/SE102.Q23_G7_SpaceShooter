@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="1_iikda"]
 [ext_resource type="Script" uid="uid://bfifa1q0bkxj2" path="res://script/card_pool.gd" id="2_ndq8k"]
-[ext_resource type="Resource" uid="uid://ms6cqa2ce5cx" path="res://resouces/card/modified_card/red_card.tres" id="2_r1e2u"]
-[ext_resource type="Resource" uid="uid://dey4cg6ivyjme" path="res://resouces/card/Skill_card/blue_card.tres" id="3_r1e2u"]
+[ext_resource type="Resource" uid="uid://b3k0blhurwva1" path="res://resouces/card/modified_card/red.tres" id="2_r1e2u"]
+[ext_resource type="Resource" uid="uid://bcwfr8n6s48ut" path="res://resouces/card/Skill_card/green.tres" id="3_d2rfo"]
 
 [resource]
 script = ExtResource("2_ndq8k")
-cards = Array[ExtResource("1_iikda")]([ExtResource("2_r1e2u"), ExtResource("3_r1e2u")])
+cards = Array[ExtResource("1_iikda")]([ExtResource("2_r1e2u"), ExtResource("3_d2rfo")])
 metadata/_custom_type_script = "uid://bfifa1q0bkxj2"

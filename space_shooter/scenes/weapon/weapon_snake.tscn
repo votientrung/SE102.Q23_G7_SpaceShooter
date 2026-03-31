@@ -1,17 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://xb8p4ncclrl2"]
+[gd_scene load_steps=17 format=3 uid="uid://xb8p4ncclrl2"]
 
 [ext_resource type="Script" uid="uid://b8jl6q1pdi1dn" path="res://script/weapon_snake.gd" id="1_o536n"]
 [ext_resource type="Texture2D" uid="uid://dllyfojlsvpv4" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/PNGs/Main Ship - Weapons - Big Space Gun.png" id="2_6xmtd"]
 [ext_resource type="PackedScene" uid="uid://cq3ki8c8l4sf7" path="res://scenes/bullets/player bullets/snake_bullet.tscn" id="3_2h35m"]
-[ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="3_anjbj"]
-
-[sub_resource type="Resource" id="Resource_puxw5"]
-script = ExtResource("3_anjbj")
-weapon_level = 1.0
-damage = 1.0
-speed = 300.0
-max_pierce = 1.0
-metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2h35m"]
 atlas = ExtResource("2_6xmtd")
@@ -109,7 +100,6 @@ animations = [{
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_o536n")
 bullet_snake_scene = ExtResource("3_2h35m")
-stat = SubResource("Resource_puxw5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

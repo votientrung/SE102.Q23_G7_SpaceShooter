@@ -1,17 +1,8 @@
-[gd_scene load_steps=23 format=3 uid="uid://di4yts2ml34vl"]
+[gd_scene load_steps=21 format=3 uid="uid://di4yts2ml34vl"]
 
 [ext_resource type="Script" uid="uid://bb0tk333saopl" path="res://script/weapon_laze.gd" id="1_ym8l3"]
-[ext_resource type="Script" uid="uid://ci81lyjydthi2" path="res://script/weapon_stat.gd" id="2_0aeg0"]
 [ext_resource type="Texture2D" uid="uid://de6igevm1tvq8" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Weapons/PNGs/Main Ship - Weapons - Zapper.png" id="2_ym8l3"]
 [ext_resource type="PackedScene" uid="uid://dqmdkwog1pek8" path="res://scenes/bullets/player bullets/laze_bullet.tscn" id="5_d1myb"]
-
-[sub_resource type="Resource" id="Resource_d1myb"]
-script = ExtResource("2_0aeg0")
-weapon_level = 1.0
-damage = 1.0
-speed = 300.0
-max_pierce = 1.0
-metadata/_custom_type_script = "uid://ci81lyjydthi2"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t7ap1"]
 atlas = ExtResource("2_ym8l3")
@@ -140,7 +131,6 @@ animations = [{
 
 [node name="weapon_laze" type="Node2D"]
 script = ExtResource("1_ym8l3")
-stat = SubResource("Resource_d1myb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

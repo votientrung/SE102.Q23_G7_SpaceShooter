@@ -6,10 +6,10 @@ class_name pick_up_manager
 @export var drop_list_gold_and_energy : Array[pick_up] = []
 @export var drop_list_stat : Array[pick_up] = []
 
-func spaw_pic_up(position: Vector2, data: pick_up):
+func spaw_pic_up(position: Vector2, data_pickup: pick_up):
 	var item = pick_up_sence.instantiate() 
+	item.stat =data_pickup
 	item.global_position = position
-	item.stat = data
 	get_tree().current_scene.add_child(item)
 
 func drop_item(position: Vector2):

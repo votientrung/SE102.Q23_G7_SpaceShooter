@@ -41,10 +41,8 @@ func upgrade_item(player_reference):
 	player_reference.scale_bullet+=upgrade.scale_bullet
 	player_reference.speed+=upgrade.speed
 	player_reference.luck+=upgrade.luck
-	player_reference.weapon_lv += upgrade.weapon_lv
+	if player_reference.weapon_lv <3:
+		player_reference.weapon_lv += upgrade.weapon_lv
 	player_reference.weapon_current = upgrade.weapon_current
-
-
-func pick_up_card():
-	var random_card = card_pool_in_game.cards.pick_random()
-	CardManager.add_card(random_card)
+func apply_card(player_reference):
+	pass

@@ -82,13 +82,13 @@ func set_shop():
 		var sell_card_instance = sell_card.instantiate() as SellCard
 		sell_card_instance.card_info = Card_list.pick_random()
 
-		#sell_card_instance.player_reference = player_reference
+		sell_card_instance.player_reference = player_reference
 		card_container.add_child(sell_card_instance)
 	
 	
 	var Skill_card_instance = Skill_card.instantiate()
 	Skill_card_instance.card_info = skill_list.pick_random()
-	#Skill_card_instance.player_reference = player_reference
+	Skill_card_instance.player_reference = player_reference
 	Skill_card_container.add_child(Skill_card_instance)
 	
 	print("done set up")

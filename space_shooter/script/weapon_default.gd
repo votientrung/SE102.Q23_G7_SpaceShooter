@@ -58,10 +58,13 @@ func deactivate():
 	set_process(false)
 	hide()
 	active = false
+	fire_delta =0
+	fire_rate =0.2
 	handle_player_weapon_animation.stop()
-	
 
 func activate():
 	show()
 	active = true
+	fire_delta =0
+	fire_rate =0.2
 	set_process(true)

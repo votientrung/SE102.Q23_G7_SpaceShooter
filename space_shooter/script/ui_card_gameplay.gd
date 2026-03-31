@@ -11,19 +11,19 @@ class_name card_ui
 @onready var dicrip=$khung_dicrip/RichTextLabel
 var data
 var count := 1
-
+var player_reference
 func set_data(card_data):
 	data = card_data
 	icon.texture = data.image
 	khung_dicrip.texture=preload("res://assets/image/cardspickup/khung_dicrip.tres")
-	match data.type:
-		data.types.red:
+	match data.card_types:
+		card.Card_types.red:
 			background.texture =preload("res://assets/image/cardspickup/card_red_background.tres")
-		data.types.blue:
+		card.Card_types.blue:
 			background.texture =preload("res://assets/image/cardspickup/card_blue_background.tres")
-		data.types.green:
+		card.Card_types.green:
 			background.texture =preload("res://assets/image/cardspickup/card_green_background.tres")
-		data.types.colorless:
+		card.Card_types.colorless:
 			background.texture=preload("res://assets/image/cardspickup/card_colorless_background.tres")
 	match data.rare:
 		data.rares.bonze:
@@ -47,7 +47,16 @@ func add_stack():
 	count += 1
 	update_stack()
 
+func activate_the_card():
+	CardManager.execute_card(data,player_reference)
+	remove_stack()
 
+func remove_stack():
+	count -=1
+	if count<=0:
+		queue_free()
+	else :
+		update_stack()
 func update_stack():
 	if count > 1:
 		stack_label.text = "x" + str(count)

@@ -1,10 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://rkrbyd3spntm"]
+[gd_scene load_steps=14 format=3 uid="uid://rkrbyd3spntm"]
 
 [ext_resource type="Script" uid="uid://dsuye5emen4nw" path="res://script/player.gd" id="1_dovo2"]
 [ext_resource type="Shader" uid="uid://c7scpbpmblrgu" path="res://shader/flash.gdshader" id="2_0owmy"]
 [ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="2_5gtgg"]
 [ext_resource type="Texture2D" uid="uid://dlj4jtcwkos1p" path="res://assets/image/player+weapon/mainship/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="2_gmlin"]
-[ext_resource type="Resource" uid="uid://xrn3pq6b85sh" path="res://resouces/player/weapon_stat/weapon_defaul.tres" id="2_qek5x"]
 [ext_resource type="PackedScene" uid="uid://bwa4uctk4tvdq" path="res://scenes/weapon/weapon_default.tscn" id="3_gmlin"]
 [ext_resource type="PackedScene" uid="uid://di4yts2ml34vl" path="res://scenes/weapon/weapon_laze.tscn" id="5_p47bc"]
 [ext_resource type="PackedScene" uid="uid://xb8p4ncclrl2" path="res://scenes/weapon/weapon_snake.tscn" id="6_75vfm"]
@@ -95,12 +94,10 @@ position = Vector2(0, -1)
 [node name="weapon_laze" parent="." instance=ExtResource("5_p47bc")]
 visible = false
 position = Vector2(0, -1)
-stat = ExtResource("2_qek5x")
 
 [node name="weapon_snake" parent="." instance=ExtResource("6_75vfm")]
 visible = false
 position = Vector2(0, 2)
-stat = ExtResource("2_qek5x")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

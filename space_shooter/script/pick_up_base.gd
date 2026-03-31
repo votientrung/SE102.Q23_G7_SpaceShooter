@@ -35,12 +35,11 @@ func _on_body_entered(body : Node2D) -> void:
 
 func pick_up():
 	if player_reference:
-		print("co player")
 		stat.upgrade_item(player_reference)
 		queue_free()
 
 func activate():
-	stat.pick_up_card()
+	stat.apply_card(player_reference)
 	queue_free()
 
 func tao_coligen():
