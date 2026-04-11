@@ -45,8 +45,8 @@ func _input(event):
 
 func shoting(direc:Vector2 , pos : Vector2):
 	defaul_bullet = bullet_scene.instantiate() as bullets
-	defaul_bullet.damage = player_reference.damage
-	defaul_bullet.speed = player_reference.speed
+	defaul_bullet.damage = player_reference.damage + player_reference.modified_stat.damage
+	defaul_bullet.speed = player_reference.speed + player_reference.modified_stat.speed
 	defaul_bullet.global_position = pos
 	defaul_bullet.direction = direc
 	get_tree().current_scene.add_child(defaul_bullet)

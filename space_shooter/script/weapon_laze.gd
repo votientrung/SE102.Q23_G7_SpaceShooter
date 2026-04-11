@@ -20,7 +20,7 @@ func _process(delta) :
 		shot_laze_butllet.activate_laze()
 		shot_laze_butllet.laze_charge(time_charge , shot_laze_butllet.damage * pow(1.5,time_charge))
 		await get_tree().create_timer(1).timeout
-		shot_laze_butllet.laze_charge_end(player_reference.damage/10)
+		shot_laze_butllet.laze_charge_end((player_reference.damage + player_reference.modified_stat.damage)/10)
 		stop_laze()
 		time_charge = 0
 
@@ -41,8 +41,8 @@ func stat_laze():
 	if not handle_player_weapon_animation.is_playing():
 		handle_animation()
 		shot_laze_butllet.activate_laze()
-		shot_laze_butllet.scale = Vector2(player_reference.weapon_lv,1)
-		shot_laze_butllet.damage = player_reference.damage/10
+		shot_laze_butllet.scale = Vector2(player_reference.weapon_lv + player_reference.modified_stat.scale_bullet,1)
+		shot_laze_butllet.damage = (player_reference.damage + player_reference.modified_stat.damage)/10
 
 #tat animation hold va tat laze
 func stop_laze():

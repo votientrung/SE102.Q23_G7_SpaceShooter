@@ -6,8 +6,12 @@ extends CharacterBody2D
 @onready var snake = $weapon_snake
 
 @export var base_stat : stats
+@export var modified_stat : stats
 
 @onready var weapons_array = [default,laze,snake]
+
+@onready var gold_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold bar"
+@onready var mana_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana bar"
 var current_weapon_index = 0
 #bound size
 var bound_size_x
@@ -18,16 +22,18 @@ var start_bound_y
 var end_bound_y
 
 #player stat thuc te
-var gold : float = 1000 :
+var gold : float = 50 :
 	set(value):
 		gold= max(value,0)
-		#ui bar gold
+		if gold_bar:
+			gold_bar.value = gold
 		if gold <=0:
 			die()
-var mana : float = 12 :
+var mana : float = 0 :
 	set(value):
 		mana =value
-		#ui mana bar 
+		if mana_bar:
+			mana_bar.value = mana
 var gold_regent : float =0 :
 	set(value):
 		gold_regent=value
@@ -80,6 +86,10 @@ var weapon_current : float = 0:
 
 func _ready() -> void:
 	set_base_stats(base_stat)
+	gold_bar.max_value = 1000
+	gold_bar.value = gold
+	mana_bar.max_value = 12
+	mana_bar.value = mana
 	# setting camera
 	bound_size_x = collistion_rect.shape.get_rect().size.x
 	bound_size_y = collistion_rect.shape.get_rect().size.y
@@ -89,7 +99,7 @@ func _ready() -> void:
 	start_bound_x = camera_position.x- (rect.size.x)/2
 	end_bound_x = camera_position.x + (rect.size.x)/2
 	start_bound_y = camera_position.y - (rect.size.y)/2
-	end_bound_y = camera_position.y + (rect.size.y)/2
+	end_bound_y = camera_position.y + (rect.size.y)/2 - 150
 	
 	default.activate()
 	laze.deactivate()

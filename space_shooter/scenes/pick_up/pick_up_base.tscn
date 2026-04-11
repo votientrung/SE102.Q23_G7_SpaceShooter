@@ -1,16 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://cn30ew75756tp"]
+[gd_scene load_steps=2 format=3 uid="uid://cn30ew75756tp"]
 
 [ext_resource type="Script" uid="uid://cf0ll0ayb4fp5" path="res://script/pick_up_base.gd" id="1_23e3j"]
-[ext_resource type="Resource" uid="uid://cm50ugra6fcx2" path="res://resouces/pick_up/gold.tres" id="2_u1304"]
 
 [node name="pick_up_base" type="Area2D"]
 texture_filter = 1
 collision_layer = 4
 script = ExtResource("1_23e3j")
-stat = ExtResource("2_u1304")
 
 [node name="Node2D" type="CollisionShape2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+top_level = true
+offset_right = 40.0
+offset_bottom = 23.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

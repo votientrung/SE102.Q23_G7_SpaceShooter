@@ -39,16 +39,69 @@ script = ExtResource("2_00tan")
 [node name="player" parent="." instance=ExtResource("5_ocj2s")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(600, 400)
+position = Vector2(600, 450)
 
 [node name="pick_up_manager" parent="." instance=ExtResource("16_407ns")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="card_bar_ui" parent="CanvasLayer" instance=ExtResource("17_w3w6i")]
-
 [node name="ShopScene" parent="." node_paths=PackedStringArray("player_reference") instance=ExtResource("18_pv71h")]
+visible = false
 light_mask = 0
 visibility_layer = 128
 z_index = 7
 player_reference = NodePath("../player")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="UI"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="UI/HUD"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/HUD/PanelContainer"]
+layout_mode = 2
+
+[node name="stat_contaner" type="VBoxContainer" parent="UI/HUD/PanelContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="gold bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner"]
+custom_minimum_size = Vector2(250, 20)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="mana bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner"]
+custom_minimum_size = Vector2(250, 20)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="card_bar_ui" parent="UI/HUD/PanelContainer/HBoxContainer" node_paths=PackedStringArray("player_reference") instance=ExtResource("17_w3w6i")]
+layout_mode = 2
+theme_override_constants/separation = 20
+player_reference = NodePath("../../../../../player")
+
+[node name="right_panel" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/HUD/PanelContainer/HBoxContainer/right_panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "vàng mục tiêu : 500"
+horizontal_alignment = 1
+vertical_alignment = 1

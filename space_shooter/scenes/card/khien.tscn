@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp68u88rmdw3r"]
+
+[ext_resource type="Script" uid="uid://cl64p6sdv3qux" path="res://shield.gd" id="1_42kjx"]
+[ext_resource type="Texture2D" uid="uid://c6ffpvqvvvquj" path="res://assets/image/cardspickup/24_Pixels020.png" id="2_y8bat"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u84qe"]
+
+[node name="Area2D" type="Area2D"]
+texture_filter = 1
+scale = Vector2(5, 5)
+collision_layer = 2
+collision_mask = 16
+script = ExtResource("1_42kjx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_y8bat")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_u84qe")

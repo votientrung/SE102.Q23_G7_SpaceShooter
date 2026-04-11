@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="nuke_card" load_steps=4 format=3 uid="uid://cl7hrf7v5ce46"]
+
+[ext_resource type="PackedScene" uid="uid://bokt6ls5ty7ou" path="res://scenes/card/no_man_hinh.tscn" id="1_tomxr"]
+[ext_resource type="Texture2D" uid="uid://6a41t3p2bcv2" path="res://assets/image/cardspickup/star.tres" id="2_yex0d"]
+[ext_resource type="Script" uid="uid://co6n1l4jvqwh" path="res://script/nuke.gd" id="3_2diiy"]
+
+[resource]
+script = ExtResource("3_2diiy")
+explosion_scene = ExtResource("1_tomxr")
+image = ExtResource("2_yex0d")
+rare = 0
+card_types = 0
+cost = 0
+card_name = "nuke"
+description = "no man hinh"
+animation = "default"
+type = 5
+scale = Vector2(1, 1)
+speed = 300.0
+direction = Vector2(0, 1)
+metadata/_custom_type_script = "uid://co6n1l4jvqwh"

@@ -3,6 +3,7 @@ extends Area2D
 @export var stat : pick_up
 @onready var animation = $AnimatedSprite2D
 @onready var coligen = $Node2D
+@onready var lable=$Label
 @export var player_reference : CharacterBody2D:
 	set(value):
 		player_reference = value
@@ -10,6 +11,7 @@ func _ready() -> void:
 	scale = stat.scale
 	animation.sprite_frames = stat.frame
 	animation.play(stat.animation)
+	
 	tao_coligen()
 func _process(delta: float) -> void:
 	position += stat.direction * stat.speed * delta
@@ -28,6 +30,7 @@ func _on_body_entered(body : Node2D) -> void:
 		print("player not found")
 		return
 	player_reference = body
+	
 	if stat.type == stat.types.pick_up_card:
 		activate()
 	if stat.type != stat.types.pick_up_card:
@@ -39,7 +42,8 @@ func pick_up():
 		queue_free()
 
 func activate():
-	stat.apply_card(player_reference)
+	var cards = stat.card_pool_in_game.cards.pick_random()
+	cards.apply_card(player_reference)
 	queue_free()
 
 func tao_coligen():

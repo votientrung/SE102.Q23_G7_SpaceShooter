@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://ccgusg7esawyn" path="res://scenes/sell_card.tscn" id="2_hovpq"]
 [ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="3_fdhsn"]
 [ext_resource type="Texture2D" uid="uid://b01uu4a7rcsbv" path="res://assets/image/UIUX/PNG/Ship_Shop/Backward_BTN.png" id="4_ykrk4"]
+[ext_resource type="Resource" uid="uid://cl7hrf7v5ce46" path="res://resouces/card/Skill_card/nuke.tres" id="5_27noo"]
 [ext_resource type="Resource" uid="uid://b3k0blhurwva1" path="res://resouces/card/modified_card/red.tres" id="5_pptjr"]
-[ext_resource type="Resource" uid="uid://bcwfr8n6s48ut" path="res://resouces/card/Skill_card/green.tres" id="7_pptjr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ykrk4"]
 font_size = 24
@@ -20,7 +20,7 @@ script = ExtResource("1_p7evi")
 sell_card = ExtResource("2_hovpq")
 Card_list = Array[ExtResource("3_fdhsn")]([ExtResource("5_pptjr")])
 Skill_card = ExtResource("2_hovpq")
-skill_list = Array[ExtResource("3_fdhsn")]([ExtResource("7_pptjr")])
+skill_list = Array[ExtResource("3_fdhsn")]([ExtResource("5_27noo")])
 
 [node name="window" type="TextureRect" parent="."]
 layout_mode = 0

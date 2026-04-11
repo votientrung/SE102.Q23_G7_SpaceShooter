@@ -26,9 +26,9 @@ func _input(event):
 
 func spawn_shot_snake_bullet():
 	shot_snake_bullet = bullet_snake_scene.instantiate() as snakes 
-	shot_snake_bullet.damage = player_reference.damage
-	shot_snake_bullet.speed = player_reference.speed * player_reference.weapon_lv
-	shot_snake_bullet.scale = Vector2(player_reference.weapon_lv + 2,player_reference.weapon_lv + 2)
+	shot_snake_bullet.damage = player_reference.damage + player_reference.modified_stat.damage
+	shot_snake_bullet.speed = (player_reference.speed + player_reference.modified_stat.speed) * player_reference.weapon_lv
+	shot_snake_bullet.scale = Vector2(player_reference.weapon_lv + player_reference.modified_stat.scale_bullet + 2,player_reference.weapon_lv + player_reference.modified_stat.scale_bullet + 2)
 	shot_snake_bullet.position = Vector2(0,-70)
 	add_child(shot_snake_bullet)
 
