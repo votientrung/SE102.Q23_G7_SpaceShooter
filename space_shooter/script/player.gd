@@ -10,8 +10,10 @@ extends CharacterBody2D
 
 @onready var weapons_array = [default,laze,snake]
 
-@onready var gold_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold bar"
-@onready var mana_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana bar"
+@onready var gold_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold/gold bar"
+#@onready var bonus_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold_bar_gr/bonus bar"
+@onready var mana_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana/mana bar"
+
 var current_weapon_index = 0
 #bound size
 var bound_size_x
@@ -27,6 +29,12 @@ var gold : float = 50 :
 		gold= max(value,0)
 		if gold_bar:
 			gold_bar.value = gold
+		#if bonus_bar:
+			#if gold >400:
+				#bonus_bar.visible = true
+				#bonus_bar.value = gold - 400
+			#else :
+				#bonus_bar.visible =false
 		if gold <=0:
 			die()
 var mana : float = 0 :

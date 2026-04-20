@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=21 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -17,7 +17,9 @@
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
 [ext_resource type="PackedScene" uid="uid://b3a5h2vk6y7bj" path="res://scenes/card/card_bar_ui.tscn" id="17_w3w6i"]
+[ext_resource type="Script" uid="uid://cfyh57fy1u0q1" path="res://script/gold.gd" id="18_mesn4"]
 [ext_resource type="PackedScene" uid="uid://bw768rjjbeets" path="res://scenes/shop_scene.tscn" id="18_pv71h"]
+[ext_resource type="Script" uid="uid://dxnhfdn0h756e" path="res://script/mana.gd" id="19_525vb"]
 
 [node name="Gameplay" type="Node2D"]
 
@@ -78,20 +80,61 @@ layout_mode = 2
 
 [node name="stat_contaner" type="VBoxContainer" parent="UI/HUD/PanelContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 100
 
-[node name="gold bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner"]
+[node name="gold" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner" node_paths=PackedStringArray("player_reference")]
+layout_mode = 2
+script = ExtResource("18_mesn4")
+player_reference = NodePath("../../../../../../player")
+
+[node name="gold bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
+self_modulate = Color(0.992157, 0, 0, 1)
+custom_minimum_size = Vector2(250, 20)
+layout_mode = 0
+offset_right = 250.0
+offset_bottom = 20.0
+size_flags_vertical = 4
+show_percentage = false
+
+[node name="gold tick" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="gold need tick" type="ColorRect" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 25.0
+
+[node name="gold have tick" type="ColorRect" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 25.0
+color = Color(1, 0, 1, 1)
+
+[node name="mana" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner" node_paths=PackedStringArray("player_reference")]
+layout_mode = 2
+script = ExtResource("19_525vb")
+player_reference = NodePath("../../../../../../player")
+
+[node name="mana bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana"]
+self_modulate = Color(0, 0, 1, 1)
 custom_minimum_size = Vector2(250, 20)
 layout_mode = 2
+offset_right = 250.0
+offset_bottom = 20.0
 size_flags_vertical = 4
+max_value = 12.0
+show_percentage = false
 
-[node name="mana bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner"]
-custom_minimum_size = Vector2(250, 20)
-layout_mode = 2
-size_flags_vertical = 4
+[node name="mana tick" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="card_bar_ui" parent="UI/HUD/PanelContainer/HBoxContainer" node_paths=PackedStringArray("player_reference") instance=ExtResource("17_w3w6i")]
 layout_mode = 2
-theme_override_constants/separation = 20
 player_reference = NodePath("../../../../../player")
 
 [node name="right_panel" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer"]

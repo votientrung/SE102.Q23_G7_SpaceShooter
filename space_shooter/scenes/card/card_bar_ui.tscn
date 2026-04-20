@@ -4,12 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://kwsusjkw07o2" path="res://scenes/card/card_ui.tscn" id="2_qauds"]
 
 [node name="card_bar_ui" type="HBoxContainer"]
+custom_minimum_size = Vector2(120, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+theme_override_constants/separation = 20
 alignment = 1
 script = ExtResource("1_erxjt")
 card_scene = ExtResource("2_qauds")
