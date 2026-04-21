@@ -2,7 +2,7 @@ extends Control
 class_name Shop
 
 
-
+@export var Game_UI_Manager : CanvasLayer
 @export var sell_card: PackedScene
 @export var Card_list: Array[card]
 @onready var card_container: HBoxContainer = $"window/CardContainer"
@@ -49,14 +49,14 @@ func _input(event) -> void:
 			pass
 
 func Open(index):
-	get_tree().paused = true
+	Game_UI_Manager.push_ui(self)
 	tax_gold(index)
 	show()
 	set_shop()
 
 func Close():
 	hide()
-	get_tree().paused = false
+	Game_UI_Manager.pop_ui()
 
 
 func tax_gold(index):

@@ -14,6 +14,8 @@ extends CharacterBody2D
 #@onready var bonus_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold_bar_gr/bonus bar"
 @onready var mana_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana/mana bar"
 
+@export var die_scene : Control
+
 var current_weapon_index = 0
 #bound size
 var bound_size_x
@@ -146,6 +148,7 @@ func gold_take(damage):
 
 func die():
 	queue_free()
+	die_scene.show_endgame()
 
 func set_base_stats(s : stats):
 	gold=s.gold

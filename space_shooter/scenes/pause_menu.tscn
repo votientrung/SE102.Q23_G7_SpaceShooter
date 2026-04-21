@@ -1,0 +1,124 @@
+[gd_scene load_steps=15 format=3 uid="uid://d3gpdx67qpoxa"]
+
+[ext_resource type="Texture2D" uid="uid://cuy1wk4dsabxl" path="res://assets/image/UIUX/PNG/Pause/Window.png" id="1_n87rw"]
+[ext_resource type="Script" uid="uid://cg0fuoen31vnf" path="res://script/pause_menu.gd" id="1_v4r4p"]
+[ext_resource type="Texture2D" uid="uid://vu7yi3pemeb3" path="res://assets/image/UIUX/PNG/Buttons/BTNs/Play_BTN.png" id="3_v4r4p"]
+[ext_resource type="Texture2D" uid="uid://c23kjlpvxnqo3" path="res://assets/image/UIUX/PNG/Buttons/BTNs/Replay_BTN.png" id="4_1s2dm"]
+[ext_resource type="Texture2D" uid="uid://768nj1fa0tt4" path="res://assets/image/UIUX/PNG/Buttons/BTNs/Settings_BTN.png" id="5_88e76"]
+[ext_resource type="Texture2D" uid="uid://bnxxwsrc2qldt" path="res://assets/image/UIUX/PNG/Buttons/BTNs/Menu_BTN.png" id="6_knqa7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_knqa7"]
+texture = ExtResource("3_v4r4p")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1rgno"]
+texture = ExtResource("3_v4r4p")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_71k7c"]
+texture = ExtResource("4_1s2dm")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4hnlu"]
+texture = ExtResource("4_1s2dm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cmnsq"]
+texture = ExtResource("5_88e76")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3o3g3"]
+texture = ExtResource("5_88e76")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ofnjo"]
+texture = ExtResource("6_knqa7")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h5b1d"]
+texture = ExtResource("6_knqa7")
+
+[node name="pause_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v4r4p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+light_mask = 128
+visibility_layer = 128
+custom_minimum_size = Vector2(1000, 700)
+layout_mode = 0
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 1100.0
+offset_bottom = 800.0
+texture = ExtResource("1_n87rw")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect"]
+custom_minimum_size = Vector2(950, 0)
+layout_mode = 0
+offset_left = 25.0
+offset_top = 99.0
+offset_right = 975.0
+offset_bottom = 449.0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Continue" type="Button" parent="TextureRect"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 0
+offset_left = 150.0
+offset_top = 475.0
+offset_right = 275.0
+offset_bottom = 600.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_knqa7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_1rgno")
+
+[node name="Replay" type="Button" parent="TextureRect"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 0
+offset_left = 350.0
+offset_top = 475.0
+offset_right = 475.0
+offset_bottom = 600.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_71k7c")
+theme_override_styles/normal = SubResource("StyleBoxTexture_4hnlu")
+
+[node name="Setting" type="Button" parent="TextureRect"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 0
+offset_left = 550.0
+offset_top = 475.0
+offset_right = 675.0
+offset_bottom = 600.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_cmnsq")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3o3g3")
+
+[node name="Home" type="Button" parent="TextureRect"]
+custom_minimum_size = Vector2(125, 125)
+layout_mode = 0
+offset_left = 750.0
+offset_top = 475.0
+offset_right = 875.0
+offset_bottom = 600.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_ofnjo")
+theme_override_styles/normal = SubResource("StyleBoxTexture_h5b1d")
+
+[connection signal="pressed" from="TextureRect/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="TextureRect/Replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="TextureRect/Setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="TextureRect/Home" to="." method="_on_home_pressed"]
