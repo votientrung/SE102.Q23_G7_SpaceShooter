@@ -158,6 +158,7 @@ player_reference = NodePath("../../player")
 visible = false
 Game_UI_Manager = NodePath("..")
 
-[node name="End_Menu" parent="UI" node_paths=PackedStringArray("Game_UI_Manager") instance=ExtResource("23_t4x03")]
+[node name="End_Menu" parent="UI" node_paths=PackedStringArray("player_scene", "Game_UI_Manager") instance=ExtResource("23_t4x03")]
 visible = false
+player_scene = NodePath("../../player")
 Game_UI_Manager = NodePath("..")

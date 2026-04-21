@@ -2,7 +2,7 @@ extends Control
 
 var is_showing := false
 
-
+@export var player_scene : CharacterBody2D
 @export var Game_UI_Manager : CanvasLayer
 
 # Called when the node enters the scene tree for the first time.
@@ -18,7 +18,7 @@ func show_endgame():
 		return
 	
 	is_showing = true
-	
+	$TextureRect/Score.text = "Score: " + str(player_scene.score)
 	Game_UI_Manager.push_ui(self)
 	show()
 
