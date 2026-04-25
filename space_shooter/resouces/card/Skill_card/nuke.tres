@@ -11,6 +11,7 @@ image = ExtResource("2_yex0d")
 rare = 0
 card_types = 0
 cost = 0
+mana_cost = 0
 card_name = "nuke"
 description = "no man hinh"
 animation = "default"

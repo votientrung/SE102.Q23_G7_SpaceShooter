@@ -1,89 +1,241 @@
-[gd_scene load_steps=2 format=3 uid="uid://kwsusjkw07o2"]
+[gd_scene load_steps=10 format=3 uid="uid://kwsusjkw07o2"]
 
-[ext_resource type="Script" uid="uid://cygaa0ls3qmep" path="res://script/ui_card_gameplay.gd" id="1_472ju"]
+[ext_resource type="Script" uid="uid://dfxgvlcqqpdcf" path="res://script/card_ui.gd" id="1_4ax82"]
+[ext_resource type="Texture2D" uid="uid://c60fy3vmfolde" path="res://assets/image/UIUX/PNG/Ship_Shop/Table_01.png" id="2_4xq2n"]
+[ext_resource type="Texture2D" uid="uid://jj33g6wcocst" path="res://assets/image/UIUX/PNG/Ship_Shop/Table_02.png" id="3_hnt4k"]
+[ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="4_hfdm1"]
+[ext_resource type="Texture2D" uid="uid://dqurgshii4y7w" path="res://assets/image/UIUX/PNG/Hangar/Dot_01.png" id="5_46h1m"]
 
-[node name="card_ui" type="Control"]
-custom_minimum_size = Vector2(120, 160)
+[sub_resource type="FontVariation" id="FontVariation_4ax82"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bo3ye"]
+line_spacing = 1.0
+font = SubResource("FontVariation_4ax82")
+font_size = 18
+
+[sub_resource type="FontFile" id="FontFile_4ax82"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+
+[sub_resource type="FontFile" id="FontFile_4xq2n"]
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+
+[node name="card_ui" type="Control" node_paths=PackedStringArray("card_frame")]
+custom_minimum_size = Vector2(100, 150)
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_472ju")
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 150.0
+script = ExtResource("1_4ax82")
+card_frame = NodePath("TextureRect")
 
-[node name="backgound" type="TextureRect" parent="."]
-texture_filter = 1
+[node name="TextureRect" type="TextureRect" parent="."]
+light_mask = 0
+visibility_layer = 512
 layout_mode = 0
+offset_top = 15.0
 offset_right = 90.0
-offset_bottom = 125.0
+offset_bottom = 140.0
+texture = ExtResource("2_4xq2n")
 expand_mode = 1
 
-[node name="icon" type="TextureRect" parent="."]
-texture_filter = 1
+[node name="ImageFrame" type="TextureRect" parent="TextureRect"]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 23.0
-offset_right = 61.0
-offset_bottom = 56.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 85.0
+offset_bottom = 75.0
+texture = ExtResource("3_hnt4k")
 expand_mode = 1
 
-[node name="vien_card" type="TextureRect" parent="."]
-texture_filter = 1
-layout_mode = 0
-offset_right = 90.0
-offset_bottom = 125.0
-expand_mode = 1
-
-[node name="vien_art" type="TextureRect" parent="."]
-texture_filter = 1
-layout_mode = 0
-offset_left = 26.0
-offset_top = 20.0
-offset_right = 63.0
-offset_bottom = 59.0
-expand_mode = 1
-
-[node name="khung_dicrip" type="TextureRect" parent="."]
-texture_filter = 1
+[node name="Image" type="TextureRect" parent="TextureRect/ImageFrame"]
 layout_mode = 0
 offset_left = 13.0
-offset_top = 71.0
-offset_right = 78.0
-offset_bottom = 111.0
-expand_mode = 1
+offset_top = 4.0
+offset_right = 67.0
+offset_bottom = 58.0
+texture = ExtResource("4_hfdm1")
+expand_mode = 4
 
-[node name="RichTextLabel" type="RichTextLabel" parent="khung_dicrip"]
+[node name="Cost" type="TextureRect" parent="TextureRect"]
+show_behind_parent = true
+light_mask = 256
+visibility_layer = 256
+z_index = 2
 layout_mode = 0
-offset_left = 3.0
-offset_top = 8.0
-offset_right = 62.0
-offset_bottom = 35.0
+offset_left = 5.0
+offset_top = 100.0
+offset_right = 85.0
+offset_bottom = 120.0
+texture = ExtResource("3_hnt4k")
+expand_mode = 2
 
-[node name="cost_icon" type="TextureRect" parent="."]
+[node name="CostText" type="Label" parent="TextureRect/Cost"]
+light_mask = 256
+visibility_layer = 256
+z_index = 3
 texture_filter = 1
-layout_mode = 0
-offset_left = 62.0
-offset_top = 2.0
-offset_right = 89.0
-offset_bottom = 29.0
-expand_mode = 1
-
-[node name="cost_lable" type="Label" parent="cost_icon"]
+custom_minimum_size = Vector2(0, 20)
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -13.5
-offset_top = -13.5
-offset_right = 13.5
-offset_bottom = 13.5
+offset_left = -42.0
+offset_top = -15.0
+offset_right = 43.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1000"
+label_settings = SubResource("LabelSettings_bo3ye")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="stack_card" type="Label" parent="."]
+[node name="mana cost" type="TextureRect" parent="TextureRect"]
+show_behind_parent = true
+light_mask = 256
+visibility_layer = 256
+z_index = 2
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 77.0
+offset_top = -10.0
+offset_right = 100.0
+offset_bottom = 13.0
+texture = ExtResource("5_46h1m")
+expand_mode = 2
+
+[node name="CostText" type="Label" parent="TextureRect/mana cost"]
+light_mask = 256
+visibility_layer = 256
+z_index = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.5
+offset_top = -13.5
+offset_right = 5.5
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "0"
+label_settings = SubResource("LabelSettings_bo3ye")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CostText" type="Label" parent="TextureRect"]
+light_mask = 256
+visibility_layer = 256
+z_index = 3
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = 10.0
+offset_right = 41.5
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontFile_4ax82")
+text = "ten gi do "
+label_settings = SubResource("LabelSettings_bo3ye")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 25.0
+offset_top = -15.0
+offset_right = 65.0
+theme_override_fonts/font = SubResource("FontFile_4xq2n")
+theme_override_font_sizes/font_size = 11
+horizontal_alignment = 1

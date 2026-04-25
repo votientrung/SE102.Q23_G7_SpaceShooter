@@ -29,6 +29,7 @@ image = ExtResource("1_20aqi")
 rare = 0
 card_types = 0
 cost = 50
+mana_cost = 0
 card_name = "red"
 description = "+5 atk"
 animation = "default"

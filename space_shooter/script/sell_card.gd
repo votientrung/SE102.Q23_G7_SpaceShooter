@@ -14,7 +14,8 @@ var card_info : card:
 		$TextureRect/ImageFrame/Image.texture = card_info.image
 		$TextureRect/Description.text = card_info.description
 		$TextureRect/Cost/CostText.text = str(card_info.cost)
-		
+		$"TextureRect/mana cost/CostText".text = str(card_info.mana_cost)
+		$TextureRect/CostText.text = str(card_info.card_name)
 		card_info.upgrade = value.upgrade
 
 
@@ -28,9 +29,7 @@ func _process(_delta):
 		card_frame.scale = Vector2(1.0, 1.0)
 
 func is_mouse_over_card() -> bool:
-	var mouse_pos: Vector2 = get_global_mouse_position()
-	var sprite_rect = Rect2(card_frame.global_position, card_frame.texture.get_size())
-	return sprite_rect.has_point(mouse_pos)
+	return card_frame.get_global_rect().has_point(get_global_mouse_position())
 
 func _input(event) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:

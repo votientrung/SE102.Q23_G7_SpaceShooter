@@ -1,0 +1,144 @@
+[gd_scene load_steps=7 format=3 uid="uid://fyus2e3014mc"]
+
+[ext_resource type="Script" uid="uid://dyv6fl6txabv3" path="res://script/hud.gd" id="1_047uy"]
+[ext_resource type="Texture2D" uid="uid://ear8jciyxan7" path="res://assets/image/UIUX/PNG/You_Lose/Window.png" id="1_uo2fv"]
+[ext_resource type="PackedScene" uid="uid://kwsusjkw07o2" path="res://scenes/card/card_ui.tscn" id="2_uo2fv"]
+[ext_resource type="PackedScene" uid="uid://b3a5h2vk6y7bj" path="res://scenes/card/card_bar_ui.tscn" id="3_uo2fv"]
+[ext_resource type="Texture2D" uid="uid://36at1bqt0vej" path="res://assets/image/UIUX/PNG/You_Win/Window.png" id="5_047uy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_047uy"]
+bg_color = Color(0.164706, 0.294118, 0.486275, 0.482353)
+
+[node name="HUD" type="Control"]
+custom_minimum_size = Vector2(1200, 100)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_047uy")
+card_scene = ExtResource("2_uo2fv")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(1200, 100)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_047uy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(250, 150)
+layout_mode = 2
+texture = ExtResource("1_uo2fv")
+expand_mode = 1
+
+[node name="stat_contaner" type="VBoxContainer" parent="PanelContainer/HBoxContainer/TextureRect"]
+custom_minimum_size = Vector2(225, 100)
+layout_mode = 2
+offset_left = 15.0
+offset_top = 19.0
+offset_right = 240.0
+offset_bottom = 144.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="gold" type="Control" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner"]
+layout_mode = 2
+
+[node name="gold bar" type="ProgressBar" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner/gold"]
+self_modulate = Color(0.992157, 0, 0, 1)
+custom_minimum_size = Vector2(225, 20)
+layout_mode = 0
+offset_right = 225.0
+offset_bottom = 20.0
+size_flags_vertical = 4
+show_percentage = false
+
+[node name="gold tick" type="Control" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner/gold"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="gold need tick" type="ColorRect" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner/gold"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 25.0
+
+[node name="gold have tick" type="ColorRect" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner/gold"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 25.0
+color = Color(1, 0, 1, 1)
+
+[node name="mana" type="Control" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner"]
+custom_minimum_size = Vector2(225, 0)
+layout_mode = 2
+
+[node name="mana bar" type="ProgressBar" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner/mana"]
+self_modulate = Color(0, 0, 1, 1)
+custom_minimum_size = Vector2(225, 20)
+layout_mode = 2
+offset_right = 225.0
+offset_bottom = 20.0
+size_flags_vertical = 4
+max_value = 12.0
+show_percentage = false
+
+[node name="mana tick" type="Control" parent="PanelContainer/HBoxContainer/TextureRect/stat_contaner/mana"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect2" type="TextureRect" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(700, 150)
+layout_mode = 2
+texture = ExtResource("1_uo2fv")
+expand_mode = 1
+
+[node name="card_bar_ui" parent="PanelContainer/HBoxContainer/TextureRect2" instance=ExtResource("3_uo2fv")]
+custom_minimum_size = Vector2(650, 100)
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 19.0
+offset_top = 20.0
+offset_right = 682.0
+offset_bottom = 145.0
+
+[node name="right_panel" type="Control" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/HBoxContainer/right_panel"]
+custom_minimum_size = Vector2(250, 150)
+layout_mode = 0
+offset_right = 250.0
+offset_bottom = 150.0
+texture = ExtResource("5_047uy")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/right_panel"]
+visibility_layer = 4
+z_index = 3
+layout_mode = 0
+offset_left = 10.0
+offset_top = 35.0
+offset_right = 159.0
+offset_bottom = 58.0
+text = "vàng mục tiêu : 500"
+horizontal_alignment = 1
+vertical_alignment = 1

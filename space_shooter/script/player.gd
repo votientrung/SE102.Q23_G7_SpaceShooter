@@ -11,8 +11,8 @@ extends CharacterBody2D
 @onready var weapons_array = [default,laze,snake]
 
 @onready var gold_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold/gold bar"
-#@onready var bonus_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold_bar_gr/bonus bar"
 @onready var mana_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana/mana bar"
+@export var hud_reference : Control
 
 @export var die_scene : Control
 
@@ -29,21 +29,11 @@ var end_bound_y
 var gold : float = 50 :
 	set(value):
 		gold= max(value,0)
-		if gold_bar:
-			gold_bar.value = gold
-		#if bonus_bar:
-			#if gold >400:
-				#bonus_bar.visible = true
-				#bonus_bar.value = gold - 400
-			#else :
-				#bonus_bar.visible =false
 		if gold <=0:
 			die()
 var mana : float = 0 :
 	set(value):
 		mana =value
-		if mana_bar:
-			mana_bar.value = mana
 var gold_regent : float =0 :
 	set(value):
 		gold_regent=value
@@ -96,10 +86,7 @@ var weapon_current : float = 0:
 
 func _ready() -> void:
 	set_base_stats(base_stat)
-	gold_bar.max_value = 1000
-	gold_bar.value = gold
-	mana_bar.max_value = 12
-	mana_bar.value = mana
+	hud_reference.update_gold(gold)
 	# setting camera
 	bound_size_x = collistion_rect.shape.get_rect().size.x
 	bound_size_y = collistion_rect.shape.get_rect().size.y

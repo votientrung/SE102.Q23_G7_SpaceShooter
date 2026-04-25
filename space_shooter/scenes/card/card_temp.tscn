@@ -1,15 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://c1sec3mu71g5b"]
 
 [ext_resource type="Script" uid="uid://b67gjhfulwkqe" path="res://script/card_temp.gd" id="1_kowx1"]
-[ext_resource type="Script" path="res://script/card.gd" id="2_qqj2n"]
+[ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="2_qqj2n"]
 
 [sub_resource type="Resource" id="Resource_23thw"]
 script = ExtResource("2_qqj2n")
-scale = Vector2(1, 1)
-type = 0
-cost = 0.0
-name = ""
+rare = 0
+card_types = 0
+cost = 0
+mana_cost = 0
+card_name = ""
 description = ""
+animation = "default"
+type = 0
+scale = Vector2(1, 1)
+speed = 300.0
+direction = Vector2(0, 1)
 metadata/_custom_type_script = "uid://dp6nxcs4xtyyw"
 
 [node name="card_temp" type="Area2D"]

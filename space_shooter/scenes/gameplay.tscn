@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=22 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -17,10 +17,8 @@
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
 [ext_resource type="Script" uid="uid://cn66hnogqbdpm" path="res://scenes/Game_UI_Manager.gd" id="17_525vb"]
-[ext_resource type="PackedScene" uid="uid://b3a5h2vk6y7bj" path="res://scenes/card/card_bar_ui.tscn" id="17_w3w6i"]
-[ext_resource type="Script" uid="uid://cfyh57fy1u0q1" path="res://script/gold.gd" id="18_mesn4"]
 [ext_resource type="PackedScene" uid="uid://bw768rjjbeets" path="res://scenes/shop_scene.tscn" id="18_pv71h"]
-[ext_resource type="Script" uid="uid://dxnhfdn0h756e" path="res://script/mana.gd" id="19_525vb"]
+[ext_resource type="PackedScene" uid="uid://fyus2e3014mc" path="res://scenes/hud.tscn" id="21_525vb"]
 [ext_resource type="PackedScene" uid="uid://d3gpdx67qpoxa" path="res://scenes/pause_menu.tscn" id="22_25e7j"]
 [ext_resource type="PackedScene" uid="uid://b8ku680jerd5r" path="res://scenes/end_menu.tscn" id="23_t4x03"]
 
@@ -41,7 +39,8 @@ shop = NodePath("../UI/ShopScene")
 light_mask = 0
 script = ExtResource("2_00tan")
 
-[node name="player" parent="." node_paths=PackedStringArray("die_scene") instance=ExtResource("5_ocj2s")]
+[node name="player" parent="." node_paths=PackedStringArray("hud_reference", "die_scene") instance=ExtResource("5_ocj2s")]
+hud_reference = NodePath("../UI/HUD")
 die_scene = NodePath("../UI/End_Menu")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -51,101 +50,6 @@ position = Vector2(600, 450)
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("17_525vb")
-
-[node name="HUD" type="Control" parent="UI"]
-custom_minimum_size = Vector2(0, 150)
-layout_mode = 3
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -150.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="PanelContainer" type="PanelContainer" parent="UI/HUD"]
-custom_minimum_size = Vector2(0, 150)
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="UI/HUD/PanelContainer"]
-layout_mode = 2
-
-[node name="stat_contaner" type="VBoxContainer" parent="UI/HUD/PanelContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 100
-
-[node name="gold" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner" node_paths=PackedStringArray("player_reference")]
-layout_mode = 2
-script = ExtResource("18_mesn4")
-player_reference = NodePath("../../../../../../player")
-
-[node name="gold bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
-self_modulate = Color(0.992157, 0, 0, 1)
-custom_minimum_size = Vector2(250, 20)
-layout_mode = 0
-offset_right = 250.0
-offset_bottom = 20.0
-size_flags_vertical = 4
-show_percentage = false
-
-[node name="gold tick" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="gold need tick" type="ColorRect" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
-layout_mode = 0
-offset_right = 3.0
-offset_bottom = 25.0
-
-[node name="gold have tick" type="ColorRect" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold"]
-layout_mode = 0
-offset_right = 3.0
-offset_bottom = 25.0
-color = Color(1, 0, 1, 1)
-
-[node name="mana" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner" node_paths=PackedStringArray("player_reference")]
-layout_mode = 2
-script = ExtResource("19_525vb")
-player_reference = NodePath("../../../../../../player")
-
-[node name="mana bar" type="ProgressBar" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana"]
-self_modulate = Color(0, 0, 1, 1)
-custom_minimum_size = Vector2(250, 20)
-layout_mode = 2
-offset_right = 250.0
-offset_bottom = 20.0
-size_flags_vertical = 4
-max_value = 12.0
-show_percentage = false
-
-[node name="mana tick" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer/stat_contaner/mana"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="card_bar_ui" parent="UI/HUD/PanelContainer/HBoxContainer" node_paths=PackedStringArray("player_reference") instance=ExtResource("17_w3w6i")]
-layout_mode = 2
-player_reference = NodePath("../../../../../player")
-
-[node name="right_panel" type="Control" parent="UI/HUD/PanelContainer/HBoxContainer"]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-
-[node name="Label" type="Label" parent="UI/HUD/PanelContainer/HBoxContainer/right_panel"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "vàng mục tiêu : 500"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="ShopScene" parent="UI" node_paths=PackedStringArray("Game_UI_Manager", "player_reference") instance=ExtResource("18_pv71h")]
 visible = false
@@ -162,3 +66,6 @@ Game_UI_Manager = NodePath("..")
 visible = false
 player_scene = NodePath("../../player")
 Game_UI_Manager = NodePath("..")
+
+[node name="HUD" parent="UI" node_paths=PackedStringArray("player_reference") instance=ExtResource("21_525vb")]
+player_reference = NodePath("../../player")

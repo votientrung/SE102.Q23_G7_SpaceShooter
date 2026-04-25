@@ -4,6 +4,7 @@ class_name card
 @export var rare : rares
 @export var card_types: Card_types
 @export var cost : int
+@export var mana_cost : int
 @export var card_name : String
 @export var description : String
 enum Card_types {

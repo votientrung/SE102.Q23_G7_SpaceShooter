@@ -3,9 +3,9 @@ extends Control
 @onready var gold_ticks = $"gold tick"
 @onready var gold_need_tick = $"gold need tick"
 @onready var gold_have_tick =$"gold have tick"
-@export var player_reference : CharacterBody2D
+@export var player_reference : CharacterBody2D 
 var gold_have : float 
-var gold_need : float = 500
+var gold_need : float = 200
 func _process(delta: float) -> void:
 	var gold_have=player_reference.gold
 	update_gold(gold_have)
