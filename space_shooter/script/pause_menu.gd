@@ -5,6 +5,11 @@ var speed := 1000
 var is_open := false
 var is_transitioning := false
 
+@export var use_card: PackedScene
+@export var Card_list: Array[card]
+@onready var card_container: HBoxContainer = $TextureRect/HBoxContainer
+
+@export var hud: Control
 @export var Game_UI_Manager : CanvasLayer
 
 
@@ -40,6 +45,12 @@ func _input(event):
 func open_pause_menu():
 	is_open = true
 	is_transitioning = true
+	
+	if hud.card_bar.get_child_count() != 0:
+		for i in hud.card_bar.get_child_count():
+			var slot = use_card.instantiate() as UseCard
+			slot.card_info = hud.card_bar.get_child(i).card_info
+			card_container.add_child(slot)
 
 	show()
 	target_position = Vector2(0,0)
@@ -51,6 +62,10 @@ func open_pause_menu():
 func close_pause_menu():
 	is_open = false
 	is_transitioning = true
+	
+	if card_container:
+		for slot in card_container.get_children():
+			slot.queue_free()
 	
 	target_position = Vector2(0, 1000)
 	var tween = create_tween()
