@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=23 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -16,8 +16,9 @@
 [ext_resource type="Script" uid="uid://bsxbk5n66aeoa" path="res://script/BossType.gd" id="8_407ns"]
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
-[ext_resource type="Script" uid="uid://cn66hnogqbdpm" path="res://scenes/Game_UI_Manager.gd" id="17_525vb"]
+[ext_resource type="Script" uid="uid://cn66hnogqbdpm" path="res://script/Game_UI_Manager.gd" id="17_525vb"]
 [ext_resource type="PackedScene" uid="uid://bw768rjjbeets" path="res://scenes/shop_scene.tscn" id="18_pv71h"]
+[ext_resource type="PackedScene" uid="uid://rhtqempttwvs" path="res://scenes/use_card.tscn" id="20_25e7j"]
 [ext_resource type="PackedScene" uid="uid://fyus2e3014mc" path="res://scenes/hud.tscn" id="21_525vb"]
 [ext_resource type="PackedScene" uid="uid://d3gpdx67qpoxa" path="res://scenes/pause_menu.tscn" id="22_25e7j"]
 [ext_resource type="PackedScene" uid="uid://b8ku680jerd5r" path="res://scenes/end_menu.tscn" id="23_t4x03"]
@@ -58,8 +59,10 @@ z_index = 7
 Game_UI_Manager = NodePath("..")
 player_reference = NodePath("../../player")
 
-[node name="pause_menu" parent="UI" node_paths=PackedStringArray("Game_UI_Manager") instance=ExtResource("22_25e7j")]
+[node name="pause_menu" parent="UI" node_paths=PackedStringArray("hud", "Game_UI_Manager") instance=ExtResource("22_25e7j")]
 visible = false
+use_card = ExtResource("20_25e7j")
+hud = NodePath("../HUD")
 Game_UI_Manager = NodePath("..")
 
 [node name="End_Menu" parent="UI" node_paths=PackedStringArray("player_scene", "Game_UI_Manager") instance=ExtResource("23_t4x03")]
