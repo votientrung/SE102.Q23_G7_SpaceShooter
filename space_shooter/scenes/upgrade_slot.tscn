@@ -1,0 +1,133 @@
+[gd_scene load_steps=4 format=3 uid="uid://chhv5nse40081"]
+
+[ext_resource type="Texture2D" uid="uid://ear8jciyxan7" path="res://assets/image/UIUX/PNG/You_Lose/Window.png" id="2_dc2l5"]
+[ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="3_18c7b"]
+
+[sub_resource type="FontFile" id="FontFile_pkxat"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+
+[node name="UpgradeSlot" type="Button"]
+custom_minimum_size = Vector2(80, 100)
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(80, 100)
+layout_mode = 2
+offset_right = 80.0
+offset_bottom = 100.0
+texture = ExtResource("2_dc2l5")
+expand_mode = 4
+
+[node name="price" type="Label" parent="."]
+layout_mode = 2
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="name" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 2
+offset_left = 5.0
+offset_top = -2.0
+offset_right = 75.0
+offset_bottom = 15.0
+theme_override_fonts/font = SubResource("FontFile_pkxat")
+theme_override_font_sizes/font_size = 12
+text = "might"
+horizontal_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 25.0
+offset_right = 60.0
+offset_bottom = 66.0
+texture = ExtResource("3_18c7b")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+offset_left = 5.0
+offset_top = 70.0
+offset_right = 65.0
+offset_bottom = 85.0
+theme_override_constants/separation = 2
+alignment = 1
