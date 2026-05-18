@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=25 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
 [ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="16_ucu43"]
 [ext_resource type="Script" uid="uid://cn66hnogqbdpm" path="res://script/Game_UI_Manager.gd" id="17_525vb"]
-[ext_resource type="PackedScene" uid="uid://bbupc0gwnofkq" path="res://scenes/save_shop.tscn" id="17_t4x03"]
 [ext_resource type="PackedScene" uid="uid://bw768rjjbeets" path="res://scenes/shop_scene.tscn" id="18_pv71h"]
 [ext_resource type="PackedScene" uid="uid://rhtqempttwvs" path="res://scenes/use_card.tscn" id="20_25e7j"]
 [ext_resource type="PackedScene" uid="uid://fyus2e3014mc" path="res://scenes/hud.tscn" id="21_525vb"]
@@ -71,8 +70,6 @@ die_scene = NodePath("../UI/End_Menu")
 position = Vector2(600, 450)
 
 [node name="pick_up_manager" parent="." instance=ExtResource("16_407ns")]
-
-[node name="save_shop" parent="." instance=ExtResource("17_t4x03")]
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("17_525vb")
