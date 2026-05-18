@@ -81,6 +81,9 @@ offset_bottom = 500.0
 
 [node name="GridContainer" type="GridContainer" parent="window/ScrollContainer"]
 layout_mode = 2
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 10
 
 [node name="DetailPanel_uprate" type="Control" parent="window"]
 anchors_preset = 0
