@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" load_steps=3 format=3 uid="uid://bg36l6iqhghif"]
+
+[ext_resource type="Texture2D" uid="uid://bajupc4kke10y" path="res://assets/image/cardspickup/cost_gold.tres" id="1_0y4h3"]
+[ext_resource type="Script" uid="uid://cl81anbup5bmr" path="res://script/menu_update_icon.gd" id="2_ua178"]
+
+[resource]
+script = ExtResource("2_ua178")
+id = "gold"
+display_name = "gold"
+icon = ExtResource("1_0y4h3")
+description = "tang 250 vang khoi dau"
+base_price = 500
+price_step = 200
+max_level = 5

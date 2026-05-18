@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" load_steps=3 format=3 uid="uid://bqe1l2rhcip8j"]
+
+[ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="1_860n8"]
+[ext_resource type="Script" uid="uid://cl81anbup5bmr" path="res://script/menu_update_icon.gd" id="2_2m48d"]
+
+[resource]
+script = ExtResource("2_2m48d")
+id = "might"
+display_name = "might"
+icon = ExtResource("1_860n8")
+description = "tang 20% dmg"
+base_price = 500
+price_step = 200
+max_level = 5

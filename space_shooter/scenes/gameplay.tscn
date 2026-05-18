@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=26 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -16,12 +16,34 @@
 [ext_resource type="Script" uid="uid://bsxbk5n66aeoa" path="res://script/BossType.gd" id="8_407ns"]
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
+[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="16_ucu43"]
 [ext_resource type="Script" uid="uid://cn66hnogqbdpm" path="res://script/Game_UI_Manager.gd" id="17_525vb"]
+[ext_resource type="PackedScene" uid="uid://bbupc0gwnofkq" path="res://scenes/save_shop.tscn" id="17_t4x03"]
 [ext_resource type="PackedScene" uid="uid://bw768rjjbeets" path="res://scenes/shop_scene.tscn" id="18_pv71h"]
 [ext_resource type="PackedScene" uid="uid://rhtqempttwvs" path="res://scenes/use_card.tscn" id="20_25e7j"]
 [ext_resource type="PackedScene" uid="uid://fyus2e3014mc" path="res://scenes/hud.tscn" id="21_525vb"]
 [ext_resource type="PackedScene" uid="uid://d3gpdx67qpoxa" path="res://scenes/pause_menu.tscn" id="22_25e7j"]
 [ext_resource type="PackedScene" uid="uid://b8ku680jerd5r" path="res://scenes/end_menu.tscn" id="23_t4x03"]
+
+[sub_resource type="Resource" id="Resource_cuhxg"]
+script = ExtResource("16_ucu43")
+gold = 0.0
+mana = 0.0
+gold_regent = 0.0
+mana_regent = 0.0
+gold_modified = 1.0
+mana_modified = 1.0
+armor = 0.0
+damage = 1.0
+damage_modified = 1.0
+might = 1.0
+scale_bullet = 1.0
+speed = 0.0
+luck = 0.0
+weapon_lv = 0.0
+weapon_current = 0.0
+score = 0.0
+metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
 
 [node name="Gameplay" type="Node2D"]
 
@@ -41,6 +63,7 @@ light_mask = 0
 script = ExtResource("2_00tan")
 
 [node name="player" parent="." node_paths=PackedStringArray("hud_reference", "die_scene") instance=ExtResource("5_ocj2s")]
+perminant_stat = SubResource("Resource_cuhxg")
 hud_reference = NodePath("../UI/HUD")
 die_scene = NodePath("../UI/End_Menu")
 
@@ -48,6 +71,8 @@ die_scene = NodePath("../UI/End_Menu")
 position = Vector2(600, 450)
 
 [node name="pick_up_manager" parent="." instance=ExtResource("16_407ns")]
+
+[node name="save_shop" parent="." instance=ExtResource("17_t4x03")]
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("17_525vb")

@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://chhv5nse40081"]
+[gd_scene load_steps=5 format=3 uid="uid://chhv5nse40081"]
 
+[ext_resource type="Script" uid="uid://c8l5s545q5evl" path="res://script/upgrade_slot.gd" id="1_r63va"]
 [ext_resource type="Texture2D" uid="uid://ear8jciyxan7" path="res://assets/image/UIUX/PNG/You_Lose/Window.png" id="2_dc2l5"]
 [ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="3_18c7b"]
 
@@ -87,6 +88,7 @@ cache/0/15/0/scale = 1.0
 custom_minimum_size = Vector2(80, 100)
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("1_r63va")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(80, 100)
@@ -95,11 +97,6 @@ offset_right = 80.0
 offset_bottom = 100.0
 texture = ExtResource("2_dc2l5")
 expand_mode = 4
-
-[node name="price" type="Label" parent="."]
-layout_mode = 2
-offset_right = 40.0
-offset_bottom = 23.0
 
 [node name="name" type="Label" parent="."]
 texture_filter = 1

@@ -21,3 +21,4 @@ class_name stats
 
 @export var weapon_lv : float = 0
 @export var weapon_current : float = 0
+@export var score : float =0

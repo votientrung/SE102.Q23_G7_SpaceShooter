@@ -1,5 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cn3sgeeu1y72f"]
+[gd_scene load_steps=12 format=3 uid="uid://cn3sgeeu1y72f"]
 
+[ext_resource type="Script" uid="uid://uq1w7mdfkce" path="res://script/menu_shop.gd" id="1_nouij"]
+[ext_resource type="Script" uid="uid://cl81anbup5bmr" path="res://script/menu_update_icon.gd" id="2_1l1v2"]
+[ext_resource type="Resource" uid="uid://bg36l6iqhghif" path="res://resouces/slot/gold.tres" id="3_rpuyh"]
+[ext_resource type="PackedScene" uid="uid://chhv5nse40081" path="res://scenes/upgrade_slot.tscn" id="4_rc4j2"]
+[ext_resource type="Resource" uid="uid://bqe1l2rhcip8j" path="res://resouces/slot/might.tres" id="4_rpuyh"]
 [ext_resource type="Texture2D" uid="uid://de0nift8i5a7s" path="res://assets/image/UIUX/PNG/Ship_Shop/Window.png" id="5_nouij"]
 [ext_resource type="Texture2D" uid="uid://b01uu4a7rcsbv" path="res://assets/image/UIUX/PNG/Ship_Shop/Backward_BTN.png" id="6_tclq7"]
 [ext_resource type="Texture2D" uid="uid://bfmnsxbjki4nb" path="res://assets/image/UIUX/PNG/You_Win/Replay_BTN.png" id="8_c607x"]
@@ -14,6 +19,9 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_nouij")
+list_upgrades = Array[ExtResource("2_1l1v2")]([ExtResource("3_rpuyh"), ExtResource("4_rpuyh")])
+slot_scene = ExtResource("4_rc4j2")
 
 [node name="window" type="TextureRect" parent="."]
 light_mask = 0
@@ -82,6 +90,7 @@ offset_right = 317.0
 offset_bottom = 590.0
 
 [node name="TextureRect2" type="TextureRect" parent="window/DetailPanel_uprate"]
+layout_mode = 0
 offset_right = 600.0
 offset_bottom = 182.0
 texture = ExtResource("8_rpuyh")
@@ -153,5 +162,6 @@ expand_mode = 1
 [connection signal="gui_input" from="window/Continue" to="." method="_on_continue_gui_input"]
 [connection signal="mouse_entered" from="window/Continue" to="." method="_on_continue_mouse_entered"]
 [connection signal="mouse_exited" from="window/Continue" to="." method="_on_continue_mouse_exited"]
+[connection signal="gui_input" from="window/return" to="." method="_on_return_gui_input"]
 [connection signal="mouse_entered" from="window/return" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="window/return" to="." method="_on_button_mouse_exited"]
