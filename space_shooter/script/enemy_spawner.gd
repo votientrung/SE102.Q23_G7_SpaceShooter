@@ -79,6 +79,7 @@ func spawn_wave():
 
 func start_next_wave():
 	formation.start = true
+	formation.global_position = Vector2.ZERO
 	await get_tree().create_timer(0.3).timeout
 	spawn_wave()
 	formation.start = false

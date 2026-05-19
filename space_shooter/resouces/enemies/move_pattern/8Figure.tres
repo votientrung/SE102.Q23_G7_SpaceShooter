@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Figure8FormationPattern" load_steps=2 format=3 uid="uid://cirafpvow0mnd"]
+
+[ext_resource type="Script" uid="uid://bi00qykj876km" path="res://script/num8move.gd" id="1_eopgy"]
+
+[resource]
+script = ExtResource("1_eopgy")
+speed = 1.5
+size = 100
+enter_duration = 2.0
+drop_speed = 200
+metadata/_custom_type_script = "uid://bi00qykj876km"

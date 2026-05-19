@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3e2f8cjvjunu"]
+
+[ext_resource type="PackedScene" uid="uid://rkrbyd3spntm" path="res://scenes/player/player.tscn" id="1_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://ciwllc84q6kgd" path="res://scenes/enemies/boss/boss.tscn" id="2_6uqi0"]
+[ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="3_6uqi0"]
+
+[node name="test" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_8uh7m")]
+
+[node name="Boss" parent="." node_paths=PackedStringArray("player_reference") instance=ExtResource("2_6uqi0")]
+boss_type = ExtResource("3_6uqi0")
+player_reference = NodePath("../player")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(602, 402)
