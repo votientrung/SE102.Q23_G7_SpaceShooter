@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 PickUpManager="*res://scenes/pick_up/pick_up_manager.tscn"
 CardManager="*res://scenes/card/card_manager.tscn"
+SaveShop="*res://scenes/save_shop.tscn"
 
 [display]
 

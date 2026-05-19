@@ -62,23 +62,25 @@ func create_mana_ticks():
 # --- Card Logic ---
 
 func add_card(card_data):
-	# Nếu đầy tay, xóa lá cũ nhất (bên trái)
+	# 1. Kiểm tra xem lá bài này đã có trên tay chưa
+	for card_node in card_stack:
+		if card_node.card_info.card_name == card_data.card_name:
+			card_node.quantity += 1
+			card_node.set_quantity(card_node.quantity) # Cập nhật số x2, x3...
+			return # Thoát hàm, không tạo thêm Node mới
+
+	# 2. Nếu chưa có thì mới tạo Node mới (Code cũ của bạn)
 	if card_stack.size() >= card_hand_size:
-		var oldest_card = card_stack.pop_front()
-		if is_instance_valid(oldest_card):
-			oldest_card.queue_free() # Phải xóa node khỏi màn hình
+		# Logic xóa lá cũ nhất nếu bạn muốn...
+		pass
 
 	var new_card_ui = card_scene.instantiate()
 	card_bar.add_child(new_card_ui)
-	
-	# Gán dữ liệu
-	if "player_reference" in new_card_ui:
-		new_card_ui.player_reference = player_reference
 	new_card_ui.card_info = card_data
-	
+	new_card_ui.quantity = 1
+	new_card_ui.set_quantity(1)
 	card_stack.append(new_card_ui)
 	update_card_indices()
-
 func _input(event) -> void:
 	if event.is_action_pressed("use_card_1") :
 		use_card(0)
@@ -101,23 +103,22 @@ func use_card(index: int):
 	if player_reference.mana >= data.cost:
 		player_reference.mana -= data.cost
 		CardManager.execute_card(data, player_reference)
-		
-		# Xóa khỏi mảng và xóa node
-		card_stack.remove_at(index)
-		target_card_ui.queue_free()
-		
-		# Cập nhật lại số thứ tự cho các lá còn lại
-		update_card_indices()
+		# Lưu ý: execute_card sẽ gọi remove_card bên dưới
 
 func remove_card(card_data):
-	# SỬA LỖI: Vì là Array nên phải duyệt để tìm card_name
-	for i in range(card_stack.size()):
-		var ui_node = card_stack[i]
-		if ui_node.card_info.card_name == card_data.card_name:
-			card_stack.remove_at(i)
-			ui_node.queue_free()
-			update_card_indices()
-			print("Đã xóa thẻ: ", card_data.card_name)
+	for i in range(card_stack.size() - 1, -1, -1):
+		var card_node = card_stack[i]
+		if card_node.card_info.card_name == card_data.card_name:
+			card_node.quantity -= 1
+			
+			if card_node.quantity <= 0:
+				# Nếu hết sạch bài loại này thì mới xóa Node
+				card_stack.remove_at(i)
+				card_node.queue_free()
+				update_card_indices()
+			else:
+				# Nếu vẫn còn thì chỉ cập nhật lại con số hiển thị
+				card_node.set_quantity(card_node.quantity)
 			return
 
 func update_card_indices():

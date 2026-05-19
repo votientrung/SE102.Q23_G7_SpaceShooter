@@ -4,10 +4,10 @@ extends CharacterBody2D
 @onready var default = $weapon_default
 @onready var laze = $weapon_laze
 @onready var snake = $weapon_snake
-
 @export var base_stat : stats
 @export var modified_stat : stats
-
+@export var perminant_stat :stats
+var upgrades_levels: Dictionary = {}
 @onready var weapons_array = [default,laze,snake]
 
 @onready var gold_bar =$"../UI/HUD/PanelContainer/HBoxContainer/stat_contaner/gold/gold bar"
@@ -82,10 +82,14 @@ var weapon_current : float = 0:
 		else:
 			if weapon_lv <3:
 				weapon_lv += 1
-
+var score : float = 0:
+	set(value):
+		score = value
 
 func _ready() -> void:
-	set_base_stats(base_stat)
+	calculate_permanent_stats()     
+	set_base_stats(base_stat, perminant_stat)
+	set_base_stats(base_stat,perminant_stat)
 	hud_reference.update_gold(gold)
 	# setting camera
 	bound_size_x = collistion_rect.shape.get_rect().size.x
@@ -137,22 +141,40 @@ func die():
 	queue_free()
 	die_scene.show_endgame()
 
-func set_base_stats(s : stats):
-	gold=s.gold
-	mana=s.mana
-	gold_regent=s.gold_regent
-	mana_regent=s.mana_regent
-	gold_modified=s.gold_modified
-	mana_modified=s.mana_modified
-	armor=s.armor
-	damage=s.damage
-	damage_modified=s.damage_modified
-	might=s.might
-	scale_bullet=s.scale_bullet
-	speed=s.speed
-	luck=s.luck
-	weapon_lv=s.weapon_lv
-	weapon_current=s.weapon_current
+func set_base_stats(s : stats, p: stats):
+	print("set base stats")
+	gold=s.gold +p.gold
+	mana=s.mana +p.mana
+	gold_regent=s.gold_regent +p.gold_regent
+	mana_regent=s.mana_regent +p.mana_regent
+	gold_modified=s.gold_modified * p.gold_modified
+	mana_modified=s.mana_modified * p.mana_modified
+	armor=s.armor +p.armor
+	damage=s.damage +p.damage
+	damage_modified=s.damage_modified +p.damage_modified
+	might=s.might *p.might
+	scale_bullet=s.scale_bullet * p.scale_bullet
+	speed=s.speed + p.speed
+	luck=s.luck +p.luck
+	weapon_lv=s.weapon_lv + p.weapon_lv
+	weapon_current=s.weapon_current +p.weapon_current
+	score=s.score + p.score
 
 func gain_gold(amount) :
 	gold += amount
+
+func calculate_permanent_stats():
+	if perminant_stat == null:
+		return
+	
+	var levels = SaveShop.upgrades_levels
+	
+	for upgrade_id in levels:
+		var level = levels[upgrade_id]
+		match upgrade_id:
+			"gold":
+				perminant_stat.gold = level * 250
+				print("gold lv=", level, " → perminant_stat.gold=", perminant_stat.gold)
+			"might":
+				perminant_stat.might = 1.0 + (level * 0.2)
+				print("might lv=", level, " → perminant_stat.might=", perminant_stat.might)

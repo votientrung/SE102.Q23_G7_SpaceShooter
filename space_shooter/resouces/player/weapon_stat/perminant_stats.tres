@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="stats" load_steps=2 format=3 uid="uid://hbo348f2xjvi"]
+
+[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="1_l813q"]
+
+[resource]
+script = ExtResource("1_l813q")
+gold = 0.0
+mana = 0.0
+gold_regent = 0.0
+mana_regent = 0.0
+gold_modified = 1.0
+mana_modified = 1.0
+armor = 0.0
+damage = 1.0
+damage_modified = 1.0
+might = 1.0
+scale_bullet = 1.0
+speed = 0.0
+luck = 0.0
+weapon_lv = 0.0
+weapon_current = 0.0
+metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
