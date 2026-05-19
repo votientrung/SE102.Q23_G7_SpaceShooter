@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=24 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -15,6 +15,7 @@
 [ext_resource type="Resource" uid="uid://c5e0pgtxc06lc" path="res://resouces/enemies/normal/nor_emy_3.tres" id="6_nt65e"]
 [ext_resource type="Script" uid="uid://bsxbk5n66aeoa" path="res://script/BossType.gd" id="8_407ns"]
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
+[ext_resource type="Resource" uid="uid://djuavplysg3uw" path="res://resouces/enemies/move_pattern/classic.tres" id="15_t4x03"]
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
 [ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="16_ucu43"]
 [ext_resource type="Script" uid="uid://cn66hnogqbdpm" path="res://script/Game_UI_Manager.gd" id="17_525vb"]
@@ -60,6 +61,7 @@ shop = NodePath("../UI/ShopScene")
 [node name="EnemyFormation" type="Node2D" parent="."]
 light_mask = 0
 script = ExtResource("2_00tan")
+pattern = ExtResource("15_t4x03")
 
 [node name="player" parent="." node_paths=PackedStringArray("hud_reference", "die_scene") instance=ExtResource("5_ocj2s")]
 perminant_stat = SubResource("Resource_cuhxg")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ClassicFormationPattern" load_steps=2 format=3 uid="uid://djuavplysg3uw"]
+
+[ext_resource type="Script" uid="uid://cp6iq7i2mx64c" path="res://script/ClassicFormationPattern.gd" id="1_7byky"]
+
+[resource]
+script = ExtResource("1_7byky")
+speed = 300
+drop_distance = 40
+screen_width = 1200
+metadata/_custom_type_script = "uid://cp6iq7i2mx64c"

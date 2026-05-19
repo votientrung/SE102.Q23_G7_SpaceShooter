@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SpiralFormationPattern" load_steps=2 format=3 uid="uid://bgocvad8jusft"]
+
+[ext_resource type="Script" uid="uid://b5usufq6vacaw" path="res://script/spiral_pattern.gd" id="1_lgtyl"]
+
+[resource]
+script = ExtResource("1_lgtyl")
+center = Vector2(380, 300)
+angular_speed = 4.0
+radius_speed = 80.0
+start_radius = 20.0
+enter_duration = 2.0
+spiral_turns = 10.0
+metadata/_custom_type_script = "uid://b5usufq6vacaw"
