@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Space_shooter"
-run/main_scene="res://scenes/gameplay.tscn"
+run/main_scene="uid://cpfi4b7p5r314"
 config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"

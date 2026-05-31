@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="3_fdhsn"]
 [ext_resource type="Texture2D" uid="uid://b01uu4a7rcsbv" path="res://assets/image/UIUX/PNG/Ship_Shop/Backward_BTN.png" id="4_ykrk4"]
 [ext_resource type="Resource" uid="uid://cl7hrf7v5ce46" path="res://resouces/card/Skill_card/nuke.tres" id="5_27noo"]
-[ext_resource type="Resource" uid="uid://b3k0blhurwva1" path="res://resouces/card/modified_card/red.tres" id="5_pptjr"]
+[ext_resource type="Resource" uid="uid://b3k0blhurwva1" path="res://resouces/card/modified_card/Attack+.tres" id="5_pptjr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ykrk4"]
 font_size = 24

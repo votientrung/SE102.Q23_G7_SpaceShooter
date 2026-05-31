@@ -7,16 +7,19 @@ var drop_distance := 40
 var dropping = false
 @export var start = false
 
-@export var pattern: FormationPattern
+@export var pattern_lib : Array[FormationPattern]
+var pattern: FormationPattern
 var time := 0.0
 
 func _ready() -> void:
 	start = false
 	dropping = false
+	pattern = pattern_lib.pick_random()
 	
 func _process(delta):
 	if start:
 		time = 0.0
+		pattern = pattern_lib.pick_random()
 		return
 	else:
 		global_position = pattern.get_position(time)

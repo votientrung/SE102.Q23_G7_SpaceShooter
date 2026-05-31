@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="passive_card" load_steps=5 format=3 uid="uid://b3k0blhurwva1"]
 
-[ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="1_20aqi"]
-[ext_resource type="Script" uid="uid://wjpm2t7ox727" path="res://script/passive_card.gd" id="2_gvp2x"]
-[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="3_3s18v"]
+[ext_resource type="Texture2D" uid="uid://cwwyaxm5s6rn4" path="res://assets/image/cardspickup/atkcard.png" id="1_udjvf"]
+[ext_resource type="Script" uid="uid://wjpm2t7ox727" path="res://script/passive_card.gd" id="2_a0int"]
+[ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="3_nit2i"]
 
 [sub_resource type="Resource" id="Resource_bsp6y"]
-script = ExtResource("3_3s18v")
+script = ExtResource("3_nit2i")
 gold = 0.0
 mana = 0.0
 gold_regent = 0.0
@@ -21,16 +21,17 @@ speed = 0.0
 luck = 0.0
 weapon_lv = 0.0
 weapon_current = -1.0
+score = 0.0
 metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
 
 [resource]
-script = ExtResource("2_gvp2x")
-image = ExtResource("1_20aqi")
+script = ExtResource("2_a0int")
+image = ExtResource("1_udjvf")
 rare = 0
 card_types = 0
 cost = 50
 mana_cost = 0
-card_name = "red"
+card_name = "Attack+"
 description = "+5 atk"
 animation = "default"
 type = 5
