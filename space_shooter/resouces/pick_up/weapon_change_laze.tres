@@ -134,6 +134,7 @@ speed = 0.0
 luck = 0.0
 weapon_lv = 0.0
 weapon_current = 1.0
+score = 0.0
 metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
 
 [resource]

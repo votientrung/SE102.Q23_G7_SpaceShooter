@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://c0srplx8c4kjp"]
+[gd_scene load_steps=32 format=3 uid="uid://c0srplx8c4kjp"]
 
 [ext_resource type="Script" uid="uid://bsbuc3q8vbxw4" path="res://script/enemy_spawner.gd" id="1_7biu0"]
 [ext_resource type="Script" uid="uid://bsri38jjmskrv" path="res://script/enemy_formation.gd" id="2_00tan"]
@@ -15,15 +15,21 @@
 [ext_resource type="Resource" uid="uid://c5e0pgtxc06lc" path="res://resouces/enemies/normal/nor_emy_3.tres" id="6_nt65e"]
 [ext_resource type="Script" uid="uid://bsxbk5n66aeoa" path="res://script/BossType.gd" id="8_407ns"]
 [ext_resource type="Resource" uid="uid://buui3llpp6a8m" path="res://resouces/enemies/boss/boss_1.tres" id="9_w3w6i"]
+[ext_resource type="Script" uid="uid://dtl6wwkgwm24o" path="res://script/FormationPattern.gd" id="15_gm2mb"]
 [ext_resource type="Resource" uid="uid://djuavplysg3uw" path="res://resouces/enemies/move_pattern/classic.tres" id="15_t4x03"]
 [ext_resource type="PackedScene" uid="uid://cekoojmi7qxuc" path="res://scenes/pick_up/pick_up_manager.tscn" id="16_407ns"]
 [ext_resource type="Script" uid="uid://bhu4dm0prgmk2" path="res://script/player_stat.gd" id="16_ucu43"]
 [ext_resource type="Script" uid="uid://cn66hnogqbdpm" path="res://script/Game_UI_Manager.gd" id="17_525vb"]
+[ext_resource type="Resource" uid="uid://bgocvad8jusft" path="res://resouces/enemies/move_pattern/spitral.tres" id="17_jhs7r"]
 [ext_resource type="PackedScene" uid="uid://bw768rjjbeets" path="res://scenes/shop_scene.tscn" id="18_pv71h"]
 [ext_resource type="PackedScene" uid="uid://rhtqempttwvs" path="res://scenes/use_card.tscn" id="20_25e7j"]
 [ext_resource type="PackedScene" uid="uid://fyus2e3014mc" path="res://scenes/hud.tscn" id="21_525vb"]
 [ext_resource type="PackedScene" uid="uid://d3gpdx67qpoxa" path="res://scenes/pause_menu.tscn" id="22_25e7j"]
+[ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="23_3v6uj"]
 [ext_resource type="PackedScene" uid="uid://b8ku680jerd5r" path="res://scenes/end_menu.tscn" id="23_t4x03"]
+[ext_resource type="Resource" uid="uid://b3k0blhurwva1" path="res://resouces/card/modified_card/Attack+.tres" id="24_rqnht"]
+[ext_resource type="AudioStream" uid="uid://bptmnux1oii26" path="res://assets/sound/BackgroundMusic.mp3" id="25_cuhxg"]
+[ext_resource type="Resource" uid="uid://dkctre0iqregd" path="res://resouces/card/modified_card/gold%.tres" id="25_srvxn"]
 
 [sub_resource type="Resource" id="Resource_cuhxg"]
 script = ExtResource("16_ucu43")
@@ -61,7 +67,7 @@ shop = NodePath("../UI/ShopScene")
 [node name="EnemyFormation" type="Node2D" parent="."]
 light_mask = 0
 script = ExtResource("2_00tan")
-pattern = ExtResource("15_t4x03")
+pattern_lib = Array[ExtResource("15_gm2mb")]([ExtResource("15_t4x03"), ExtResource("17_jhs7r")])
 
 [node name="player" parent="." node_paths=PackedStringArray("hud_reference", "die_scene") instance=ExtResource("5_ocj2s")]
 perminant_stat = SubResource("Resource_cuhxg")
@@ -81,6 +87,7 @@ visible = false
 visibility_layer = 64
 z_index = 7
 Game_UI_Manager = NodePath("..")
+Card_list = Array[ExtResource("23_3v6uj")]([ExtResource("24_rqnht"), ExtResource("25_srvxn")])
 player_reference = NodePath("../../player")
 
 [node name="pause_menu" parent="UI" node_paths=PackedStringArray("hud", "Game_UI_Manager") instance=ExtResource("22_25e7j")]
@@ -96,3 +103,9 @@ Game_UI_Manager = NodePath("..")
 
 [node name="HUD" parent="UI" node_paths=PackedStringArray("player_reference") instance=ExtResource("21_525vb")]
 player_reference = NodePath("../../player")
+
+[node name="BackGroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("25_cuhxg")
+autoplay = true
+area_mask = 128
+parameters/looping = true

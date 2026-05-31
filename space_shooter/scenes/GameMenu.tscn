@@ -1,3 +1,112 @@
-[gd_scene format=3 uid="uid://df7v2yxrmrtv5"]
+[gd_scene load_steps=6 format=3 uid="uid://cpfi4b7p5r314"]
+
+[ext_resource type="Script" uid="uid://bi63bkox7iyeh" path="res://script/game_menu.gd" id="1_bfrts"]
+[ext_resource type="Texture2D" uid="uid://druuq8r3mb43o" path="res://assets/image/BackGround.jpg" id="1_hoxy2"]
+[ext_resource type="Texture2D" uid="uid://36at1bqt0vej" path="res://assets/image/UIUX/PNG/You_Win/Window.png" id="2_iudpa"]
+[ext_resource type="Texture2D" uid="uid://cnmgkelgn5jpd" path="res://assets/image/title.png" id="4_3n088"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bfrts"]
+texture = ExtResource("2_iudpa")
 
 [node name="GameMenu" type="Node2D"]
+script = ExtResource("1_bfrts")
+
+[node name="background" type="TextureRect" parent="."]
+z_index = -10
+custom_minimum_size = Vector2(1200, 900)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_hoxy2")
+expand_mode = 2
+
+[node name="Start" type="Button" parent="."]
+z_index = 2
+custom_minimum_size = Vector2(250, 100)
+offset_left = 475.0
+offset_top = 390.0
+offset_right = 725.0
+offset_bottom = 490.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_bfrts")
+text = "Start"
+
+[node name="TextureRect" type="TextureRect" parent="Start"]
+show_behind_parent = true
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_iudpa")
+expand_mode = 2
+
+[node name="Shop" type="Button" parent="."]
+z_index = 2
+custom_minimum_size = Vector2(250, 100)
+offset_left = 475.0
+offset_top = 500.0
+offset_right = 725.0
+offset_bottom = 600.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_bfrts")
+text = "Shop"
+
+[node name="TextureRect" type="TextureRect" parent="Shop"]
+show_behind_parent = true
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_iudpa")
+expand_mode = 2
+
+[node name="Setting" type="Button" parent="."]
+custom_minimum_size = Vector2(250, 100)
+offset_left = 475.0
+offset_top = 610.0
+offset_right = 725.0
+offset_bottom = 710.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_bfrts")
+text = "Setting
+"
+
+[node name="TextureRect" type="TextureRect" parent="Setting"]
+show_behind_parent = true
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_iudpa")
+expand_mode = 2
+
+[node name="Quit" type="Button" parent="."]
+z_index = 2
+custom_minimum_size = Vector2(250, 100)
+offset_left = 475.0
+offset_top = 720.0
+offset_right = 725.0
+offset_bottom = 820.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_bfrts")
+text = "Quit
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Quit"]
+show_behind_parent = true
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_iudpa")
+expand_mode = 2
+
+[node name="Title" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(800, 300)
+offset_left = 200.0
+offset_top = 120.0
+offset_right = 1000.0
+offset_bottom = 420.0
+texture = ExtResource("4_3n088")
+expand_mode = 2
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Shop" to="." method="_on_shop_pressed"]
+[connection signal="pressed" from="Setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

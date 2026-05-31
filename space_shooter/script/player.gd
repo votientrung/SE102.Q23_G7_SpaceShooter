@@ -161,7 +161,7 @@ func set_base_stats(s : stats, p: stats):
 	score=s.score + p.score
 
 func gain_gold(amount) :
-	gold += amount
+	gold += amount * gold_modified
 
 func calculate_permanent_stats():
 	if perminant_stat == null:
