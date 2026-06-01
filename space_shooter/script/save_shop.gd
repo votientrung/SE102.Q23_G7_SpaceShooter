@@ -1,6 +1,6 @@
 extends Node2D
 const SAVE_FILE_PATH = "user://menu_shop_save.dat"
-var diamond : int  =100000
+var diamond : int  =0
 var upgrades_levels: Dictionary = {
 	"might": 0,
 	"start_gold": 0
@@ -12,7 +12,6 @@ func _ready() -> void:
 		stat_vinh_vien = base_stats_resource.duplicate()
 	else:
 		stat_vinh_vien = stats.new()
-	diamond = 1000000
 	# Khi vừa bật game lên, lập tức đi tìm file cũ để nạp lại tiền
 	load_shop_data()
 	print("=== SAVESHOP READY: upgrades_levels = ", upgrades_levels)
@@ -23,8 +22,6 @@ func get_upgrade_level(upgrade_id: String) -> int:
 		return upgrades_levels[upgrade_id]
 	return 0
 
-
-
 func save_shop_data():
 	var file = FileAccess.open(SAVE_FILE_PATH, FileAccess.WRITE)
 	if file:
@@ -32,27 +29,28 @@ func save_shop_data():
 			"diamond": diamond,
 			"upgrades_levels": upgrades_levels
 		}
-		file.store_var(data) # Ghi dữ liệu vào file
+		# Chuyển Dictionary thành chuỗi chữ viết đọc được (JSON)
+		var json_string = JSON.stringify(data)
+		file.store_line(json_string)
 		file.close()
-		print("--- SAVE SYSTEM: Đã lưu số vàng hiện tại là: ", diamond)
+		print("--- SAVE SYSTEM: Đã lưu dữ liệu dạng Text dễ sửa!")
 
 func load_shop_data():
-	# Nếu người chơi mới chơi lần đầu, chưa có file save thì giữ nguyên 10000
 	if not FileAccess.file_exists(SAVE_FILE_PATH):
-		print("--- SAVE SYSTEM: Chưa có file save cũ, dùng vàng mặc định.")
 		return
 		
 	var file = FileAccess.open(SAVE_FILE_PATH, FileAccess.READ)
 	if file:
-		var data = file.get_var() # Đọc dữ liệu từ file ra biến data
+		var json_string = file.get_line()
 		file.close()
 		
-		# Nạp số vàng cũ vào biến toàn cục
-		if data:
-			if data.has("diamond"):
-				diamond = data["diamond"]
-			if data.has("upgrades_levels"): # <--- Tải lại cấp độ cũ đã mua
-				upgrades_levels = data["upgrades_levels"]
-			print("--- SAVE SYSTEM: Tải dữ liệu thành công! Kim cương hiện có: ", diamond)
+		var json = JSON.new()
+		var error = json.parse(json_string)
+		if error == OK:
+			var data = json.get_data()
+			if data.has("diamond"): diamond = int(data["diamond"])
+			if data.has("upgrades_levels"): upgrades_levels = data["upgrades_levels"]
+			print("--- SAVE SYSTEM: Tải dữ liệu JSON thành công!")
+			
 func reset_stat_vinh_vien():
 	stat_vinh_vien = base_stats_resource.duplicate()

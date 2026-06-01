@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="HalfCircle" load_steps=3 format=3 uid="uid://h3d2uytisu26"]
+[gd_resource type="Resource" script_class="Boss_HalfCircle" load_steps=3 format=3 uid="uid://h3d2uytisu26"]
 
 [ext_resource type="PackedScene" uid="uid://ceuenk0e2u8li" path="res://scenes/bullets/enemy_bullet/enemy_bullet.tscn" id="1_afkid"]
 [ext_resource type="Script" uid="uid://doc5u74vjdco7" path="res://script/Boss_SkillHalfCircle_right.gd" id="2_fvkil"]

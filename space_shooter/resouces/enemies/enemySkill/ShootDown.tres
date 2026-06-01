@@ -7,6 +7,8 @@
 script = ExtResource("2_5j11m")
 em_normal_bullet = ExtResource("1_t0tns")
 bullet_speed = 0.0
+wavecount = 0
+phase = 0
 damage = 10
 cooldown = 5.0
 title = "ShootDown"
