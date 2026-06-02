@@ -32,6 +32,7 @@ func _process(delta: float) -> void:
 		hovering = false
 		exit_button.scale = Vector2(1.0, 1.0)
 	
+	$"window/GoldLeft".text = str(player_reference.gold)
 
 
 func is_mouse_over_card() -> bool:

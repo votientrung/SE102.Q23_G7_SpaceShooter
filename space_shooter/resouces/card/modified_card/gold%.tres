@@ -13,14 +13,14 @@ mana_regent = 0.0
 gold_modified = 0.1
 mana_modified = 0.0
 armor = 0.0
-damage = 5.0
+damage = 0.0
 damage_modified = 0.0
 might = 0.0
 scale_bullet = 0.0
 speed = 0.0
 luck = 0.0
 weapon_lv = 0.0
-weapon_current = 0.0
+weapon_current = -1.0
 score = 0.0
 metadata/_custom_type_script = "uid://bhu4dm0prgmk2"
 
