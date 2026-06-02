@@ -29,4 +29,5 @@ func _on_replay_pressed() -> void:
 
 
 func _on_home_pressed() -> void:
+	Game_UI_Manager.ui_clear()
 	get_tree().change_scene_to_file("res://scenes/GameMenu.tscn")

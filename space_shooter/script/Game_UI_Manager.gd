@@ -23,3 +23,7 @@ func pop_ui():
 	
 	if ui_stack.is_empty():
 		get_tree().paused = false
+
+func ui_clear():
+	ui_stack.clear()
+	get_tree().paused = false
