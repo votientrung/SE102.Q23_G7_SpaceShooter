@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UpgradeData" load_steps=3 format=3 uid="uid://bhaur42vlnr1i"]
+
+[ext_resource type="Texture2D" uid="uid://ddlpvkevbi065" path="res://assets/image/UIUX/PNG/Buttons/BTNs/Hangar_BTN.png" id="1_4yf7m"]
+[ext_resource type="Script" uid="uid://cl81anbup5bmr" path="res://script/menu_update_icon.gd" id="2_at8o6"]
+
+[resource]
+script = ExtResource("2_at8o6")
+id = "weapon lv"
+display_name = "weapon lv"
+icon = ExtResource("1_4yf7m")
+description = "+1 weapon lv"
+base_price = 3000
+price_step = 2000
+max_level = 2
+metadata/_custom_type_script = "uid://cl81anbup5bmr"

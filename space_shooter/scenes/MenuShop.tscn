@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cn3sgeeu1y72f"]
+[gd_scene load_steps=15 format=3 uid="uid://cn3sgeeu1y72f"]
 
 [ext_resource type="Script" uid="uid://uq1w7mdfkce" path="res://script/menu_shop.gd" id="1_nouij"]
 [ext_resource type="Script" uid="uid://cl81anbup5bmr" path="res://script/menu_update_icon.gd" id="2_1l1v2"]
@@ -6,7 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://chhv5nse40081" path="res://scenes/upgrade_slot.tscn" id="4_rc4j2"]
 [ext_resource type="Resource" uid="uid://bqe1l2rhcip8j" path="res://resouces/slot/might.tres" id="4_rpuyh"]
 [ext_resource type="Texture2D" uid="uid://de0nift8i5a7s" path="res://assets/image/UIUX/PNG/Ship_Shop/Window.png" id="5_nouij"]
+[ext_resource type="Resource" uid="uid://onin2vocoa6j" path="res://resouces/slot/mana.tres" id="5_rc4j2"]
+[ext_resource type="Resource" uid="uid://p7f4hspeyn5n" path="res://resouces/slot/armor.tres" id="6_dswjv"]
 [ext_resource type="Texture2D" uid="uid://b01uu4a7rcsbv" path="res://assets/image/UIUX/PNG/Ship_Shop/Backward_BTN.png" id="6_tclq7"]
+[ext_resource type="Resource" uid="uid://bhaur42vlnr1i" path="res://resouces/slot/weapon_lv.tres" id="7_38k8k"]
 [ext_resource type="Texture2D" uid="uid://bfmnsxbjki4nb" path="res://assets/image/UIUX/PNG/You_Win/Replay_BTN.png" id="8_c607x"]
 [ext_resource type="Texture2D" uid="uid://cmvdv8kfsuwyl" path="res://assets/image/UIUX/PNG/You_Lose/Table.png" id="8_rpuyh"]
 [ext_resource type="Texture2D" uid="uid://cbnbjjar1hri2" path="res://assets/image/UIUX/PNG/Upgrade/Ok_BTN.png" id="9_rc4j2"]
@@ -20,7 +23,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_nouij")
-list_upgrades = Array[ExtResource("2_1l1v2")]([ExtResource("3_rpuyh"), ExtResource("4_rpuyh")])
+list_upgrades = Array[ExtResource("2_1l1v2")]([ExtResource("3_rpuyh"), ExtResource("4_rpuyh"), ExtResource("5_rc4j2"), ExtResource("6_dswjv"), ExtResource("7_38k8k")])
 slot_scene = ExtResource("4_rc4j2")
 
 [node name="window" type="TextureRect" parent="."]

@@ -3,7 +3,10 @@ const SAVE_FILE_PATH = "user://menu_shop_save.dat"
 var diamond : int  =0
 var upgrades_levels: Dictionary = {
 	"might": 0,
-	"start_gold": 0
+	"gold": 0,
+	"mana" :0,
+	"armor" :0,
+	"weapon lv" :0
 }
 var base_stats_resource: stats = preload("res://resouces/player/weapon_stat/perminant_stats.tres")
 var stat_vinh_vien : stats
