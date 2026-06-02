@@ -60,7 +60,7 @@ func _on_slot_selected(upgrade_data: UpgradeData):
 	# Đổ chữ vào bảng chi tiết bên phải
 	detail_name.text = upgrade_data.display_name
 	detail_desc.text = upgrade_data.description
-	detail_price.text = "Giá: " + str(upgrade_data.base_price)
+	detail_price.text = "Giá: " + str(upgrade_data.base_price  + (SaveShop.get_upgrade_level(upgrade_data.id) * upgrade_data.price_step))
 
 # --- KHU VỰC BẤM NÚT CHỨC NĂNG ---
 

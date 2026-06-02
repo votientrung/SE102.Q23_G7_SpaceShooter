@@ -132,7 +132,7 @@ func gold_take(damage):
 	can_take_dmg =false
 	print("take dmg")
 	print("dmg " , damage)
-	gold -= damage
+	gold -= damage - armor
 	animation_player_get_hit.play("flash")
 	await  get_tree().create_timer(6).timeout
 	animation_player_get_hit.stop()
@@ -178,5 +178,14 @@ func calculate_permanent_stats():
 				perminant_stat.gold = level * 250
 				print("gold lv=", level, " → perminant_stat.gold=", perminant_stat.gold)
 			"might":
-				perminant_stat.might = 1.0 + (level * 0.2)
+				perminant_stat.damage = 1.0 + (level * 0.2)
 				print("might lv=", level, " → perminant_stat.might=", perminant_stat.might)
+			"mana":
+				perminant_stat.mana = level 
+				print("mana lv=", level, " → perminant_stat.mana=", perminant_stat.mana)
+			"armor":
+				perminant_stat.armor =level
+				print("armor lv=", level, " → perminant_stat.armor=", perminant_stat.armor)
+			"weapon lv":
+				perminant_stat.weapon_lv = level
+				print("weapon lv=", level, " → perminant_stat.weapon_lv=", perminant_stat.weapon_lv)

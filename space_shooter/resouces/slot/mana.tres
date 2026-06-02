@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UpgradeData" load_steps=3 format=3 uid="uid://onin2vocoa6j"]
+
+[ext_resource type="Texture2D" uid="uid://cktqrne45es0d" path="res://assets/image/cardspickup/energy.png" id="1_jjjx1"]
+[ext_resource type="Script" uid="uid://cl81anbup5bmr" path="res://script/menu_update_icon.gd" id="2_e1nnu"]
+
+[resource]
+script = ExtResource("2_e1nnu")
+id = "mana"
+display_name = "mana"
+icon = ExtResource("1_jjjx1")
+description = "+1 mana"
+base_price = 500
+price_step = 200
+max_level = 5
+metadata/_custom_type_script = "uid://cl81anbup5bmr"

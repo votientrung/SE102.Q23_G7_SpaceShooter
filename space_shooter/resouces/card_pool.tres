@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="card_pool" load_steps=5 format=3 uid="uid://ts22es3nmcdy"]
+
+[ext_resource type="Script" uid="uid://dp6nxcs4xtyyw" path="res://script/card.gd" id="1_xevmd"]
+[ext_resource type="Resource" uid="uid://0v0bc06iue4l" path="res://resouces/card/Skill_card/shield.tres" id="2_ddjf2"]
+[ext_resource type="Resource" uid="uid://cl7hrf7v5ce46" path="res://resouces/card/Skill_card/nuke.tres" id="3_ci5mx"]
+[ext_resource type="Script" uid="uid://bfifa1q0bkxj2" path="res://script/card_pool.gd" id="4_ey3qn"]
+
+[resource]
+script = ExtResource("4_ey3qn")
+cards = Array[ExtResource("1_xevmd")]([ExtResource("2_ddjf2"), ExtResource("3_ci5mx")])
+metadata/_custom_type_script = "uid://bfifa1q0bkxj2"

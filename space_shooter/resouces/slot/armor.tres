@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UpgradeData" load_steps=3 format=3 uid="uid://p7f4hspeyn5n"]
+
+[ext_resource type="Texture2D" uid="uid://bjtd8ngbijisa" path="res://assets/image/cardspickup/defcard.png" id="1_ia6u3"]
+[ext_resource type="Script" uid="uid://cl81anbup5bmr" path="res://script/menu_update_icon.gd" id="2_esom3"]
+
+[resource]
+script = ExtResource("2_esom3")
+id = "armor"
+display_name = "armor"
+icon = ExtResource("1_ia6u3")
+description = "+1 armor"
+base_price = 500
+price_step = 200
+max_level = 5
+metadata/_custom_type_script = "uid://cl81anbup5bmr"
