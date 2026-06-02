@@ -35,7 +35,7 @@ func _input(event) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed and hovering:
 			
-			if player_reference.gold >= card_info.cost and  player_reference.gold != null:
+			if player_reference.gold >= card_info.cost:
 				player_reference.gold -= card_info.cost
 				card_info.apply_card(player_reference)
 				print(player_reference.damage)
