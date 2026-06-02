@@ -87,6 +87,8 @@ func die():
 	$Sprite2D.visible = false
 	$AnimatedSprite2D.play("die")
 	drop_item()
+	player_reference.score += point
+	player_reference.gold += golddrop
 	await $AnimatedSprite2D.animation_finished
 	$AnimatedSprite2D.visible = false
 	queue_free()

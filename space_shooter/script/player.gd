@@ -132,6 +132,7 @@ func gold_take(damage):
 	can_take_dmg =false
 	print("take dmg")
 	print("dmg " , damage)
+	print("score" , score)
 	gold -= damage - armor
 	animation_player_get_hit.play("flash")
 	await  get_tree().create_timer(6).timeout

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="pick_up" load_steps=6 format=3 uid="uid://db7tu05qdnlmq"]
 
-[ext_resource type="Resource" uid="uid://ts22es3nmcdy" path="res://resouces/card_pool.tres" id="1_gtcbl"]
+[ext_resource type="Resource" path="res://resouces/card_pool.tres" id="1_gtcbl"]
 [ext_resource type="Texture2D" uid="uid://dgqwccabwim63" path="res://assets/image/cardspickup/LineAcross2dMegaAssetsPack/Assets/DailyObjects.png" id="1_vl0nq"]
 [ext_resource type="Script" uid="uid://ccnca73pvgj5f" path="res://script/pick_up.gd" id="2_gtcbl"]
 
