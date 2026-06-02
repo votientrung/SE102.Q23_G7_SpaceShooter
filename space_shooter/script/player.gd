@@ -29,7 +29,7 @@ var end_bound_y
 var gold : float = 50 :
 	set(value):
 		gold= max(value,0)
-		if gold <=0:
+		if gold <0:
 			die()
 var mana : float = 0 :
 	set(value):
@@ -125,6 +125,8 @@ func _process(delta):
 #take dam
 var can_take_dmg =true
 func gold_take(damage):
+	if gold==0:
+		die()
 	if can_take_dmg == false:
 		return
 	can_take_dmg =false
@@ -138,7 +140,7 @@ func gold_take(damage):
 	print("gold left " , gold)
 
 func die():
-	queue_free()
+	SaveShop.diamond += 100
 	die_scene.show_endgame()
 
 func set_base_stats(s : stats, p: stats):

@@ -11,6 +11,7 @@ image = ExtResource("1_jw6hh")
 rare = 2
 card_types = 1
 cost = 0
+mana_cost = 0
 card_name = ""
 description = "khien"
 animation = "default"

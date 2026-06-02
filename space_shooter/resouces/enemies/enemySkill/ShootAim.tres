@@ -7,6 +7,8 @@
 script = ExtResource("2_8qlqp")
 em_normal_bullet = ExtResource("1_apw21")
 bullet_speed = 0.0
+wavecount = 0
+phase = 0
 damage = 10
 cooldown = 7.0
 title = "ShootAim"

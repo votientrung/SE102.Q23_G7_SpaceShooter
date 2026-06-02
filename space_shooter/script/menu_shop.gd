@@ -23,7 +23,6 @@ extends Control
 var selected_upgrade: UpgradeData = null
 
 func _ready() -> void:
-	SaveShop.diamond = 100000000
 	# 1. Ẩn bảng chi tiết bên phải đi khi mới mở shop (vì chưa chọn món nào)
 	detail_panel.hide()
 	
